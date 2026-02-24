@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="caramellatte">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#7B4B2A" />
+  <title>Cozy Weeknight Dinners - Food Atlas Collections</title>
+  <meta name="description" content="Comforting, easy weeknight dinners you can put on the table fast. Explore the Cozy Weeknight Dinners collection on Food Atlas." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .font-serif { font-family: 'Lora', serif; }
+  </style>
+</head>
+<body class="bg-base-100 text-base-content">
+
+  <!-- NAVBAR -->
+  <div class="navbar bg-white/90 backdrop-blur-lg sticky top-0 z-50 border-b border-base-300 shadow-sm">
+    <div class="navbar-start">
+      <a href="index.html" class="btn btn-ghost text-xl">
+        <img src="logo-horizontal.png" alt="Food Atlas logo" class="h-10" />
+      </a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1 gap-6">
+        <li><a href="index.html" class="text-sm font-medium hover:text-primary transition-colors">Home</a></li>
+        <li><a href="recipes.html" class="text-sm font-medium hover:text-primary transition-colors">Recipes</a></li>
+        <li><a href="collections.html" class="text-sm font-medium text-primary">Collections</a></li>
+      </ul>
+    </div>
+    <div class="navbar-end gap-2">
+      <button class="btn btn-ghost btn-sm btn-circle hidden lg:flex hover:bg-base-200" aria-label="Search">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      </button>
+      <a href="login.html" class="btn btn-outline btn-sm hidden lg:flex hover:bg-base-200">Log in</a>
+      <a href="signup.html" class="btn btn-primary btn-sm hidden lg:flex">Sign up</a>
+      <div class="dropdown dropdown-end lg:hidden">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </div>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-3 shadow-xl bg-white rounded-box w-56 border border-base-300">
+          <li><a href="index.html" class="hover:bg-base-200">Home</a></li>
+          <li><a href="recipes.html" class="hover:bg-base-200">Recipes</a></li>
+          <li><a href="collections.html" class="hover:bg-base-200">Collections</a></li>
+          <li class="border-t border-base-300 mt-2 pt-2">
+            <a href="login.html" class="btn btn-outline btn-sm w-full">Log in</a>
+          </li>
+          <li><a href="signup.html" class="btn btn-primary btn-sm w-full mt-2">Sign up</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- COLLECTION HERO -->
+    <section class="hero min-h-[320px] lg:min-h-[400px] relative overflow-hidden">
+      <div class="hero-overlay bg-gradient-to-r from-base-content/95 via-base-content/80 to-base-content/55"></div>
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1920&q=80" alt="Cozy weeknight dinner table" class="brightness-50 opacity-80 absolute inset-0 w-full h-full object-cover" />
+      <div class="hero-content text-left text-primary-content relative z-10 container mx-auto px-4 lg:px-8 py-16 lg:py-24">
+        <div class="max-w-2xl">
+          <nav class="breadcrumbs text-primary-content/80 text-sm mb-4 px-0" aria-label="Breadcrumb">
+            <ul>
+              <li><a href="index.html" class="hover:text-primary-content">Home</a></li>
+              <li><a href="collections.html" class="hover:text-primary-content">Collections</a></li>
+              <li class="text-primary-content font-medium">Cozy Weeknight Dinners</li>
+            </ul>
+          </nav>
+          <h1 class="font-serif text-4xl lg:text-5xl font-bold mb-4">Cozy Weeknight Dinners</h1>
+          <p class="text-lg opacity-90 mb-6">
+            Quick, comforting meals perfect for busy evenings. From hearty pastas to one-pan bakes, these recipes keep dinner simple without sacrificing flavor.
+          </p>
+          <div class="flex flex-wrap items-center gap-3">
+            <div class="badge badge-primary badge-lg text-primary-content border-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              9 recipes
+            </div>
+            <div class="flex flex-wrap gap-2 text-xs">
+              <span class="badge badge-outline badge-sm border-primary/60 text-primary-content/90 bg-base-100/10">30 minutes or less</span>
+              <span class="badge badge-outline badge-sm border-primary/60 text-primary-content/90 bg-base-100/10">family friendly</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECIPES IN COLLECTION -->
+    <section class="py-16 lg:py-24">
+      <div class="container mx-auto px-4 lg:px-8">
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10">
+          <div>
+            <h2 class="font-serif text-2xl lg:text-3xl font-bold mb-2">Recipes in this collection</h2>
+            <p class="text-base-content/70 max-w-2xl">
+              These dinners are designed to be simple enough for a busy weeknight, but special enough to look forward to.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-3">
+            <select class="select select-bordered select-sm w-full sm:w-auto">
+              <option disabled selected>Sort by</option>
+              <option>Recommended</option>
+              <option>Fastest first</option>
+              <option>Most hearty</option>
+            </select>
+            <select class="select select-bordered select-sm w-full sm:w-auto">
+              <option disabled selected>Diet</option>
+              <option>All</option>
+              <option>Vegetarian</option>
+              <option>Gluten-free</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+          <!-- Recipe card 1 -->
+          <a href="#" class="card bg-base-200 shadow-lg hover:shadow-2xl transition-all border border-base-300 hover:border-primary/30 group">
+            <figure class="aspect-[4/3] overflow-hidden rounded-t-2xl">
+              <img src="https://images.unsplash.com/photo-1604908554163-67df8fdf00a4?w=600&q=80" alt="Creamy One-Pot Chicken Pasta" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+            </figure>
+            <div class="card-body p-5">
+              <h3 class="card-title font-serif text-lg group-hover:text-primary transition-colors">Creamy One-Pot Chicken Pasta</h3>
+              <p class="text-sm text-base-content/70 line-clamp-2">
+                Tender chicken and al dente pasta simmered together in a silky garlic-parmesan sauce.
+              </p>
+              <div class="flex gap-4 text-xs text-base-content/60 mt-2">
+                <span>30 min</span>
+                <span>4 servings</span>
+              </div>
+              <div class="flex gap-2 mt-2">
+                <span class="badge badge-sm badge-secondary">one-pot</span>
+                <span class="badge badge-sm badge-secondary">comfort</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Recipe card 2 -->
+          <a href="#" class="card bg-base-200 shadow-lg hover:shadow-2xl transition-all border border-base-300 hover:border-primary/30 group">
+            <figure class="aspect-[4/3] overflow-hidden rounded-t-2xl">
+              <img src="https://images.unsplash.com/photo-1601314167099-232775b478e1?w=600&q=80" alt="Sheet Pan Lemon Herb Salmon" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+            </figure>
+            <div class="card-body p-5">
+              <h3 class="card-title font-serif text-lg group-hover:text-primary transition-colors">Sheet Pan Lemon Herb Salmon</h3>
+              <p class="text-sm text-base-content/70 line-clamp-2">
+                Flaky salmon with roasted vegetables, all baked together on a single pan.
+              </p>
+              <div class="flex gap-4 text-xs text-base-content/60 mt-2">
+                <span>25 min</span>
+                <span>3 servings</span>
+              </div>
+              <div class="flex gap-2 mt-2">
+                <span class="badge badge-sm badge-secondary">sheet pan</span>
+                <span class="badge badge-sm badge-secondary">light</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Recipe card 3 -->
+          <a href="#" class="card bg-base-200 shadow-lg hover:shadow-2xl transition-all border border-base-300 hover:border-primary/30 group">
+            <figure class="aspect-[4/3] overflow-hidden rounded-t-2xl">
+              <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=600&q=80" alt="Veggie-Packed Lentil Soup" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+            </figure>
+            <div class="card-body p-5">
+              <h3 class="card-title font-serif text-lg group-hover:text-primary transition-colors">Veggie-Packed Lentil Soup</h3>
+              <p class="text-sm text-base-content/70 line-clamp-2">
+                Hearty lentils, seasonal vegetables, and warm spices for a bowl that feels like a hug.
+              </p>
+              <div class="flex gap-4 text-xs text-base-content/60 mt-2">
+                <span>40 min</span>
+                <span>6 servings</span>
+              </div>
+              <div class="flex gap-2 mt-2">
+                <span class="badge badge-sm badge-secondary">soup</span>
+                <span class="badge badge-sm badge-secondary">vegetarian</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Recipe card 4 -->
+          <a href="#" class="card bg-base-200 shadow-lg hover:shadow-2xl transition-all border border-base-300 hover:border-primary/30 group">
+            <figure class="aspect-[4/3] overflow-hidden rounded-t-2xl">
+              <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=600&q=80" alt="Stovetop Skillet Lasagna" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+            </figure>
+            <div class="card-body p-5">
+              <h3 class="card-title font-serif text-lg group-hover:text-primary transition-colors">Stovetop Skillet Lasagna</h3>
+              <p class="text-sm text-base-content/70 line-clamp-2">
+                All the flavor of classic lasagna, made in one skillet with no layering required.
+              </p>
+              <div class="flex gap-4 text-xs text-base-content/60 mt-2">
+                <span>35 min</span>
+                <span>4 servings</span>
+              </div>
+              <div class="flex gap-2 mt-2">
+                <span class="badge badge-sm badge-secondary">one-pan</span>
+                <span class="badge badge-sm badge-secondary">pasta</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Recipe card 5 -->
+          <a href="#" class="card bg-base-200 shadow-lg hover:shadow-2xl transition-all border border-base-300 hover:border-primary/30 group">
+            <figure class="aspect-[4/3] overflow-hidden rounded-t-2xl">
+              <img src="https://images.unsplash.com/photo-1601056459452-09c6993a9d80?w=600&q=80" alt="Creamy Tomato Gnocchi Bake" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+            </figure>
+            <div class="card-body p-5">
+              <h3 class="card-title font-serif text-lg group-hover:text-primary transition-colors">Creamy Tomato Gnocchi Bake</h3>
+              <p class="text-sm text-base-content/70 line-clamp-2">
+                Soft gnocchi baked in a creamy tomato sauce with mozzarella and basil.
+              </p>
+              <div class="flex gap-4 text-xs text-base-content/60 mt-2">
+                <span>30 min</span>
+                <span>4 servings</span>
+              </div>
+              <div class="flex gap-2 mt-2">
+                <span class="badge badge-sm badge-secondary">baked</span>
+                <span class="badge badge-sm badge-secondary">vegetarian</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Recipe card 6 -->
+          <a href="#" class="card bg-base-200 shadow-lg hover:shadow-2xl transition-all border border-base-300 hover:border-primary/30 group">
+            <figure class="aspect-[4/3] overflow-hidden rounded-t-2xl">
+              <img src="https://images.unsplash.com/photo-1542444256-8e4622c05778?w=600&q=80" alt="Garlic Butter Shrimp Rice Bowl" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+            </figure>
+            <div class="card-body p-5">
+              <h3 class="card-title font-serif text-lg group-hover:text-primary transition-colors">Garlic Butter Shrimp Rice Bowl</h3>
+              <p class="text-sm text-base-content/70 line-clamp-2">
+                Juicy shrimp in garlic butter sauce served over fluffy rice with greens.
+              </p>
+              <div class="flex gap-4 text-xs text-base-content/60 mt-2">
+                <span>20 min</span>
+                <span>2 servings</span>
+              </div>
+              <div class="flex gap-2 mt-2">
+                <span class="badge badge-sm badge-secondary">seafood</span>
+                <span class="badge badge-sm badge-secondary">quick</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+        <div class="flex justify-center mt-12">
+          <a href="collections.html" class="btn btn-outline hover:bg-base-200">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+            Back to Collections
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-base-200 border-t border-base-300 p-10 text-base-content">
+    <div class="container mx-auto px-4 lg:px-8">
+      <div class="flex flex-col md:flex-row gap-8 md:gap-24 items-start">
+        <div class="max-w-xs shrink-0">
+          <a href="index.html" class="hover:opacity-80 transition-opacity inline-block mb-3">
+            <img src="logo-horizontal.png" alt="Food Atlas logo" class="h-9" />
+          </a>
+          <p class="text-sm text-base-content/70">Your passport to global flavors. Discover, create, and organize recipes from around the world.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-12 md:ml-auto">
+          <div>
+            <h6 class="font-semibold text-base-content mb-3">Explore</h6>
+            <div class="flex flex-col gap-2">
+              <a href="recipes.html" class="text-sm text-base-content/70 hover:text-primary transition-colors">Recipes</a>
+              <a href="collections.html" class="text-sm text-base-content/70 hover:text-primary transition-colors">Collections</a>
+              <a href="recipes.html" class="text-sm text-base-content/70 hover:text-primary transition-colors">Search</a>
+            </div>
+          </div>
+          <div>
+            <h6 class="font-semibold text-base-content mb-3">Account</h6>
+            <div class="flex flex-col gap-2">
+              <a href="signup.html" class="text-sm text-base-content/70 hover:text-primary transition-colors">Sign Up</a>
+              <a href="login.html" class="text-sm text-base-content/70 hover:text-primary transition-colors">Log In</a>
+              <a href="#" class="text-sm text-base-content/70 hover:text-primary transition-colors">Dashboard</a>
+            </div>
+          </div>
+          <div>
+            <h6 class="font-semibold text-base-content mb-3">Company</h6>
+            <div class="flex flex-col gap-2">
+              <a href="#" class="text-sm text-base-content/70 hover:text-primary transition-colors">About</a>
+              <a href="#" class="text-sm text-base-content/70 hover:text-primary transition-colors">Privacy</a>
+              <a href="#" class="text-sm text-base-content/70 hover:text-primary transition-colors">Terms</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-base-300 pt-6 mt-8 text-center">
+        <p class="text-xs text-base-content/60">Food Atlas. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+

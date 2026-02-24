@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="caramellatte">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#7B4B2A" />
+  <title>Recipes - Food Atlas</title>
+  <meta name="description" content="Browse all recipes from around the world on Food Atlas." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .font-serif { font-family: 'Lora', serif; }
+  </style>
+</head>
+<body class="bg-base-100 text-base-content">
+
+  <!-- NAVBAR -->
+  <div class="navbar bg-white/90 backdrop-blur-lg sticky top-0 z-50 border-b border-base-300 shadow-sm">
+    <div class="navbar-start">
+      <a href="index.html" class="btn btn-ghost text-xl">
+        <img src="logo-horizontal.png" alt="Food Atlas logo" class="h-10" />
+      </a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1 gap-6">
+        <li><a href="index.html" class="text-sm font-medium hover:text-primary transition-colors">Home</a></li>
+        <li><a href="recipes.html" class="text-sm font-medium text-primary">Recipes</a></li>
+        <li><a href="collections.html" class="text-sm font-medium hover:text-primary transition-colors">Collections</a></li>
+      </ul>
+    </div>
+    <div class="navbar-end gap-2">
+      <button class="btn btn-ghost btn-sm btn-circle hidden lg:flex hover:bg-base-200">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      </button>
+      <a href="login.html" class="btn btn-outline btn-sm hidden lg:flex hover:bg-base-200">Log in</a>
+      <a href="signup.html" class="btn btn-primary btn-sm hidden lg:flex">Sign up</a>
+      <div class="dropdown dropdown-end lg:hidden">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </div>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-3 shadow-xl bg-white rounded-box w-56 border border-base-300">
+          <li><a href="index.html" class="hover:bg-base-200">Home</a></li>
+          <li><a href="recipes.html" class="hover:bg-base-200">Recipes</a></li>
+          <li><a href="collections.html" class="hover:bg-base-200">Collections</a></li>
+          <li class="border-t border-base-300 mt-2 pt-2">
+            <a href="login.html" class="btn btn-outline btn-sm w-full">Log in</a>
+          </li>
+          <li>
+            <a href="signup.html" class="btn btn-primary btn-sm w-full mt-2">Sign up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <main class="py-16 lg:py-24">
+    <div class="container mx-auto px-4 lg:px-8">
+      <h1 class="text-3xl lg:text-4xl font-bold font-serif mb-10">All Recipes</h1>
+
+      <!-- FILTERS -->
+      <div class="card bg-base-200 border border-base-300 shadow-md mb-12">
+        <div class="card-body p-6">
+          <div class="flex flex-col lg:flex-row gap-4 items-center">
+            <input type="text" placeholder="Search recipes…" class="input input-bordered flex-1 w-full h-12" />
+            <select class="select select-bordered w-full lg:w-auto h-12">
+              <option disabled selected>Cuisine</option>
+              <option>Italian</option>
+              <option>Mexican</option>
+              <option>Indian</option>
+              <option>Mediterranean</option>
+              <option>Japanese</option>
+            </select>
+            <select class="select select-bordered w-full lg:w-auto h-12">
+              <option disabled selected>Category</option>
+              <option>Main Dish</option>
+              <option>Dessert</option>
+              <option>Salad</option>
+              <option>Soup</option>
+              <option>Baking</option>
+            </select>
+            <select class="select select-bordered w-full lg:w-auto h-12">
+              <option disabled selected>Time</option>
+              <option>Under 30 min</option>
+              <option>30-60 min</option>
+              <option>Over 60 min</option>
+            </select>
+            <button class="btn btn-primary btn-square h-12 w-12">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- RECIPE GRID -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <a href="#" class="card bg-base-200 shadow-lg hover:shadow-2xl transition-all duration-300 border border-base-300 hover:border-primary/30 group">
+          <figure class="aspect-[4/3] overflow-hidden rounded-t-2xl">
+            <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=800&q=80" alt="Classic Chocolate Chip Cookies" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+          </figure>
+          <div class="card-body p-5">
+            <h3 class="card-title font-serif text-lg group-hover:text-primary transition-colors">Classic Chocolate Chip Cookies</h3>
+            <p class="text-sm text-base-content/70 line-clamp-2">A timeless recipe for soft and chewy chocolate chip cookies.</p>
+            <div class="flex flex-wrap gap-2 pt-3">
+              <span class="badge badge-secondary badge-sm">dessert</span>
+              <span class="badge badge-secondary badge-sm">baking</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="card bg-base-200 shadow-lg hover:shadow-2xl transition-all duration-300 border border-base-300 hover:border-primary/30 group">
+          <figure class="aspect-[4/3] overflow-hidden rounded-t-2xl">
+            <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800&q=80" alt="Creamy Carbonara Pasta" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+          </figure>
+          <div class="card-body p-5">
+            <h3 class="card-title font-serif text-lg group-hover:text-primary transition-colors">Creamy Carbonara Pasta</h3>
+            <p class="text-sm text-base-content/70 line-clamp-2">An authentic Italian carbonara with silky sauce and crispy guanciale.</p>
+            <div class="flex flex-wrap gap-2 pt-3">
+              <span class="badge badge-secondary badge-sm">italian</span>
+              <span class="badge badge-secondary badge-sm">pasta</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="card bg-base-200 shadow-lg hover:shadow-2xl transition-all duration-300 border border-base-300 hover:border-primary/30 group">
+          <figure class="aspect-[4/3] overflow-hidden rounded-t-2xl">
+            <img src="https://images.unsplash.com/photo-1546793665-c74683f339c1?w=800&q=80" alt="Mediterranean Salad" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+          </figure>
+          <div class="card-body p-5">
+            <h3 class="card-title font-serif text-lg group-hover:text-primary transition-colors">Mediterranean Salad</h3>
+            <p class="text-sm text-base-content/70 line-clamp-2">A vibrant salad with tomatoes, olives, feta and lemon dressing.</p>
+            <div class="flex flex-wrap gap-2 pt-3">
+              <span class="badge badge-secondary badge-sm">healthy</span>
+              <span class="badge badge-secondary badge-sm">salad</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="card bg-base-200 shadow-lg hover:shadow-2xl transition-all duration-300 border border-base-300 hover:border-primary/30 group">
+          <figure class="aspect-[4/3] overflow-hidden rounded-t-2xl">
+            <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?w=800&q=80" alt="Chicken Tikka Masala" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+          </figure>
+          <div class="card-body p-5">
+            <h3 class="card-title font-serif text-lg group-hover:text-primary transition-colors">Chicken Tikka Masala</h3>
+            <p class="text-sm text-base-content/70 line-clamp-2">Rich and aromatic chicken in creamy tomato-spiced sauce.</p>
+            <div class="flex flex-wrap gap-2 pt-3">
+              <span class="badge badge-secondary badge-sm">indian</span>
+              <span class="badge badge-secondary badge-sm">curry</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="card bg-base-200 shadow-lg hover:shadow-2xl transition-all duration-300 border border-base-300 hover:border-primary/30 group">
+          <figure class="aspect-[4/3] overflow-hidden rounded-t-2xl">
+            <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=800&q=80" alt="Street-Style Tacos" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+          </figure>
+          <div class="card-body p-5">
+            <h3 class="card-title font-serif text-lg group-hover:text-primary transition-colors">Street-Style Tacos</h3>
+            <p class="text-sm text-base-content/70 line-clamp-2">Authentic Mexican street tacos with fresh salsa and lime.</p>
+            <div class="flex flex-wrap gap-2 pt-3">
+              <span class="badge badge-secondary badge-sm">mexican</span>
+              <span class="badge badge-secondary badge-sm">tacos</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="card bg-base-200 shadow-lg hover:shadow-2xl transition-all duration-300 border border-base-300 hover:border-primary/30 group">
+          <figure class="aspect-[4/3] overflow-hidden rounded-t-2xl">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800&q=80" alt="Chocolate Ganache Layer Cake" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+          </figure>
+          <div class="card-body p-5">
+            <h3 class="card-title font-serif text-lg group-hover:text-primary transition-colors">Chocolate Ganache Layer Cake</h3>
+            <p class="text-sm text-base-content/70 line-clamp-2">Indulgent layered chocolate cake with ganache and berries.</p>
+            <div class="flex flex-wrap gap-2 pt-3">
+              <span class="badge badge-secondary badge-sm">dessert</span>
+              <span class="badge badge-secondary badge-sm">cake</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- PAGINATION -->
+      <div class="flex justify-center mt-12">
+        <div class="join">
+          <button class="join-item btn btn-outline btn-sm">«</button>
+          <button class="join-item btn btn-primary btn-sm">1</button>
+          <button class="join-item btn btn-outline btn-sm">2</button>
+          <button class="join-item btn btn-outline btn-sm">3</button>
+          <button class="join-item btn btn-outline btn-sm">»</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-base-200 border-t border-base-300 p-10 text-base-content">
+    <div class="container mx-auto px-4 lg:px-8">
+      <div class="flex flex-col md:flex-row gap-8 md:gap-24 items-start">
+        <div class="max-w-xs shrink-0">
+          <a href="index.html" class="hover:opacity-80 transition-opacity inline-block mb-3">
+            <img src="logo-horizontal.png" alt="Food Atlas logo" class="h-9" />
+          </a>
+          <p class="text-sm text-base-content/70">Your passport to global flavors. Discover, create, and organize recipes from around the world.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-12 md:ml-auto">
+          <div>
+            <h6 class="font-semibold text-base-content mb-3">Explore</h6>
+            <div class="flex flex-col gap-2">
+              <a href="recipes.html" class="text-sm text-base-content/70 hover:text-primary transition-colors">Recipes</a>
+              <a href="collections.html" class="text-sm text-base-content/70 hover:text-primary transition-colors">Collections</a>
+              <a href="recipes.html" class="text-sm text-base-content/70 hover:text-primary transition-colors">Search</a>
+            </div>
+          </div>
+          <div>
+            <h6 class="font-semibold text-base-content mb-3">Account</h6>
+            <div class="flex flex-col gap-2">
+              <a href="signup.html" class="text-sm text-base-content/70 hover:text-primary transition-colors">Sign Up</a>
+              <a href="login.html" class="text-sm text-base-content/70 hover:text-primary transition-colors">Log In</a>
+              <a href="#" class="text-sm text-base-content/70 hover:text-primary transition-colors">Dashboard</a>
+            </div>
+          </div>
+          <div>
+            <h6 class="font-semibold text-base-content mb-3">Company</h6>
+            <div class="flex flex-col gap-2">
+              <a href="#" class="text-sm text-base-content/70 hover:text-primary transition-colors">About</a>
+              <a href="#" class="text-sm text-base-content/70 hover:text-primary transition-colors">Privacy</a>
+              <a href="#" class="text-sm text-base-content/70 hover:text-primary transition-colors">Terms</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-base-300 pt-6 mt-8 text-center">
+        <p class="text-xs text-base-content/60">Food Atlas. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
