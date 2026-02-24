@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-base-300" data-theme="coffee">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="bg-base-300 flex flex-row justify-center items-center space-x-10 w-11/12 mx-auto h-screen py-16">
+  <div id="menuDiv">
+    <div class="w-md h-96 bg-base-100 rounded-xl shadow-md p-6 flex flex-col justify-between">
+      <h1 class="text-center font-bold text-3xl">Flappy Bird</h1>
+
+      <div>
+        <fieldset class="fieldset">
+          <legend class="fieldset-legend">Set the speed of the columns!</legend>
+          <input type="range" min="-400" max="-50" value="-200" class="range w-full" />
+          <div class="w-full flex flex-row justify-between">
+            <p class="label">-400 (fast)</p>
+            <p class="label">-50 (slow)</p>
+
+          </div>
+        </fieldset>
+      </div>
+      <div>
+        <fieldset class="fieldset">
+          <legend class="fieldset-legend">What is your name?</legend>
+          <input type="text" class="input w-full" placeholder="Type your name here" />
+          
+        </fieldset>
+      </div>
+      <button class="btn" disabled id="startGame">Start Game</button>
+    </div>
+  </div>
+  <div id="gameDiv" class="flex flex-row h-full gap-5">
+    <canvas width="1000" height="800" class="rounded-2xl border-primary border-3 !shadow-md !shadow-orange-600"></canvas>
+    <div class="card card-border bg-base-100 w-96 !h-full">
+        <div class="card-body h-full">
+          <h2 class="card-title">Highscore</h2>
+          <ol id="highscores"></ol>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary" id="newGame">New game</button>
+          </div>
+        </div>
+      </div>
+  </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

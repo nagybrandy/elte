@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "name": "Pista",
+      "age": 66,
+      "city": "Ráckeve",
+      "toothbrush_color": "red",
+      "favorite_food": "pizza"
+    },
+    {
+      "id": 2,
+      "name": "Gazsi",
+      "age": 13,
+      "city": "Nyíregyháza",
+      "toothbrush_color": "blue",
+      "favorite_food": "pizza"
+    },
+    {
+      "id": 3,
+      "name": "Béla",
+      "age": 40,
+      "city": "Liszabon",
+      "toothbrush_color": "green",
+      "favorite_food": "pizza"
+    },
+    {
+      "id": 4,
+      "name": "Károly",
+      "age": 22,
+      "city": "New York",
+      "toothbrush_color": "yellow",
+      "favorite_food": "pizza"
+    },
+    {
+      "id": 5,
+      "name": "Heri",
+      "age": 30,
+      "city": "Háromhányás tanya",
+      "toothbrush_color": "yellow",
+      "favorite_food": "pizza"
+    },
+    {
+      "id": 6,
+      "name": "Euklédész",
+      "age": 30,
+      "city": "Budapest",
+      "toothbrush_color": "yellow",
+      "favorite_food": "pizza"
+    }
+]

@@ -1,0 +1,14 @@
+@media print {
+    body {
+        font-size: 12px;
+    }
+    video, iframe, #fomenu {
+        display: none;
+    }
+    #fomenu {
+        display: none;
+    }
+
+}
+
+

@@ -1,0 +1,2598 @@
+[
+    {
+        "id": 1,
+        "title": "Dune: Part Two",
+        "description": "Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family.",
+        "image_path": "movies\/dune.jpg",
+        "duration": 166,
+        "director": "Denis Villeneuve",
+        "genre": "Sci-Fi",
+        "release_year": 2024,
+        "created_at": "2025-03-31T14:19:35.000000Z",
+        "updated_at": "2025-03-31T14:19:35.000000Z",
+        "screenings": [
+            {
+                "id": 1,
+                "movie_id": 1,
+                "room_id": 1,
+                "start_time": "2025-03-31T13:00:35.000000Z",
+                "price": "1642.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 2,
+                "movie_id": 1,
+                "room_id": 1,
+                "start_time": "2025-03-31T13:00:35.000000Z",
+                "price": "2346.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 4,
+                "movie_id": 1,
+                "room_id": 2,
+                "start_time": "2025-03-31T21:00:35.000000Z",
+                "price": "1791.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 28,
+                "movie_id": 1,
+                "room_id": 2,
+                "start_time": "2025-04-05T21:00:35.000000Z",
+                "price": "1677.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 31,
+                "movie_id": 1,
+                "room_id": 2,
+                "start_time": "2025-04-06T15:00:35.000000Z",
+                "price": "1635.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 32,
+                "movie_id": 1,
+                "room_id": 2,
+                "start_time": "2025-04-06T19:00:35.000000Z",
+                "price": "2299.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 33,
+                "movie_id": 1,
+                "room_id": 2,
+                "start_time": "2025-04-07T13:00:35.000000Z",
+                "price": "1773.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 46,
+                "movie_id": 1,
+                "room_id": 1,
+                "start_time": "2025-04-09T20:00:35.000000Z",
+                "price": "2163.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 55,
+                "movie_id": 1,
+                "room_id": 1,
+                "start_time": "2025-04-11T16:00:35.000000Z",
+                "price": "2175.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 68,
+                "movie_id": 1,
+                "room_id": 1,
+                "start_time": "2025-04-15T11:00:35.000000Z",
+                "price": "2039.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 71,
+                "movie_id": 1,
+                "room_id": 2,
+                "start_time": "2025-04-15T19:00:35.000000Z",
+                "price": "2111.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 75,
+                "movie_id": 1,
+                "room_id": 1,
+                "start_time": "2025-04-16T14:00:35.000000Z",
+                "price": "2482.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 76,
+                "movie_id": 1,
+                "room_id": 2,
+                "start_time": "2025-04-16T21:00:35.000000Z",
+                "price": "1609.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 80,
+                "movie_id": 1,
+                "room_id": 2,
+                "start_time": "2025-04-17T14:00:35.000000Z",
+                "price": "2200.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 94,
+                "movie_id": 1,
+                "room_id": 1,
+                "start_time": "2025-04-20T15:00:35.000000Z",
+                "price": "1631.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 109,
+                "movie_id": 1,
+                "room_id": 1,
+                "start_time": "2025-04-23T18:00:35.000000Z",
+                "price": "1822.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 110,
+                "movie_id": 1,
+                "room_id": 1,
+                "start_time": "2025-04-23T21:00:35.000000Z",
+                "price": "1646.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 163,
+                "movie_id": 1,
+                "room_id": 1,
+                "start_time": "2025-05-05T15:00:35.000000Z",
+                "price": "2379.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 171,
+                "movie_id": 1,
+                "room_id": 1,
+                "start_time": "2025-05-07T13:00:35.000000Z",
+                "price": "2204.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 173,
+                "movie_id": 1,
+                "room_id": 1,
+                "start_time": "2025-05-07T19:00:35.000000Z",
+                "price": "2160.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 181,
+                "movie_id": 1,
+                "room_id": 1,
+                "start_time": "2025-05-09T20:00:35.000000Z",
+                "price": "2285.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 208,
+                "movie_id": 1,
+                "room_id": 2,
+                "start_time": "2025-05-15T20:00:35.000000Z",
+                "price": "2150.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 215,
+                "movie_id": 1,
+                "room_id": 2,
+                "start_time": "2025-05-17T12:00:35.000000Z",
+                "price": "1591.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 219,
+                "movie_id": 1,
+                "room_id": 2,
+                "start_time": "2025-05-18T13:00:35.000000Z",
+                "price": "1693.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 230,
+                "movie_id": 1,
+                "room_id": 2,
+                "start_time": "2025-05-21T16:00:35.000000Z",
+                "price": "1570.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 231,
+                "movie_id": 1,
+                "room_id": 1,
+                "start_time": "2025-05-21T15:00:35.000000Z",
+                "price": "1571.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 262,
+                "movie_id": 1,
+                "room_id": 1,
+                "start_time": "2025-05-29T11:00:35.000000Z",
+                "price": "1995.00",
+                "created_at": "2025-03-31T14:19:37.000000Z",
+                "updated_at": "2025-03-31T14:19:37.000000Z"
+            },
+            {
+                "id": 264,
+                "movie_id": 1,
+                "room_id": 1,
+                "start_time": "2025-05-29T14:00:35.000000Z",
+                "price": "1846.00",
+                "created_at": "2025-03-31T14:19:37.000000Z",
+                "updated_at": "2025-03-31T14:19:37.000000Z"
+            },
+            {
+                "id": 265,
+                "movie_id": 1,
+                "room_id": 2,
+                "start_time": "2025-05-29T18:00:35.000000Z",
+                "price": "2067.00",
+                "created_at": "2025-03-31T14:19:37.000000Z",
+                "updated_at": "2025-03-31T14:19:37.000000Z"
+            },
+            {
+                "id": 270,
+                "movie_id": 1,
+                "room_id": 1,
+                "start_time": "2025-05-30T22:00:35.000000Z",
+                "price": "2325.00",
+                "created_at": "2025-03-31T14:19:37.000000Z",
+                "updated_at": "2025-03-31T14:19:37.000000Z"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Poor Things",
+        "description": "The incredible tale about the fantastical evolution of Bella Baxter, a young woman brought back to life by the brilliant and unorthodox scientist Dr. Godwin Baxter.",
+        "image_path": "movies\/poor-things.jpg",
+        "duration": 141,
+        "director": "Yorgos Lanthimos",
+        "genre": "Drama",
+        "release_year": 2024,
+        "created_at": "2025-03-31T14:19:35.000000Z",
+        "updated_at": "2025-03-31T14:19:35.000000Z",
+        "screenings": [
+            {
+                "id": 5,
+                "movie_id": 2,
+                "room_id": 2,
+                "start_time": "2025-04-01T10:00:35.000000Z",
+                "price": "2131.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 8,
+                "movie_id": 2,
+                "room_id": 2,
+                "start_time": "2025-04-01T14:00:35.000000Z",
+                "price": "2282.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 23,
+                "movie_id": 2,
+                "room_id": 2,
+                "start_time": "2025-04-04T18:00:35.000000Z",
+                "price": "2472.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 30,
+                "movie_id": 2,
+                "room_id": 2,
+                "start_time": "2025-04-06T11:00:35.000000Z",
+                "price": "2253.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 39,
+                "movie_id": 2,
+                "room_id": 2,
+                "start_time": "2025-04-08T10:00:35.000000Z",
+                "price": "2141.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 43,
+                "movie_id": 2,
+                "room_id": 2,
+                "start_time": "2025-04-09T10:00:35.000000Z",
+                "price": "1751.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 50,
+                "movie_id": 2,
+                "room_id": 2,
+                "start_time": "2025-04-10T16:00:35.000000Z",
+                "price": "2363.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 56,
+                "movie_id": 2,
+                "room_id": 2,
+                "start_time": "2025-04-11T20:00:35.000000Z",
+                "price": "2223.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 61,
+                "movie_id": 2,
+                "room_id": 2,
+                "start_time": "2025-04-13T11:00:35.000000Z",
+                "price": "1697.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 86,
+                "movie_id": 2,
+                "room_id": 1,
+                "start_time": "2025-04-18T14:00:35.000000Z",
+                "price": "2146.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 91,
+                "movie_id": 2,
+                "room_id": 2,
+                "start_time": "2025-04-19T16:00:35.000000Z",
+                "price": "1947.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 113,
+                "movie_id": 2,
+                "room_id": 2,
+                "start_time": "2025-04-24T16:00:35.000000Z",
+                "price": "2450.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 119,
+                "movie_id": 2,
+                "room_id": 1,
+                "start_time": "2025-04-25T20:00:35.000000Z",
+                "price": "2280.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 124,
+                "movie_id": 2,
+                "room_id": 1,
+                "start_time": "2025-04-26T20:00:35.000000Z",
+                "price": "1889.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 129,
+                "movie_id": 2,
+                "room_id": 2,
+                "start_time": "2025-04-28T13:00:35.000000Z",
+                "price": "2271.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 139,
+                "movie_id": 2,
+                "room_id": 1,
+                "start_time": "2025-04-29T21:00:35.000000Z",
+                "price": "1615.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 146,
+                "movie_id": 2,
+                "room_id": 2,
+                "start_time": "2025-05-01T13:00:35.000000Z",
+                "price": "2298.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 147,
+                "movie_id": 2,
+                "room_id": 2,
+                "start_time": "2025-05-01T17:00:35.000000Z",
+                "price": "2250.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 153,
+                "movie_id": 2,
+                "room_id": 1,
+                "start_time": "2025-05-03T11:00:35.000000Z",
+                "price": "2445.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 158,
+                "movie_id": 2,
+                "room_id": 1,
+                "start_time": "2025-05-04T13:00:35.000000Z",
+                "price": "2488.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 160,
+                "movie_id": 2,
+                "room_id": 1,
+                "start_time": "2025-05-04T17:00:35.000000Z",
+                "price": "1962.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 172,
+                "movie_id": 2,
+                "room_id": 1,
+                "start_time": "2025-05-07T14:00:35.000000Z",
+                "price": "1602.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 198,
+                "movie_id": 2,
+                "room_id": 2,
+                "start_time": "2025-05-13T14:00:35.000000Z",
+                "price": "1854.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 202,
+                "movie_id": 2,
+                "room_id": 1,
+                "start_time": "2025-05-14T14:00:35.000000Z",
+                "price": "2157.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 206,
+                "movie_id": 2,
+                "room_id": 2,
+                "start_time": "2025-05-15T16:00:35.000000Z",
+                "price": "2185.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 207,
+                "movie_id": 2,
+                "room_id": 1,
+                "start_time": "2025-05-15T15:00:35.000000Z",
+                "price": "2080.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 209,
+                "movie_id": 2,
+                "room_id": 2,
+                "start_time": "2025-05-15T20:00:35.000000Z",
+                "price": "2276.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 210,
+                "movie_id": 2,
+                "room_id": 2,
+                "start_time": "2025-05-16T11:00:35.000000Z",
+                "price": "1604.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 236,
+                "movie_id": 2,
+                "room_id": 1,
+                "start_time": "2025-05-22T16:00:35.000000Z",
+                "price": "1908.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 241,
+                "movie_id": 2,
+                "room_id": 1,
+                "start_time": "2025-05-23T15:00:35.000000Z",
+                "price": "1881.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 244,
+                "movie_id": 2,
+                "room_id": 1,
+                "start_time": "2025-05-24T15:00:35.000000Z",
+                "price": "2284.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 246,
+                "movie_id": 2,
+                "room_id": 2,
+                "start_time": "2025-05-25T13:00:35.000000Z",
+                "price": "1987.00",
+                "created_at": "2025-03-31T14:19:37.000000Z",
+                "updated_at": "2025-03-31T14:19:37.000000Z"
+            },
+            {
+                "id": 247,
+                "movie_id": 2,
+                "room_id": 2,
+                "start_time": "2025-05-25T12:00:35.000000Z",
+                "price": "2228.00",
+                "created_at": "2025-03-31T14:19:37.000000Z",
+                "updated_at": "2025-03-31T14:19:37.000000Z"
+            },
+            {
+                "id": 255,
+                "movie_id": 2,
+                "room_id": 1,
+                "start_time": "2025-05-27T13:00:35.000000Z",
+                "price": "2466.00",
+                "created_at": "2025-03-31T14:19:37.000000Z",
+                "updated_at": "2025-03-31T14:19:37.000000Z"
+            },
+            {
+                "id": 259,
+                "movie_id": 2,
+                "room_id": 2,
+                "start_time": "2025-05-28T12:00:35.000000Z",
+                "price": "1533.00",
+                "created_at": "2025-03-31T14:19:37.000000Z",
+                "updated_at": "2025-03-31T14:19:37.000000Z"
+            },
+            {
+                "id": 271,
+                "movie_id": 2,
+                "room_id": 2,
+                "start_time": "2025-05-30T20:00:35.000000Z",
+                "price": "2136.00",
+                "created_at": "2025-03-31T14:19:37.000000Z",
+                "updated_at": "2025-03-31T14:19:37.000000Z"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Oppenheimer",
+        "description": "The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb.",
+        "image_path": "movies\/oppenheimer.jpg",
+        "duration": 180,
+        "director": "Christopher Nolan",
+        "genre": "Drama",
+        "release_year": 2023,
+        "created_at": "2025-03-31T14:19:35.000000Z",
+        "updated_at": "2025-03-31T14:19:35.000000Z",
+        "screenings": [
+            {
+                "id": 3,
+                "movie_id": 3,
+                "room_id": 1,
+                "start_time": "2025-03-31T14:00:35.000000Z",
+                "price": "2405.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 13,
+                "movie_id": 3,
+                "room_id": 1,
+                "start_time": "2025-04-02T20:00:35.000000Z",
+                "price": "1621.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 19,
+                "movie_id": 3,
+                "room_id": 1,
+                "start_time": "2025-04-04T10:00:35.000000Z",
+                "price": "1899.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 34,
+                "movie_id": 3,
+                "room_id": 2,
+                "start_time": "2025-04-07T17:00:35.000000Z",
+                "price": "2201.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 42,
+                "movie_id": 3,
+                "room_id": 1,
+                "start_time": "2025-04-08T18:00:35.000000Z",
+                "price": "1671.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 54,
+                "movie_id": 3,
+                "room_id": 1,
+                "start_time": "2025-04-11T11:00:35.000000Z",
+                "price": "2350.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 57,
+                "movie_id": 3,
+                "room_id": 1,
+                "start_time": "2025-04-12T13:00:35.000000Z",
+                "price": "1541.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 74,
+                "movie_id": 3,
+                "room_id": 1,
+                "start_time": "2025-04-16T16:00:35.000000Z",
+                "price": "2371.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 84,
+                "movie_id": 3,
+                "room_id": 2,
+                "start_time": "2025-04-18T12:00:35.000000Z",
+                "price": "2102.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 85,
+                "movie_id": 3,
+                "room_id": 1,
+                "start_time": "2025-04-18T15:00:35.000000Z",
+                "price": "1641.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 89,
+                "movie_id": 3,
+                "room_id": 2,
+                "start_time": "2025-04-19T11:00:35.000000Z",
+                "price": "1761.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 93,
+                "movie_id": 3,
+                "room_id": 1,
+                "start_time": "2025-04-20T13:00:35.000000Z",
+                "price": "1979.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 95,
+                "movie_id": 3,
+                "room_id": 2,
+                "start_time": "2025-04-20T16:00:35.000000Z",
+                "price": "1943.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 97,
+                "movie_id": 3,
+                "room_id": 1,
+                "start_time": "2025-04-20T22:00:35.000000Z",
+                "price": "2087.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 102,
+                "movie_id": 3,
+                "room_id": 2,
+                "start_time": "2025-04-22T11:00:35.000000Z",
+                "price": "1650.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 117,
+                "movie_id": 3,
+                "room_id": 1,
+                "start_time": "2025-04-25T17:00:35.000000Z",
+                "price": "1536.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 120,
+                "movie_id": 3,
+                "room_id": 2,
+                "start_time": "2025-04-26T11:00:35.000000Z",
+                "price": "2013.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 123,
+                "movie_id": 3,
+                "room_id": 2,
+                "start_time": "2025-04-26T21:00:35.000000Z",
+                "price": "2160.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 134,
+                "movie_id": 3,
+                "room_id": 1,
+                "start_time": "2025-04-28T19:00:35.000000Z",
+                "price": "1651.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 137,
+                "movie_id": 3,
+                "room_id": 1,
+                "start_time": "2025-04-29T16:00:35.000000Z",
+                "price": "1677.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 140,
+                "movie_id": 3,
+                "room_id": 2,
+                "start_time": "2025-04-30T12:00:35.000000Z",
+                "price": "1714.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 161,
+                "movie_id": 3,
+                "room_id": 1,
+                "start_time": "2025-05-04T18:00:35.000000Z",
+                "price": "1944.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 165,
+                "movie_id": 3,
+                "room_id": 2,
+                "start_time": "2025-05-06T11:00:35.000000Z",
+                "price": "1536.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 167,
+                "movie_id": 3,
+                "room_id": 1,
+                "start_time": "2025-05-06T14:00:35.000000Z",
+                "price": "1515.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 179,
+                "movie_id": 3,
+                "room_id": 2,
+                "start_time": "2025-05-09T14:00:35.000000Z",
+                "price": "2344.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 183,
+                "movie_id": 3,
+                "room_id": 1,
+                "start_time": "2025-05-10T13:00:35.000000Z",
+                "price": "1719.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 185,
+                "movie_id": 3,
+                "room_id": 2,
+                "start_time": "2025-05-10T18:00:35.000000Z",
+                "price": "1936.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 193,
+                "movie_id": 3,
+                "room_id": 1,
+                "start_time": "2025-05-12T14:00:35.000000Z",
+                "price": "1747.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 194,
+                "movie_id": 3,
+                "room_id": 2,
+                "start_time": "2025-05-12T18:00:35.000000Z",
+                "price": "1935.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 212,
+                "movie_id": 3,
+                "room_id": 1,
+                "start_time": "2025-05-16T16:00:35.000000Z",
+                "price": "2220.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 213,
+                "movie_id": 3,
+                "room_id": 2,
+                "start_time": "2025-05-16T14:00:35.000000Z",
+                "price": "2468.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 225,
+                "movie_id": 3,
+                "room_id": 1,
+                "start_time": "2025-05-20T13:00:35.000000Z",
+                "price": "2214.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 232,
+                "movie_id": 3,
+                "room_id": 2,
+                "start_time": "2025-05-21T19:00:35.000000Z",
+                "price": "2449.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 233,
+                "movie_id": 3,
+                "room_id": 2,
+                "start_time": "2025-05-21T20:00:35.000000Z",
+                "price": "2061.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 261,
+                "movie_id": 3,
+                "room_id": 1,
+                "start_time": "2025-05-28T21:00:35.000000Z",
+                "price": "1544.00",
+                "created_at": "2025-03-31T14:19:37.000000Z",
+                "updated_at": "2025-03-31T14:19:37.000000Z"
+            },
+            {
+                "id": 274,
+                "movie_id": 3,
+                "room_id": 1,
+                "start_time": "2025-05-31T15:00:35.000000Z",
+                "price": "1921.00",
+                "created_at": "2025-03-31T14:19:37.000000Z",
+                "updated_at": "2025-03-31T14:19:37.000000Z"
+            },
+            {
+                "id": 276,
+                "movie_id": 3,
+                "room_id": 1,
+                "start_time": "2025-05-31T18:00:35.000000Z",
+                "price": "1617.00",
+                "created_at": "2025-03-31T14:19:37.000000Z",
+                "updated_at": "2025-03-31T14:19:37.000000Z"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Godzilla x Kong: The New Empire",
+        "description": "Two ancient titans, Godzilla and Kong, clash in an epic battle as humans unravel their intertwined origins and connection to Skull Island's mysteries.",
+        "image_path": "movies\/godzilla-kong.jpg",
+        "duration": 115,
+        "director": "Adam Wingard",
+        "genre": "Action",
+        "release_year": 2024,
+        "created_at": "2025-03-31T14:19:35.000000Z",
+        "updated_at": "2025-03-31T14:19:35.000000Z",
+        "screenings": [
+            {
+                "id": 11,
+                "movie_id": 4,
+                "room_id": 1,
+                "start_time": "2025-04-02T10:00:35.000000Z",
+                "price": "2008.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 15,
+                "movie_id": 4,
+                "room_id": 1,
+                "start_time": "2025-04-03T12:00:35.000000Z",
+                "price": "1724.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 17,
+                "movie_id": 4,
+                "room_id": 1,
+                "start_time": "2025-04-03T15:00:35.000000Z",
+                "price": "2251.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 21,
+                "movie_id": 4,
+                "room_id": 1,
+                "start_time": "2025-04-04T15:00:35.000000Z",
+                "price": "1928.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 25,
+                "movie_id": 4,
+                "room_id": 2,
+                "start_time": "2025-04-05T10:00:35.000000Z",
+                "price": "2102.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 40,
+                "movie_id": 4,
+                "room_id": 1,
+                "start_time": "2025-04-08T17:00:35.000000Z",
+                "price": "2124.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 45,
+                "movie_id": 4,
+                "room_id": 1,
+                "start_time": "2025-04-09T14:00:35.000000Z",
+                "price": "2155.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 47,
+                "movie_id": 4,
+                "room_id": 1,
+                "start_time": "2025-04-09T18:00:35.000000Z",
+                "price": "1638.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 49,
+                "movie_id": 4,
+                "room_id": 2,
+                "start_time": "2025-04-10T11:00:35.000000Z",
+                "price": "2323.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 65,
+                "movie_id": 4,
+                "room_id": 1,
+                "start_time": "2025-04-14T11:00:35.000000Z",
+                "price": "1730.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 66,
+                "movie_id": 4,
+                "room_id": 1,
+                "start_time": "2025-04-14T17:00:35.000000Z",
+                "price": "2123.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 70,
+                "movie_id": 4,
+                "room_id": 1,
+                "start_time": "2025-04-15T17:00:35.000000Z",
+                "price": "1799.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 73,
+                "movie_id": 4,
+                "room_id": 2,
+                "start_time": "2025-04-16T10:00:35.000000Z",
+                "price": "1808.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 83,
+                "movie_id": 4,
+                "room_id": 2,
+                "start_time": "2025-04-18T12:00:35.000000Z",
+                "price": "1832.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 99,
+                "movie_id": 4,
+                "room_id": 1,
+                "start_time": "2025-04-21T15:00:35.000000Z",
+                "price": "1748.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 103,
+                "movie_id": 4,
+                "room_id": 2,
+                "start_time": "2025-04-22T12:00:35.000000Z",
+                "price": "1706.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 105,
+                "movie_id": 4,
+                "room_id": 1,
+                "start_time": "2025-04-22T15:00:35.000000Z",
+                "price": "2013.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 116,
+                "movie_id": 4,
+                "room_id": 1,
+                "start_time": "2025-04-25T12:00:35.000000Z",
+                "price": "1772.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 133,
+                "movie_id": 4,
+                "room_id": 1,
+                "start_time": "2025-04-28T18:00:35.000000Z",
+                "price": "2360.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 149,
+                "movie_id": 4,
+                "room_id": 1,
+                "start_time": "2025-05-02T12:00:35.000000Z",
+                "price": "1913.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 156,
+                "movie_id": 4,
+                "room_id": 1,
+                "start_time": "2025-05-03T15:00:35.000000Z",
+                "price": "2219.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 157,
+                "movie_id": 4,
+                "room_id": 2,
+                "start_time": "2025-05-03T22:00:35.000000Z",
+                "price": "1773.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 162,
+                "movie_id": 4,
+                "room_id": 2,
+                "start_time": "2025-05-05T10:00:35.000000Z",
+                "price": "1894.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 177,
+                "movie_id": 4,
+                "room_id": 2,
+                "start_time": "2025-05-08T20:00:35.000000Z",
+                "price": "1692.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 182,
+                "movie_id": 4,
+                "room_id": 2,
+                "start_time": "2025-05-10T13:00:35.000000Z",
+                "price": "1618.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 188,
+                "movie_id": 4,
+                "room_id": 2,
+                "start_time": "2025-05-11T10:00:35.000000Z",
+                "price": "2492.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 189,
+                "movie_id": 4,
+                "room_id": 2,
+                "start_time": "2025-05-11T15:00:35.000000Z",
+                "price": "1895.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 199,
+                "movie_id": 4,
+                "room_id": 2,
+                "start_time": "2025-05-13T16:00:35.000000Z",
+                "price": "1658.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 203,
+                "movie_id": 4,
+                "room_id": 1,
+                "start_time": "2025-05-14T20:00:35.000000Z",
+                "price": "2205.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 211,
+                "movie_id": 4,
+                "room_id": 2,
+                "start_time": "2025-05-16T11:00:35.000000Z",
+                "price": "2496.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 214,
+                "movie_id": 4,
+                "room_id": 1,
+                "start_time": "2025-05-16T21:00:35.000000Z",
+                "price": "1906.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 218,
+                "movie_id": 4,
+                "room_id": 2,
+                "start_time": "2025-05-17T19:00:35.000000Z",
+                "price": "1917.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 223,
+                "movie_id": 4,
+                "room_id": 1,
+                "start_time": "2025-05-19T16:00:35.000000Z",
+                "price": "2463.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 234,
+                "movie_id": 4,
+                "room_id": 2,
+                "start_time": "2025-05-22T13:00:35.000000Z",
+                "price": "1748.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 249,
+                "movie_id": 4,
+                "room_id": 1,
+                "start_time": "2025-05-25T17:00:35.000000Z",
+                "price": "2321.00",
+                "created_at": "2025-03-31T14:19:37.000000Z",
+                "updated_at": "2025-03-31T14:19:37.000000Z"
+            },
+            {
+                "id": 250,
+                "movie_id": 4,
+                "room_id": 2,
+                "start_time": "2025-05-25T21:00:35.000000Z",
+                "price": "2126.00",
+                "created_at": "2025-03-31T14:19:37.000000Z",
+                "updated_at": "2025-03-31T14:19:37.000000Z"
+            },
+            {
+                "id": 251,
+                "movie_id": 4,
+                "room_id": 1,
+                "start_time": "2025-05-26T13:00:35.000000Z",
+                "price": "2430.00",
+                "created_at": "2025-03-31T14:19:37.000000Z",
+                "updated_at": "2025-03-31T14:19:37.000000Z"
+            },
+            {
+                "id": 256,
+                "movie_id": 4,
+                "room_id": 1,
+                "start_time": "2025-05-27T12:00:35.000000Z",
+                "price": "2355.00",
+                "created_at": "2025-03-31T14:19:37.000000Z",
+                "updated_at": "2025-03-31T14:19:37.000000Z"
+            },
+            {
+                "id": 267,
+                "movie_id": 4,
+                "room_id": 2,
+                "start_time": "2025-05-30T11:00:35.000000Z",
+                "price": "2115.00",
+                "created_at": "2025-03-31T14:19:37.000000Z",
+                "updated_at": "2025-03-31T14:19:37.000000Z"
+            },
+            {
+                "id": 273,
+                "movie_id": 4,
+                "room_id": 1,
+                "start_time": "2025-05-31T10:00:35.000000Z",
+                "price": "1846.00",
+                "created_at": "2025-03-31T14:19:37.000000Z",
+                "updated_at": "2025-03-31T14:19:37.000000Z"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Civil War",
+        "description": "In a near-future America, a civil war is unfolding as journalists try to navigate the dangerous landscape.",
+        "image_path": "movies\/civil-war.jpg",
+        "duration": 109,
+        "director": "Alex Garland",
+        "genre": "Action",
+        "release_year": 2024,
+        "created_at": "2025-03-31T14:19:35.000000Z",
+        "updated_at": "2025-03-31T14:19:35.000000Z",
+        "screenings": [
+            {
+                "id": 7,
+                "movie_id": 5,
+                "room_id": 1,
+                "start_time": "2025-04-01T17:00:35.000000Z",
+                "price": "2486.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 12,
+                "movie_id": 5,
+                "room_id": 1,
+                "start_time": "2025-04-02T17:00:35.000000Z",
+                "price": "2292.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 14,
+                "movie_id": 5,
+                "room_id": 2,
+                "start_time": "2025-04-02T18:00:35.000000Z",
+                "price": "2023.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 18,
+                "movie_id": 5,
+                "room_id": 1,
+                "start_time": "2025-04-03T20:00:35.000000Z",
+                "price": "2302.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 35,
+                "movie_id": 5,
+                "room_id": 1,
+                "start_time": "2025-04-07T16:00:35.000000Z",
+                "price": "2212.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 41,
+                "movie_id": 5,
+                "room_id": 1,
+                "start_time": "2025-04-08T18:00:35.000000Z",
+                "price": "1564.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 48,
+                "movie_id": 5,
+                "room_id": 2,
+                "start_time": "2025-04-10T12:00:35.000000Z",
+                "price": "2201.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 58,
+                "movie_id": 5,
+                "room_id": 1,
+                "start_time": "2025-04-12T15:00:35.000000Z",
+                "price": "2438.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 63,
+                "movie_id": 5,
+                "room_id": 1,
+                "start_time": "2025-04-13T14:00:35.000000Z",
+                "price": "2031.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 72,
+                "movie_id": 5,
+                "room_id": 1,
+                "start_time": "2025-04-16T12:00:35.000000Z",
+                "price": "2181.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 78,
+                "movie_id": 5,
+                "room_id": 2,
+                "start_time": "2025-04-17T12:00:35.000000Z",
+                "price": "1786.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 107,
+                "movie_id": 5,
+                "room_id": 1,
+                "start_time": "2025-04-23T12:00:35.000000Z",
+                "price": "2113.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 108,
+                "movie_id": 5,
+                "room_id": 1,
+                "start_time": "2025-04-23T16:00:35.000000Z",
+                "price": "1903.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 126,
+                "movie_id": 5,
+                "room_id": 1,
+                "start_time": "2025-04-27T11:00:35.000000Z",
+                "price": "2340.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 128,
+                "movie_id": 5,
+                "room_id": 2,
+                "start_time": "2025-04-27T22:00:35.000000Z",
+                "price": "2098.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 130,
+                "movie_id": 5,
+                "room_id": 1,
+                "start_time": "2025-04-28T13:00:35.000000Z",
+                "price": "2346.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 131,
+                "movie_id": 5,
+                "room_id": 2,
+                "start_time": "2025-04-28T17:00:35.000000Z",
+                "price": "1586.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 135,
+                "movie_id": 5,
+                "room_id": 1,
+                "start_time": "2025-04-29T10:00:35.000000Z",
+                "price": "1890.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 143,
+                "movie_id": 5,
+                "room_id": 2,
+                "start_time": "2025-04-30T19:00:35.000000Z",
+                "price": "2361.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 144,
+                "movie_id": 5,
+                "room_id": 2,
+                "start_time": "2025-04-30T18:00:35.000000Z",
+                "price": "2343.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 150,
+                "movie_id": 5,
+                "room_id": 1,
+                "start_time": "2025-05-02T16:00:35.000000Z",
+                "price": "2449.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 154,
+                "movie_id": 5,
+                "room_id": 1,
+                "start_time": "2025-05-03T11:00:35.000000Z",
+                "price": "1816.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 155,
+                "movie_id": 5,
+                "room_id": 1,
+                "start_time": "2025-05-03T14:00:35.000000Z",
+                "price": "2046.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 164,
+                "movie_id": 5,
+                "room_id": 2,
+                "start_time": "2025-05-05T20:00:35.000000Z",
+                "price": "1671.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 169,
+                "movie_id": 5,
+                "room_id": 1,
+                "start_time": "2025-05-06T19:00:35.000000Z",
+                "price": "1532.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 200,
+                "movie_id": 5,
+                "room_id": 1,
+                "start_time": "2025-05-13T21:00:35.000000Z",
+                "price": "2376.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 204,
+                "movie_id": 5,
+                "room_id": 2,
+                "start_time": "2025-05-14T18:00:35.000000Z",
+                "price": "1731.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 205,
+                "movie_id": 5,
+                "room_id": 1,
+                "start_time": "2025-05-15T13:00:35.000000Z",
+                "price": "1607.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 216,
+                "movie_id": 5,
+                "room_id": 1,
+                "start_time": "2025-05-17T12:00:35.000000Z",
+                "price": "1542.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 217,
+                "movie_id": 5,
+                "room_id": 1,
+                "start_time": "2025-05-17T17:00:35.000000Z",
+                "price": "1592.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 227,
+                "movie_id": 5,
+                "room_id": 2,
+                "start_time": "2025-05-20T16:00:35.000000Z",
+                "price": "2014.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 229,
+                "movie_id": 5,
+                "room_id": 2,
+                "start_time": "2025-05-21T10:00:35.000000Z",
+                "price": "1503.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 243,
+                "movie_id": 5,
+                "room_id": 2,
+                "start_time": "2025-05-24T10:00:35.000000Z",
+                "price": "2430.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 248,
+                "movie_id": 5,
+                "room_id": 1,
+                "start_time": "2025-05-25T17:00:35.000000Z",
+                "price": "2418.00",
+                "created_at": "2025-03-31T14:19:37.000000Z",
+                "updated_at": "2025-03-31T14:19:37.000000Z"
+            },
+            {
+                "id": 253,
+                "movie_id": 5,
+                "room_id": 2,
+                "start_time": "2025-05-26T17:00:35.000000Z",
+                "price": "1918.00",
+                "created_at": "2025-03-31T14:19:37.000000Z",
+                "updated_at": "2025-03-31T14:19:37.000000Z"
+            },
+            {
+                "id": 254,
+                "movie_id": 5,
+                "room_id": 2,
+                "start_time": "2025-05-26T20:00:35.000000Z",
+                "price": "2329.00",
+                "created_at": "2025-03-31T14:19:37.000000Z",
+                "updated_at": "2025-03-31T14:19:37.000000Z"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Ghostbusters: Frozen Empire",
+        "description": "When the discovery of an ancient artifact unleashes an evil force, Ghostbusters new and old must join forces to protect their home and save the world from a second Ice Age.",
+        "image_path": "movies\/ghostbusters.jpg",
+        "duration": 115,
+        "director": "Gil Kenan",
+        "genre": "Comedy",
+        "release_year": 2024,
+        "created_at": "2025-03-31T14:19:35.000000Z",
+        "updated_at": "2025-03-31T14:19:35.000000Z",
+        "screenings": [
+            {
+                "id": 9,
+                "movie_id": 6,
+                "room_id": 2,
+                "start_time": "2025-04-01T20:00:35.000000Z",
+                "price": "2268.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 22,
+                "movie_id": 6,
+                "room_id": 1,
+                "start_time": "2025-04-04T14:00:35.000000Z",
+                "price": "1518.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 51,
+                "movie_id": 6,
+                "room_id": 1,
+                "start_time": "2025-04-10T15:00:35.000000Z",
+                "price": "2303.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 53,
+                "movie_id": 6,
+                "room_id": 2,
+                "start_time": "2025-04-11T12:00:35.000000Z",
+                "price": "1926.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 59,
+                "movie_id": 6,
+                "room_id": 2,
+                "start_time": "2025-04-12T22:00:35.000000Z",
+                "price": "2054.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 62,
+                "movie_id": 6,
+                "room_id": 1,
+                "start_time": "2025-04-13T15:00:35.000000Z",
+                "price": "1536.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 64,
+                "movie_id": 6,
+                "room_id": 1,
+                "start_time": "2025-04-13T21:00:35.000000Z",
+                "price": "2181.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 77,
+                "movie_id": 6,
+                "room_id": 2,
+                "start_time": "2025-04-17T10:00:35.000000Z",
+                "price": "1983.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 88,
+                "movie_id": 6,
+                "room_id": 2,
+                "start_time": "2025-04-18T19:00:35.000000Z",
+                "price": "1671.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 90,
+                "movie_id": 6,
+                "room_id": 2,
+                "start_time": "2025-04-19T15:00:35.000000Z",
+                "price": "1581.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 92,
+                "movie_id": 6,
+                "room_id": 1,
+                "start_time": "2025-04-19T21:00:35.000000Z",
+                "price": "2127.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 96,
+                "movie_id": 6,
+                "room_id": 1,
+                "start_time": "2025-04-20T18:00:35.000000Z",
+                "price": "2175.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 104,
+                "movie_id": 6,
+                "room_id": 2,
+                "start_time": "2025-04-22T14:00:35.000000Z",
+                "price": "2382.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 106,
+                "movie_id": 6,
+                "room_id": 1,
+                "start_time": "2025-04-22T18:00:35.000000Z",
+                "price": "2442.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 112,
+                "movie_id": 6,
+                "room_id": 2,
+                "start_time": "2025-04-24T14:00:35.000000Z",
+                "price": "1764.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 114,
+                "movie_id": 6,
+                "room_id": 2,
+                "start_time": "2025-04-24T20:00:35.000000Z",
+                "price": "2032.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 127,
+                "movie_id": 6,
+                "room_id": 2,
+                "start_time": "2025-04-27T16:00:35.000000Z",
+                "price": "1995.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 132,
+                "movie_id": 6,
+                "room_id": 1,
+                "start_time": "2025-04-28T14:00:35.000000Z",
+                "price": "1826.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 141,
+                "movie_id": 6,
+                "room_id": 1,
+                "start_time": "2025-04-30T11:00:35.000000Z",
+                "price": "1864.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 152,
+                "movie_id": 6,
+                "room_id": 2,
+                "start_time": "2025-05-02T19:00:35.000000Z",
+                "price": "1972.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 166,
+                "movie_id": 6,
+                "room_id": 1,
+                "start_time": "2025-05-06T17:00:35.000000Z",
+                "price": "2013.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 170,
+                "movie_id": 6,
+                "room_id": 2,
+                "start_time": "2025-05-07T13:00:35.000000Z",
+                "price": "1706.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 175,
+                "movie_id": 6,
+                "room_id": 1,
+                "start_time": "2025-05-08T10:00:35.000000Z",
+                "price": "2463.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 178,
+                "movie_id": 6,
+                "room_id": 2,
+                "start_time": "2025-05-09T13:00:35.000000Z",
+                "price": "2306.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 184,
+                "movie_id": 6,
+                "room_id": 1,
+                "start_time": "2025-05-10T17:00:35.000000Z",
+                "price": "1575.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 186,
+                "movie_id": 6,
+                "room_id": 1,
+                "start_time": "2025-05-10T20:00:35.000000Z",
+                "price": "1883.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 190,
+                "movie_id": 6,
+                "room_id": 2,
+                "start_time": "2025-05-11T22:00:35.000000Z",
+                "price": "1655.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 196,
+                "movie_id": 6,
+                "room_id": 2,
+                "start_time": "2025-05-13T10:00:35.000000Z",
+                "price": "2165.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 222,
+                "movie_id": 6,
+                "room_id": 2,
+                "start_time": "2025-05-19T13:00:35.000000Z",
+                "price": "1659.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 235,
+                "movie_id": 6,
+                "room_id": 1,
+                "start_time": "2025-05-22T11:00:35.000000Z",
+                "price": "2491.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 237,
+                "movie_id": 6,
+                "room_id": 1,
+                "start_time": "2025-05-22T22:00:35.000000Z",
+                "price": "2464.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 238,
+                "movie_id": 6,
+                "room_id": 2,
+                "start_time": "2025-05-22T21:00:35.000000Z",
+                "price": "2036.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 239,
+                "movie_id": 6,
+                "room_id": 2,
+                "start_time": "2025-05-23T10:00:35.000000Z",
+                "price": "2011.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 242,
+                "movie_id": 6,
+                "room_id": 1,
+                "start_time": "2025-05-23T20:00:35.000000Z",
+                "price": "2059.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 245,
+                "movie_id": 6,
+                "room_id": 2,
+                "start_time": "2025-05-24T18:00:35.000000Z",
+                "price": "1525.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 252,
+                "movie_id": 6,
+                "room_id": 1,
+                "start_time": "2025-05-26T17:00:35.000000Z",
+                "price": "2181.00",
+                "created_at": "2025-03-31T14:19:37.000000Z",
+                "updated_at": "2025-03-31T14:19:37.000000Z"
+            },
+            {
+                "id": 258,
+                "movie_id": 6,
+                "room_id": 2,
+                "start_time": "2025-05-27T21:00:35.000000Z",
+                "price": "1612.00",
+                "created_at": "2025-03-31T14:19:37.000000Z",
+                "updated_at": "2025-03-31T14:19:37.000000Z"
+            },
+            {
+                "id": 263,
+                "movie_id": 6,
+                "room_id": 2,
+                "start_time": "2025-05-29T11:00:35.000000Z",
+                "price": "2205.00",
+                "created_at": "2025-03-31T14:19:37.000000Z",
+                "updated_at": "2025-03-31T14:19:37.000000Z"
+            },
+            {
+                "id": 266,
+                "movie_id": 6,
+                "room_id": 1,
+                "start_time": "2025-05-29T18:00:35.000000Z",
+                "price": "2286.00",
+                "created_at": "2025-03-31T14:19:37.000000Z",
+                "updated_at": "2025-03-31T14:19:37.000000Z"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Inside Out 2",
+        "description": "Follow Riley in her teenage years as new emotions join Joy, Sadness, Anger, Fear, and Disgust in headquarters.",
+        "image_path": "movies\/inside-out-2.jpg",
+        "duration": 100,
+        "director": "Kelsey Mann",
+        "genre": "Animation",
+        "release_year": 2024,
+        "created_at": "2025-03-31T14:19:35.000000Z",
+        "updated_at": "2025-03-31T14:19:35.000000Z",
+        "screenings": [
+            {
+                "id": 10,
+                "movie_id": 7,
+                "room_id": 1,
+                "start_time": "2025-04-01T21:00:35.000000Z",
+                "price": "2408.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 16,
+                "movie_id": 7,
+                "room_id": 1,
+                "start_time": "2025-04-03T17:00:35.000000Z",
+                "price": "2259.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 20,
+                "movie_id": 7,
+                "room_id": 2,
+                "start_time": "2025-04-04T10:00:35.000000Z",
+                "price": "2449.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 37,
+                "movie_id": 7,
+                "room_id": 2,
+                "start_time": "2025-04-07T22:00:35.000000Z",
+                "price": "1845.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 38,
+                "movie_id": 7,
+                "room_id": 1,
+                "start_time": "2025-04-08T12:00:35.000000Z",
+                "price": "1865.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 44,
+                "movie_id": 7,
+                "room_id": 2,
+                "start_time": "2025-04-09T12:00:35.000000Z",
+                "price": "1524.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 60,
+                "movie_id": 7,
+                "room_id": 2,
+                "start_time": "2025-04-12T21:00:35.000000Z",
+                "price": "2345.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 69,
+                "movie_id": 7,
+                "room_id": 2,
+                "start_time": "2025-04-15T10:00:35.000000Z",
+                "price": "2256.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 82,
+                "movie_id": 7,
+                "room_id": 1,
+                "start_time": "2025-04-17T18:00:35.000000Z",
+                "price": "1632.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 87,
+                "movie_id": 7,
+                "room_id": 1,
+                "start_time": "2025-04-18T20:00:35.000000Z",
+                "price": "1719.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 98,
+                "movie_id": 7,
+                "room_id": 1,
+                "start_time": "2025-04-21T12:00:35.000000Z",
+                "price": "2263.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 100,
+                "movie_id": 7,
+                "room_id": 2,
+                "start_time": "2025-04-21T21:00:35.000000Z",
+                "price": "2397.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 101,
+                "movie_id": 7,
+                "room_id": 2,
+                "start_time": "2025-04-21T21:00:35.000000Z",
+                "price": "1917.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 111,
+                "movie_id": 7,
+                "room_id": 1,
+                "start_time": "2025-04-24T10:00:35.000000Z",
+                "price": "2427.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 121,
+                "movie_id": 7,
+                "room_id": 2,
+                "start_time": "2025-04-26T16:00:35.000000Z",
+                "price": "2048.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 142,
+                "movie_id": 7,
+                "room_id": 1,
+                "start_time": "2025-04-30T17:00:35.000000Z",
+                "price": "2488.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 145,
+                "movie_id": 7,
+                "room_id": 2,
+                "start_time": "2025-05-01T13:00:35.000000Z",
+                "price": "1899.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 174,
+                "movie_id": 7,
+                "room_id": 1,
+                "start_time": "2025-05-08T13:00:35.000000Z",
+                "price": "2258.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 176,
+                "movie_id": 7,
+                "room_id": 1,
+                "start_time": "2025-05-08T16:00:35.000000Z",
+                "price": "1745.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 191,
+                "movie_id": 7,
+                "room_id": 1,
+                "start_time": "2025-05-11T22:00:35.000000Z",
+                "price": "2310.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 220,
+                "movie_id": 7,
+                "room_id": 2,
+                "start_time": "2025-05-18T17:00:35.000000Z",
+                "price": "2359.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 224,
+                "movie_id": 7,
+                "room_id": 2,
+                "start_time": "2025-05-19T20:00:35.000000Z",
+                "price": "1654.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 226,
+                "movie_id": 7,
+                "room_id": 2,
+                "start_time": "2025-05-20T16:00:35.000000Z",
+                "price": "2449.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 228,
+                "movie_id": 7,
+                "room_id": 2,
+                "start_time": "2025-05-20T18:00:35.000000Z",
+                "price": "1710.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 240,
+                "movie_id": 7,
+                "room_id": 2,
+                "start_time": "2025-05-23T16:00:35.000000Z",
+                "price": "2132.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 257,
+                "movie_id": 7,
+                "room_id": 1,
+                "start_time": "2025-05-27T17:00:35.000000Z",
+                "price": "1571.00",
+                "created_at": "2025-03-31T14:19:37.000000Z",
+                "updated_at": "2025-03-31T14:19:37.000000Z"
+            },
+            {
+                "id": 260,
+                "movie_id": 7,
+                "room_id": 2,
+                "start_time": "2025-05-28T16:00:35.000000Z",
+                "price": "1951.00",
+                "created_at": "2025-03-31T14:19:37.000000Z",
+                "updated_at": "2025-03-31T14:19:37.000000Z"
+            },
+            {
+                "id": 269,
+                "movie_id": 7,
+                "room_id": 1,
+                "start_time": "2025-05-30T16:00:35.000000Z",
+                "price": "2475.00",
+                "created_at": "2025-03-31T14:19:37.000000Z",
+                "updated_at": "2025-03-31T14:19:37.000000Z"
+            },
+            {
+                "id": 275,
+                "movie_id": 7,
+                "room_id": 2,
+                "start_time": "2025-05-31T15:00:35.000000Z",
+                "price": "2234.00",
+                "created_at": "2025-03-31T14:19:37.000000Z",
+                "updated_at": "2025-03-31T14:19:37.000000Z"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "title": "Kung Fu Panda 4",
+        "description": "Po must train a new warrior when he's chosen to become the spiritual leader of the Valley of Peace.",
+        "image_path": "movies\/kung-fu-panda-4.jpg",
+        "duration": 94,
+        "director": "Mike Mitchell",
+        "genre": "Animation",
+        "release_year": 2024,
+        "created_at": "2025-03-31T14:19:35.000000Z",
+        "updated_at": "2025-03-31T14:19:35.000000Z",
+        "screenings": [
+            {
+                "id": 6,
+                "movie_id": 8,
+                "room_id": 2,
+                "start_time": "2025-04-01T11:00:35.000000Z",
+                "price": "1679.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 24,
+                "movie_id": 8,
+                "room_id": 1,
+                "start_time": "2025-04-05T13:00:35.000000Z",
+                "price": "1938.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 26,
+                "movie_id": 8,
+                "room_id": 1,
+                "start_time": "2025-04-05T16:00:35.000000Z",
+                "price": "1991.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 27,
+                "movie_id": 8,
+                "room_id": 2,
+                "start_time": "2025-04-05T17:00:35.000000Z",
+                "price": "1785.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 29,
+                "movie_id": 8,
+                "room_id": 1,
+                "start_time": "2025-04-05T20:00:35.000000Z",
+                "price": "1611.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 36,
+                "movie_id": 8,
+                "room_id": 2,
+                "start_time": "2025-04-07T20:00:35.000000Z",
+                "price": "1601.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 52,
+                "movie_id": 8,
+                "room_id": 1,
+                "start_time": "2025-04-10T21:00:35.000000Z",
+                "price": "1605.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 67,
+                "movie_id": 8,
+                "room_id": 2,
+                "start_time": "2025-04-14T20:00:35.000000Z",
+                "price": "2439.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 79,
+                "movie_id": 8,
+                "room_id": 2,
+                "start_time": "2025-04-17T16:00:35.000000Z",
+                "price": "1579.00",
+                "created_at": "2025-03-31T14:19:35.000000Z",
+                "updated_at": "2025-03-31T14:19:35.000000Z"
+            },
+            {
+                "id": 81,
+                "movie_id": 8,
+                "room_id": 2,
+                "start_time": "2025-04-17T20:00:35.000000Z",
+                "price": "1651.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 115,
+                "movie_id": 8,
+                "room_id": 1,
+                "start_time": "2025-04-24T19:00:35.000000Z",
+                "price": "2447.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 118,
+                "movie_id": 8,
+                "room_id": 2,
+                "start_time": "2025-04-25T20:00:35.000000Z",
+                "price": "2366.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 122,
+                "movie_id": 8,
+                "room_id": 2,
+                "start_time": "2025-04-26T14:00:35.000000Z",
+                "price": "1619.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 125,
+                "movie_id": 8,
+                "room_id": 2,
+                "start_time": "2025-04-27T12:00:35.000000Z",
+                "price": "2157.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 136,
+                "movie_id": 8,
+                "room_id": 1,
+                "start_time": "2025-04-29T15:00:35.000000Z",
+                "price": "2444.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 138,
+                "movie_id": 8,
+                "room_id": 2,
+                "start_time": "2025-04-29T19:00:35.000000Z",
+                "price": "2293.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 148,
+                "movie_id": 8,
+                "room_id": 2,
+                "start_time": "2025-05-01T21:00:35.000000Z",
+                "price": "1664.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 151,
+                "movie_id": 8,
+                "room_id": 2,
+                "start_time": "2025-05-02T15:00:35.000000Z",
+                "price": "1603.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 159,
+                "movie_id": 8,
+                "room_id": 2,
+                "start_time": "2025-05-04T15:00:35.000000Z",
+                "price": "1688.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 168,
+                "movie_id": 8,
+                "room_id": 1,
+                "start_time": "2025-05-06T22:00:35.000000Z",
+                "price": "1864.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 180,
+                "movie_id": 8,
+                "room_id": 1,
+                "start_time": "2025-05-09T22:00:35.000000Z",
+                "price": "1546.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 187,
+                "movie_id": 8,
+                "room_id": 1,
+                "start_time": "2025-05-11T10:00:35.000000Z",
+                "price": "2305.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 192,
+                "movie_id": 8,
+                "room_id": 2,
+                "start_time": "2025-05-12T12:00:35.000000Z",
+                "price": "2470.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 195,
+                "movie_id": 8,
+                "room_id": 2,
+                "start_time": "2025-05-12T19:00:35.000000Z",
+                "price": "1792.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 197,
+                "movie_id": 8,
+                "room_id": 1,
+                "start_time": "2025-05-13T12:00:35.000000Z",
+                "price": "1894.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 201,
+                "movie_id": 8,
+                "room_id": 2,
+                "start_time": "2025-05-14T10:00:35.000000Z",
+                "price": "2155.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 221,
+                "movie_id": 8,
+                "room_id": 2,
+                "start_time": "2025-05-18T20:00:35.000000Z",
+                "price": "2432.00",
+                "created_at": "2025-03-31T14:19:36.000000Z",
+                "updated_at": "2025-03-31T14:19:36.000000Z"
+            },
+            {
+                "id": 268,
+                "movie_id": 8,
+                "room_id": 1,
+                "start_time": "2025-05-30T12:00:35.000000Z",
+                "price": "2388.00",
+                "created_at": "2025-03-31T14:19:37.000000Z",
+                "updated_at": "2025-03-31T14:19:37.000000Z"
+            },
+            {
+                "id": 272,
+                "movie_id": 8,
+                "room_id": 2,
+                "start_time": "2025-05-31T11:00:35.000000Z",
+                "price": "2431.00",
+                "created_at": "2025-03-31T14:19:37.000000Z",
+                "updated_at": "2025-03-31T14:19:37.000000Z"
+            }
+        ]
+    }
+]

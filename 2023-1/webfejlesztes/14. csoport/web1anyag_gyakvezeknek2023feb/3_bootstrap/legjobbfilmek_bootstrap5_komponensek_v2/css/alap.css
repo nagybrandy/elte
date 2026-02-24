@@ -1,0 +1,14 @@
+body {background-image:url("../media/fejlechatter.jpg")}
+
+label {color:#555}
+
+.table-dark td {background-color:#6d5435}
+
+pre {background-color: black; color:white}
+
+.carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  height: 40vh;
+  overflow: hidden;
+}

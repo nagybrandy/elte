@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Kék sajt",
+        "type": "penészes",
+        "origin": "it",
+        "age_m": 6
+    },
+    {
+        "name": "Brie sajt",
+        "type": "fehér",
+        "origin": "fr",
+        "age_m": 36
+    },
+    {
+        "name": "Feta sajt",
+        "type": "fehér",
+        "origin": "gr",
+        "age_m": 3
+    }
+]

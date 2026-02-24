@@ -1,0 +1,74 @@
+[
+    {
+      "title": "Beautiful Bali",
+      "description": "Tropical paradise with stunning beaches and rich cultural heritage",
+      "city": "Bali",
+      "country": "Indonesia"
+    },
+    {
+      "title": "Ancient Petra",
+      "description": "Historic rock-cut architecture and archaeological wonders",
+      "city": "Petra",
+      "country": "Jordan"
+    },
+    {
+      "title": "Majestic Hunza Valley",
+      "description": "Spectacular mountain valley surrounded by snow-capped peaks",
+      "city": "Hunza Valley",
+      "country": "Pakistan"
+    },
+    {
+      "title": "Vast Gobi Desert",
+      "description": "Expansive desert landscape with stunning dunes and nomadic culture",
+      "city": "Gobi Desert",
+      "country": "Mongolia"
+    },
+    {
+      "title": "Pristine Lake Baikal",
+      "description": "World's deepest and oldest freshwater lake",
+      "city": "Lake Baikal",
+      "country": "Russia"
+    },
+    {
+      "title": "Vibrant Pattaya",
+      "description": "Coastal resort city with beautiful beaches and nightlife",
+      "city": "Pattaya",
+      "country": "Thailand"
+    },
+    {
+      "title": "Historic San Andreas",
+      "description": "Colonial architecture and Caribbean charm",
+      "city": "San Andreas",
+      "country": "Colombia"
+    },
+    {
+      "title": "Serene Lake Balaton",
+      "description": "Central Europe's largest freshwater lake",
+      "city": "Lake Balaton",
+      "country": "Hungary"
+    },
+    {
+      "title": "Magnificent Registan Square",
+      "description": "Historic public square with stunning Islamic architecture",
+      "city": "Registan Square",
+      "country": "Uzbekistan"
+    },
+    {
+      "title": "Ancient Persepolis",
+      "description": "Ceremonial capital of the Achaemenid Empire",
+      "city": "Persepolis",
+      "country": "Iran"
+    },
+    {
+      "title": "Traditional Kyoto",
+      "description": "Former imperial capital with numerous classical Buddhist temples",
+      "city": "Kyoto",
+      "country": "Japan"
+    },
+    {
+      "title": "Picturesque Lake Issyk-kul",
+      "description": "Second largest saline lake in the world with stunning mountain views",
+      "city": "Lake Issyk-kul",
+      "country": "Kyrgyzstan"
+    }
+  ]

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+   <style>
+      
+      .kesz:before {
+         content: "✔ "
+      }
+      table,td {
+         border: solid 1px black;
+         border-collapse: collapse;
+         padding: 15px;
+         align-items: center; 
+      }
+      .jelolt {
+         background-color: blue;
+      }
+      .jelolt2 {
+         background-color: red;
+      }
+   </style>
+   <a href="https://github.com/gvikthor/Webprogramozas/tree/master/20-21-1/3.%20Gyak/Delegalas">THOR</a>
+ <ul class="lista">
+   <li>első</li>
+   <li>második</li>
+   <li>harmadik</li>
+ </ul>
+<table class="myTable">
+   <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+   </tr>
+   <tr>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+      <td>10</td>
+   </tr>
+   <tr>
+      <td>11</td>
+      <td>12</td>
+      <td>13</td>
+      <td>14</td>
+      <td>15</td>
+   </tr>
+</table>
+
+<script>
+
+ // 1. feladat - todo list
+ const ul = document.querySelector('ul.lista')
+ ul.addEventListener('click', kattintas)
+   
+   function kattintas(e){
+       if(e.target.matches('li')){
+           e.target.classList.toggle('kesz')
+   }
+   }
+
+// Kép feketefehérből színessé változzon ha ráhúzzuk az egerünket   
+// 2. feladat - 1 cella
+  const tabla = document.querySelector('table.myTable')
+   cells = document.querySelectorAll("td")
+   
+   tabla.addEventListener('click', katttabla)
+   
+   function katttabla(e){
+      console.log(this)
+      console.log(e)
+      if(e.target.matches('td')){
+         e.target.classList.toggle('jelolt')
+      }
+   }
+// hovernél a cella színe legyen halvány
+// 3. feladat - delegálás
+   function delegal(szulo, gyerek, mikor, mit){
+      function esemenyKezelo(esemeny){
+          let esemenyCelja    = esemeny.target;
+          let esemenyKezeloje = this;
+          let legkozelebbiKeresettElem = esemenyCelja.closest(gyerek);
+  
+          if(esemenyKezeloje.contains(legkozelebbiKeresettElem)){
+              mit(esemeny, legkozelebbiKeresettElem);
+          }
+      }
+  
+  
+      szulo.addEventListener(mikor, esemenyKezelo);
+   }
+   
+
+   function szinezes(esemeny, elem){
+      elem.style.backgroundColor = "red"
+   }
+   delegal(document.querySelector("table"),"table tr td","mouseover",(e,c)=>{
+      c.parentElement.classList.add('jelolt2')
+  })
+  delegal(document.querySelector("table"),"table tr td","mouseout",(e,c)=>{
+   c.parentElement.classList.remove('jelolt2')
+})
+
+// Lottószámos játék elkészítése egyénileg
+</script>
+</body>
+</html>

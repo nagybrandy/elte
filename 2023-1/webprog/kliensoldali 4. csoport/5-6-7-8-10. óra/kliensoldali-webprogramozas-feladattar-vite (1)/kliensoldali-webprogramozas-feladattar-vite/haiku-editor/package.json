@@ -1,0 +1,16 @@
+{
+  "name": "react-template",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.3",
+    "lodash": "^4.17.21",
+    "react-redux": "^8.0.5"
+  }
+}

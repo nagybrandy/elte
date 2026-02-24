@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+      <link rel="shortcut icon" href="src/sarga.png" type="image/x-icon">  
+  <title>Connect 4</title>
+  </head>
+  <body>
+      <div id="menu">
+        <img src="src/logo3.png" width="45%">
+        <br>
+        <table>
+            <tr>
+                <td onclick="Gamemode()"><h2 class="svg-colored" id="text-multi">Multiplayer</h2></td>
+                <td onclick="Gamemode()"><h2 class="svg-black" id="text-ai">VS AI</h2></td>
+            </tr>
+            <tr>
+                <td onclick="Gamemode()"><img src="src/multi.svg" width="120px" class="svg-colored" id="svg-multi"></td>
+                <td onclick="Gamemode()"><img src="src/vsai.svg" width="100px" class="svg-black" id="svg-ai"></td>
+            </tr>
+        </table>
+        <form>
+            <input type="text" placeholder="Player1's Name" maxlength="10" class="name" onchange="RemoveError()">
+            <span class="vs">vs</span>
+            <input type="text" placeholder="Player2's Name" maxlength="10" class="name" onchange="RemoveError()">
+            <br>
+            <snap style="font-size:25px;">Round Timer</snap>
+            <input type="number" class="time" id="timerval" value="20" min="20" max="60">
+        </form>
+        <button onclick="Play()"><span class="animated">PLAY</span></button>
+      </div>
+      <div id="game">
+        <aside>
+            <table>
+                <tr>
+                    <td><img width="90px" src="src/player1.png" id="player1img"></td>
+                    <td><h2>VS.</h2></td>
+                    <td><img width="100px" src="src/player2.png" id="player2img"></td>
+                </tr>
+                <tr>
+                    <td><h2 id="player1name" class="basic" style="font-size:35px;">Name1</h2></td>
+                    <td></td>
+                    <td><h2 id="player2name"  class="basic" style="font-size:35px;">Name2</h2></td>
+                </tr>
+            </table>
+            <span style="font-size: 30px;">Round Timer</span><br><progress value="20" max="20" id="timerBar"></progress>
+            <br>
+            <button onclick="Menu()" class="backtomenu"><span class="animated">MENU</span></button>
+        </aside>
+        <div class="tablediv">
+        <table id="gameTable" cellspacing="0" cellpadding="0">
+            <tr>
+                <td class="col1"></td>
+                <td class="col2"></td>
+                <td class="col3"></td>
+                <td class="col4"></td>
+                <td class="col5"></td>
+                <td class="col6"></td>
+                <td class="col7"></td>
+            </tr>
+            <tr>
+                <td class="col1"></td>
+                <td class="col2"></td>
+                <td class="col3"></td>
+                <td class="col4"></td>
+                <td class="col5"></td>
+                <td class="col6"></td>
+                <td class="col7"></td>
+        
+            </tr>
+            <tr>
+                <td class="col1"></td>
+                <td class="col2"></td>
+                <td class="col3"></td>
+                <td class="col4"></td>
+                <td class="col5"></td>
+                <td class="col6"></td>
+                <td class="col7"></td>
+                
+            </tr>
+            <tr>
+                <td class="col1"></td>
+                <td class="col2"></td>
+                <td class="col3"></td>
+                <td class="col4"></td>
+                <td class="col5"></td>
+                <td class="col6"></td>
+                <td class="col7"></td>
+                
+            </tr>
+            <tr>
+                <td class="col1"></td>
+                <td class="col2"></td>
+                <td class="col3"></td>
+                <td class="col4"></td>
+                <td class="col5"></td>
+                <td class="col6"></td>
+                <td class="col7"></td>
+                
+            </tr>
+            <tr>
+                <td class="col1"></td>
+                <td class="col2"></td>
+                <td class="col3"></td>
+                <td class="col4"></td>
+                <td class="col5"></td>
+                <td class="col6"></td>
+                <td class="col7"></td>
+            
+            </tr>
+        </table>
+        </div>
+        </div>
+        <div id="winner">
+            <p>WINNER:<span id="winplayer">PLAYER1</span></p>
+            <img src="src/player1.png" width="300" id="pic"><br>
+            <button onclick="Menu()" class="backtomenu"><span class="animated">MENU</span></button>
+        </div>
+        <details id="gamerules">
+            <summary><h2>Játékszabály</h2></summary>
+            <code>
+                A Connect four kétszemélyes absztrakt stratégiai táblás játék, az amőba egyik változata. A győzelemhez 4 színünket kell egy vonalba lerakni.
+    
+                <h3>Nézet</h3>
+                A játék egy 7x6-os függőleges kék táblán játszódik, melynek a tetejéből kell bedobálni mindkét játékosnak a saját színét.
+    
+                <h3>Játékmenet</h3>
+                A játékosok felülről csúsztatják bele a táblába a saját színeiket melyek általában piros és sárga korongok-, így a jelrakások lehetőségei is korlátozottak a többi amőba típusú játékhoz képest. Az a játékos nyer, amelyik függőlegesen, vízszintesen, vagy átlósan kirakott négyet a saját színéből.
+    
+                <h3>Papíron játszható változat</h3>
+                A Connect Four kockás papíron is játszható. A játékos piros és sárga pöttyöket (vagy klasszikusan X-et és O-t) rajzolnak a kockákba. Az nyer, aki a saját színéből (vagy jeléből) négyet kirak függőlegesen, vízszintesen vagy átlósan. A papíros változatban akárhova lehet rakni jelet mert nem esik mindig alulra, mint a kézzelfogható álló táblás változat. Ez a változat számítógépes változatban is megtalálható.
+                </code>
+          </details>
+
+          <script src="script.js"></script>
+  </body>
+</html>

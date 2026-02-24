@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="forest">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="bg-neutral h-dvh flex flex-col space-y-10 justify-center items-center">
+  <div id="menuDiv" class="bg-base-300 flex flex-col justify-between p-6 w-md h-96 rounded-xl shadow-md">
+    <h1 class="text-3xl font-bold italic text-center">Flappy Bird</h1>
+    <div id="settings" class="flex flex-col gap-4">
+      <input type="text" placeholder="Type your name here" class="input w-full" id="playerName" />
+      Column velocity<input type="range" min="-300" max="-100" value="-200" class="range w-full" />
+      <button class="btn btn-secondary w-full" id="startGame">Start Game</button>
+
+    </div>
+  </div>
+  <div id="gameDiv" class="flex flex-row gap-5">
+    <canvas width="800" height="600" class="rounded-xl border-5 !border-solid !border-primary !shadow-lg !shadow-green-700"></canvas>
+    <div class="card card-dash bg-base-100 w-96 ">
+        <div class="card-body">
+            <h2 class="card-title">Highscore</h2>
+            <ol></ol>
+            <div class="card-actions justify-end">
+              <button id="newGame" class="btn shadow-lg shadow-green-700 hover:shadow-green-500 hover:shadow-2xl">New Game</button>
+            </div>
+        </div>
+    </div>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="pokemons">
+        <div class="pokemon">
+            <img src="" alt="">
+            <h2></h2>
+            <p></p>
+        </div>
+    </div>
+    <script>
+        fetch("https://pokeapi.co/api/v2/pokemon?limit=10")
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+            data.results.forEach(pokemon => {
+                fetch(pokemon.url)
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data)
+                    const pokemon = document.createElement('div')
+                    pokemon.classList.add('pokemon')
+                    pokemon.innerHTML = `
+                        <img src="${data.sprites.front_default}" alt="${data.name}">
+                        <h2>${data.name}</h2>
+                        <p>${data.types.map(type => type.type.name).join(', ')}</p>
+                    `
+                    document.getElementById('pokemons').appendChild(pokemon)
+                })
+                .catch(error => console.error('Error:', error));
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A legjobb webes témájú filmek -Űrlap</title>
+    <link rel="stylesheet" href="./css/alap.css">
+</head>
+
+<body>
+    <header>
+        <nav id="tartalomra">
+            <a href="#tartalom">Tartalomra ugrás</a>
+        </nav>
+        <nav id="fomenu">
+            <h1>A legjobb &lt; internetes / webes &gt; témájú filmek -<br> Űrlap</h1>
+            <a href="./index.html">Kezdőlap</a> Új film beküldése
+        </nav>
+    </header>
+    <main id="tartalom">
+        <form action="mailto:bendeguznagy55@gmail.com" method="get">
+            <fieldset>
+                <legend>Alapadatok</legend>
+                <div>
+                    <label for="nev">Név:</label>
+                    <input type="text" id="nev" name="nev" placeholder="Kiss Pista" maxlength="25" required>
+                </div>
+                <label for="email">Email cím:</label>
+                <input type="email" id="email" name="email" placeholder="kiss@pista.com" maxlength="25" required>
+            </fieldset>
+            <fieldset>
+                <legend>Értékelés</legend>
+                <div>
+                    1 <input type="radio" name="ertekeles" id="">
+                    2 <input type="radio" name="ertekeles" id="">
+                    3 <input type="radio" name="ertekeles" id="">
+                    4 <input type="radio" name="ertekeles" id="">
+                    5 <input type="radio" name="ertekeles" id="">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Üzenet</legend>
+                <div>
+                    <label for="uzenet">Üzenet:</label>
+                    <textarea name="uzenet" id="uzenet" cols="30"></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Feliratkozás</legend>
+                <div>
+                    <label for="hirlevel">Iratkozz fel a hírlevélre</label>
+                    <input type="checkbox" name="hirlevel" id="">
+                </div>
+            </fieldset>
+            <input type="submit" value="Küldés">
+            <input type="reset" value="Visszaállítás">
+        </form>
+    </main>
+    <footer>
+        <h2>Források</h2>
+        <ul>
+            <li><a
+                    href="http://www.techtimes.com/articles/10259/20140711/the-best-movies-about-the-internet.htm">Techtimes.com</a>
+            </li>
+            <li><a href="http://librarius.hu/2015/07/14/a-deep-web-megmutatja-a-virtualis-pokol-legmelyet/"
+                    target="_blank">Librarius</a></li>
+        </ul>
+
+        Készítette: Gipsz Jakab<br>
+        (gipszjakab@mailinator.com)<br>
+        1117 Budapest, Nevenincs u. 17
+    </footer>
+</body>
+
+</html>

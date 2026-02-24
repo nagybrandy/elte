@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-base-300">
+    <div id="menu" class="flex space-y-5">
+        <h1 class="font-bold text-center text-3xl mb-5 w-full">Dino Run</h1>
+        <select name="" class="select w-full max-w-xs" id="dino-szin">
+            <option value="red">Piros</option>
+            <option value="yellow">Sárga</option>
+            <option value="green">Zöld</option>
+            <option value="blue">Kék</option>
+        </select>
+        <button id='start' class="btn btn-primary mr-2 w-full">Start</button>
+        <button class="btn w-full">Játékszabály</button>
+    </div>
+
+    <div id="inGame">
+        <canvas></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

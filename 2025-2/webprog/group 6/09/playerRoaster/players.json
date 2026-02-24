@@ -1,0 +1,369 @@
+{
+    "0": {
+        "name": "John Smith",
+        "positions": [
+            "Striker"
+        ],
+        "goals2024": 12,
+        "goals2023": 14,
+        "img": "batorini"
+    },
+    "1": {
+        "name": "Carlos Diaz",
+        "positions": [
+            "Midfielder",
+            "Defender"
+        ],
+        "goals2024": 5,
+        "goals2023": 3,
+        "img": "benke"
+    },
+    "2": {
+        "name": "Amir Rajan",
+        "positions": [
+            "Midfielder"
+        ],
+        "goals2024": 8,
+        "goals2023": 10,
+        "img": "carlaise"
+    },
+    "3": {
+        "name": "Sofia Loren",
+        "positions": [
+            "Goalkeeper"
+        ],
+        "goals2024": 0,
+        "goals2023": 0,
+        "img": "rataka"
+    },
+    "4": {
+        "name": "Xiao Ming",
+        "positions": [
+            "Striker",
+            "Winger"
+        ],
+        "goals2024": 20,
+        "goals2023": 22,
+        "img": "layka"
+    },
+    "5": {
+        "name": "Aleksandr Petrov",
+        "positions": [
+            "LeftBack"
+        ],
+        "goals2024": 2,
+        "goals2023": 1,
+        "img": "doggo"
+    },
+    "6": {
+        "name": "Sarah Connor",
+        "positions": [
+            "Striker",
+            "Midfielder"
+        ],
+        "goals2024": 15,
+        "goals2023": 18,
+        "img": "dace"
+    },
+    "7": {
+        "name": "Lee Chan",
+        "positions": [
+            "Midfielder"
+        ],
+        "goals2024": 11,
+        "goals2023": 13,
+        "img": "held"
+    },
+    "8": {
+        "name": "Emanuel Blanc",
+        "positions": [
+            "Rightback",
+            "Midfielder",
+            "LeftBack"
+        ],
+        "goals2024": 6,
+        "goals2023": 4,
+        "img": "grunwald"
+    },
+    "9": {
+        "name": "Mohammed Al-Sayed",
+        "positions": [
+            "Striker"
+        ],
+        "goals2024": 17,
+        "goals2023": 19,
+        "img": "kiss"
+    },
+    "10": {
+        "name": "Lucy Heart",
+        "positions": [
+            "Defender"
+        ],
+        "goals2024": 3,
+        "goals2023": 2,
+        "img": "svab"
+    },
+    "11": {
+        "name": "Mariooo",
+        "goals2024": "40",
+        "positions": [
+            "striker",
+            "winger",
+            "defender"
+        ],
+        "goals2023": 0,
+        "img": "benke"
+    },
+    "12": {
+        "name": "asdasd",
+        "goals2024": "22024",
+        "positions": [
+            "striker",
+            "winger",
+            "defender"
+        ],
+        "goals2023": 0,
+        "img": "carlaise"
+    },
+    "13": {
+        "name": "Mario Balotelli",
+        "goals2024": "30",
+        "positions": [
+            "striker",
+            "winger",
+            "defender"
+        ],
+        "goals2023": 0,
+        "img": "benke"
+    },
+    "691f3d0f203f5": {
+        "name": "Pr\u00f3ba",
+        "goals2024": 300,
+        "goals2023": 200,
+        "positions": [
+            "striker"
+        ],
+        "img": "kiss",
+        "id": "691f3d0f203f5"
+    },
+    "691f3d0f2b4db": {
+        "name": "Pr\u00f3ba",
+        "goals2024": 300,
+        "goals2023": 200,
+        "positions": [
+            "striker"
+        ],
+        "img": "kiss",
+        "id": "691f3d0f2b4db"
+    },
+    "691f3d0f41c47": {
+        "name": "Pr\u00f3ba",
+        "goals2024": 300,
+        "goals2023": 200,
+        "positions": [
+            "striker"
+        ],
+        "img": "kiss",
+        "id": "691f3d0f41c47"
+    },
+    "691f3d10c96ad": {
+        "name": "Pr\u00f3ba",
+        "goals2024": 300,
+        "goals2023": 200,
+        "positions": [
+            "striker"
+        ],
+        "img": "kiss",
+        "id": "691f3d10c96ad"
+    },
+    "691f3d1535d78": {
+        "name": "Pr\u00f3ba",
+        "goals2024": 300,
+        "goals2023": 200,
+        "positions": [
+            "striker"
+        ],
+        "img": "kiss",
+        "id": "691f3d1535d78"
+    },
+    "691f3d153acf6": {
+        "name": "Pr\u00f3ba",
+        "goals2024": 300,
+        "goals2023": 200,
+        "positions": [
+            "striker"
+        ],
+        "img": "kiss",
+        "id": "691f3d153acf6"
+    },
+    "691f3d1559af6": {
+        "name": "Pr\u00f3ba",
+        "goals2024": 300,
+        "goals2023": 200,
+        "positions": [
+            "striker"
+        ],
+        "img": "kiss",
+        "id": "691f3d1559af6"
+    },
+    "691f3d16ea21c": {
+        "name": "Pr\u00f3ba",
+        "goals2024": 300,
+        "goals2023": 200,
+        "positions": [
+            "striker"
+        ],
+        "img": "kiss",
+        "id": "691f3d16ea21c"
+    },
+    "691f3d1988415": {
+        "name": "Pr\u00f3ba",
+        "goals2024": 300,
+        "goals2023": 200,
+        "positions": [
+            "striker"
+        ],
+        "img": "kiss",
+        "id": "691f3d1988415"
+    },
+    "691f3d198e119": {
+        "name": "Pr\u00f3ba",
+        "goals2024": 300,
+        "goals2023": 200,
+        "positions": [
+            "striker"
+        ],
+        "img": "kiss",
+        "id": "691f3d198e119"
+    },
+    "691f3d19ab771": {
+        "name": "Pr\u00f3ba",
+        "goals2024": 300,
+        "goals2023": 200,
+        "positions": [
+            "striker"
+        ],
+        "img": "kiss",
+        "id": "691f3d19ab771"
+    },
+    "691f3d1b47807": {
+        "name": "Pr\u00f3ba",
+        "goals2024": 300,
+        "goals2023": 200,
+        "positions": [
+            "striker"
+        ],
+        "img": "kiss",
+        "id": "691f3d1b47807"
+    },
+    "691f3e3c220f7": {
+        "name": "Pr\u00f3ba",
+        "goals2024": 300,
+        "goals2023": 200,
+        "positions": [
+            "striker"
+        ],
+        "img": "kiss",
+        "id": "691f3e3c220f7"
+    },
+    "691f3f861c15b": {
+        "name": "Pr\u00f3ba",
+        "goals2024": 300,
+        "goals2023": 200,
+        "positions": [
+            "striker"
+        ],
+        "img": "kiss",
+        "id": "691f3f861c15b"
+    },
+    "691f40d01d340": {
+        "name": "Pr\u00f3ba",
+        "goals2024": 300,
+        "goals2023": 200,
+        "positions": [
+            "striker"
+        ],
+        "img": "kiss",
+        "id": "691f40d01d340"
+    },
+    "691f421a1f628": {
+        "name": "Pr\u00f3ba",
+        "goals2024": 300,
+        "goals2023": 200,
+        "positions": [
+            "striker"
+        ],
+        "img": "kiss",
+        "id": "691f421a1f628"
+    },
+    "692039c44dccc": {
+        "name": "Pr\u00f3ba",
+        "goals2024": 300,
+        "goals2023": 200,
+        "positions": [
+            "striker"
+        ],
+        "img": "kiss",
+        "id": "692039c44dccc"
+    },
+    "692039c62e374": {
+        "name": "Pr\u00f3ba",
+        "goals2024": 300,
+        "goals2023": 200,
+        "positions": [
+            "striker"
+        ],
+        "img": "kiss",
+        "id": "692039c62e374"
+    },
+    "692039ccf1b5d": {
+        "name": "Pr\u00f3ba",
+        "goals2024": 300,
+        "goals2023": 200,
+        "positions": [
+            "striker"
+        ],
+        "img": "kiss",
+        "id": "692039ccf1b5d"
+    },
+    "692039ce91f55": {
+        "name": "Pr\u00f3ba",
+        "goals2024": 300,
+        "goals2023": 200,
+        "positions": [
+            "striker"
+        ],
+        "img": "kiss",
+        "id": "692039ce91f55"
+    },
+    "692039f8c115b": {
+        "name": "Pr\u00f3ba",
+        "goals2024": 300,
+        "goals2023": 200,
+        "positions": [
+            "striker"
+        ],
+        "img": "kiss",
+        "id": "692039f8c115b"
+    },
+    "692039fa66bba": {
+        "name": "Pr\u00f3ba",
+        "goals2024": 300,
+        "goals2023": 200,
+        "positions": [
+            "striker"
+        ],
+        "img": "kiss",
+        "id": "692039fa66bba"
+    },
+    "69203a17ce7a1": {
+        "name": "Pr\u00f3ba",
+        "goals2024": 300,
+        "goals2023": 200,
+        "positions": [
+            "striker"
+        ],
+        "img": "kiss",
+        "id": "69203a17ce7a1"
+    }
+}

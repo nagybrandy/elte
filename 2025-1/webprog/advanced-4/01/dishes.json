@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Hot Pot",
+    "country": "China",
+    "city": "Beijing",
+    "description": "A simmering pot of soup stock where diners cook their own ingredients including meat, seafood, vegetables, and noodles."
+  },
+  {
+    "name": "Horse Meat",
+    "country": "Kirgizistan",
+    "city": "Bishkek",
+    "description": "Traditional horse meat dishes, often served as kazy (horse meat sausage) or in various other preparations."
+  },
+  {
+    "name": "Hawawshi",
+    "country": "Egypt",
+    "city": "Cairo",
+    "description": "A Egyptian street food consisting of spiced ground meat stuffed into pita bread and grilled to perfection."
+  },
+  {
+    "name": "Dolma",
+    "country": "Azerbaijan",
+    "city": "Baku",
+    "description": "Stuffed grape leaves or vegetables filled with seasoned rice, minced meat, and aromatic herbs."
+  },
+  {
+    "name": "Pilaf",
+    "country": "Uzbekistan",
+    "city": "Tashkent",
+    "description": "A fragrant rice dish cooked with tender meat, carrots, onions, and various spices, considered the national dish."
+  },
+  {
+    "name": "Chicken Briyani",
+    "country": "India",
+    "city": "New Delhi",
+    "description": "Aromatic rice dish made with Indian spices, chicken, and caramelized onions, often served with raita."
+  },
+  {
+    "name": "Camel Bump",
+    "country": "Mongolia",
+    "city": "Ulaanbaatar",
+    "description": "A traditional delicacy made from the fatty hump of a camel, often prepared through slow cooking methods."
+  },
+  {
+    "name": "Kibbeh",
+    "country": "Lebanon",
+    "city": "Beirut",
+    "description": "Deep-fried croquettes made of bulgur wheat, minced onions, and ground meat, typically served with tahini sauce."
+  },
+  {
+    "name": "Pelmenye",
+    "country": "Russia",
+    "city": "Moscow",
+    "description": "Small dumplings filled with minced meat, served with sour cream and often in a clear soup."
+  },
+  {
+    "name": "Lobiani",
+    "country": "Georgia",
+    "city": "Tbilisi",
+    "description": "Traditional Georgian bread filled with seasoned mashed beans, often served during fasting periods."
+  },
+  {
+    "name": "Beshbarmak",
+    "country": "Kazakhstan",
+    "city": "Astana",
+    "description": "A traditional dish of boiled horse meat or lamb served over flat noodles with onion sauce."
+  }
+]

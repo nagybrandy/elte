@@ -1,0 +1,133 @@
+/* Alap beállítások */
+* {
+    box-sizing: border-box;
+    /* Átállítja a dobozmodellt úgy, hogy a szélesség megadásba (width:) bele legyen foglalva a belső margó és a szegély is. 
+    Alapértelmezett dobozmodellben (content-box) a width a tartalom szélességére vonatkozik.  */
+    
+    /* KITÖLTENI CSS RESET */
+}
+
+/* Konténer elem */
+.container {
+    width: 90%;
+    /* Elem szélességének beállítása */
+    margin: 0 auto; /* mx-auto */
+    max-width: 1200px;
+    /* KITÖLTENI - maximális szélesség */ 
+    /* KITÖLTENI - Blokk középre igazítása */
+
+}
+
+/* Sor (row) */
+.row {
+    display: flex;
+    /* Az elemet flexbox konténerré alakítja, lehetővé téve a rugalmas elrendezést */
+    flex-wrap: wrap;
+    /* A flexbox elemei szükség esetén új sorba törnek */
+}
+
+/* KITÖLTENI - Oszlopok alapbeállítása (15px belső margó */
+[class*="col-"] {
+    padding: 15px;
+}
+
+/* Teljes szélesség (col-12) */
+.col-12 {
+    flex-grow: 0;
+    /* Nem növekszik */
+    flex-shrink: 0;
+    /* Nem zsugorodik */
+    flex-basis: 100%;
+    /* Alap szélesség 100% */
+    max-width: 100%;
+    /* Maximális szélesség beállítása */
+}
+
+iframe, img,  video {
+    display: block;
+    width: 100%;
+    -webkit-box-shadow: -65px 13px 88px 0px rgba(110,83,33,0.46);
+-moz-box-shadow: -65px 13px 88px 0px rgba(110,83,33,0.46);
+box-shadow: -65px 13px 88px 0px rgba(110,83,33,0.46);
+filter: grayscale(100%);
+transition: all 0.5s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+    transition: all 0.5s ease-in-out;
+}
+
+main h2:before {
+    content: "🎉";
+}
+p.nyomtatas {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        /* Elem szélességének beállítása */
+    }
+} /* max width 768 */
+
+
+/* Közepes kijelzőn (md: 768px-től) */
+@media (min-width: 768px) {
+    .col-md-6 {
+        flex-grow: 0;
+        /* Nem növekszik */
+        flex-shrink: 0;
+        /* Nem zsugorodik */
+        flex-basis: 50%;
+        /* Alap szélesség 50% */
+        max-width: 50%;
+        /* Maximális szélesség beállítása */
+    }
+
+    .col-md-4 {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 33.3333%;
+        /* Az oszlop a konténer 1/3-át foglalja el */
+        max-width: 33.3333%;
+        /* Maximális szélesség beállítása */
+    }
+
+    .col-md-8 {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 66.6667%;
+        /* Az oszlop a konténer 2/3-át foglalja el */
+        max-width: 66.6667%;
+        /* Maximális szélesség beállítása */
+    }
+}
+
+/* KITÖLTENI .col-lg-6 osztály, 992px-től*/
+
+/*FOLYÉKONY MÉDIAELEMEK BEÁLLÍTÁSA */
+
+audio {
+    width: 100%;
+    /* Elem szélességének beállítása */
+    display: block;
+    /* Az elem megjelenítési módjának beállítása */
+}
+
+iframe {
+    aspect-ratio: 4 / 3;
+    /* Az elem szélességének és magasságának arányát 4:3-ra állítja */
+    width: 100%;
+    /* Az elem kitölti a szülőelem szélességét */
+    height: auto;
+    /* Elem magasságának beállítása */
+}
+
+/* KITÖLTENI - folyékony kép */
+
+/* KITÖLTENI - folyékony videó */

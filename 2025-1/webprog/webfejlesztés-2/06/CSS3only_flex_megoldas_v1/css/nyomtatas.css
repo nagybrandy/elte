@@ -1,0 +1,64 @@
+details,
+nav,
+audio,
+iframe,
+video,
+div.carousel,
+meter,
+hr,
+canvas {
+  display: none !important;
+  /* Az elem eltüntetése */
+}
+
+p {
+  text-align: justify;
+  /* Sorkizárt igazítás */
+}
+
+figure,
+footer p {
+  text-align: center !important;
+  /* Szöveg középre igazítása */
+
+}
+
+pre {
+  text-align: left;
+  /* Szöveg balra igazítása */
+
+}
+
+abbr {
+  text-decoration: none;
+  /* Szövegdekoráció eltüntetése */
+
+}
+
+figure img {
+  max-width: 10cm !important;
+  /* Maximális szélesség beállítása */
+  max-height: 6cm !important;
+  /* Maximális magasság beállítása */
+}
+
+.nyomtatas {
+  display: block !important;
+  /* Az elem megjelenítése */
+  border: 1px dashed gray;
+  /* Szegély beállítása */
+  padding: 10px;
+  /* Belső margó beállítása */
+}
+
+table {
+  float: left;
+  /* balra lebegtetés */
+  margin-right: 1cm
+    /*jobb oldali margó*/
+}
+
+a::after {
+  content: " (" attr(href) ")";
+  /* A link szövege mögé generáljuk a href paraméter tartalmát */
+}

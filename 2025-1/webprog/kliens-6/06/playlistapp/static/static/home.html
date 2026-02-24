@@ -1,0 +1,106 @@
+
+
+<body class="w-full overflow-x-hidden bg-gray-100">
+    <div class="px-5 navbar bg-base-100">
+        <div class="navbar-start ">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li>
+                        <a class="item" href="/home">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="/playlists">
+                            <i class="fas fa-headphones"></i> My Playlists
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="/tracks">
+                            <i class="fas fa-music"></i> Tracks
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="/search">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-44"><img src="./assets/logo.png" alt="Logo" /></div>
+        </div>
+        <div class="hidden navbar-center lg:flex">
+            <ul class="px-1 menu menu-horizontal">
+                <li>
+                    <a class="item" href="/home">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                </li>
+                <li>
+                    <a class="item" href="/playlists">
+                        <i class="fas fa-headphones"></i> My Playlists
+                    </a>
+                </li>
+                <li>
+                    <a class="item" href="/tracks">
+                        <i class="fas fa-music"></i> Tracks
+                    </a>
+                </li>
+                <li>
+                    <a class="item" href="/search">
+                        <i class="fas fa-search"></i> Search
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="m-1 btn"><i class="fas fa-user"></i> Jake Peralta</div>
+                <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-200 rounded-box w-52">
+                    <li><a>Playlists</a></li>
+                    <li><a>Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="hero min-h-[80vh] bg-base-100">
+        <img src="./assets/cover-without-text.png" alt="Cover" class="h-[80vh] contrast-50 drop-shadow brightness-50 opacity-35"/>
+        <div class="container w-8/12 px-4 mx-auto">
+            <div class="flex-col w-full hero-content lg:flex-row-reverse">
+              <div class="ml-10 text-center lg:text-left">
+                <h1 class="text-5xl font-bold">Login now!</h1>
+                <p class="py-6">Come and create playlists with ease, tailor your music experience to your heart's content! Add your favorite tracks to your perfect playlists and let the music take you on a journey!</p>
+              </div>
+              <div class="w-full max-w-sm shadow-2xl card shrink-0 bg-base-300">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Email</span>
+                    </label>
+                    <input type="email" placeholder="email" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Password</span>
+                    </label>
+                    <input type="password" placeholder="password" class="input input-bordered" required />
+                    <label class="label">
+                      <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                    </label>
+                  </div>
+                  <div class="mt-6 form-control">
+                    <button class="btn btn-primary">Login</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</body>
+
+</html>

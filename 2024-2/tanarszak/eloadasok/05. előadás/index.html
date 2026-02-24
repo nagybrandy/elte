@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>asdasdasd</h1>
+    <button>Click me</button>
+    <script>
+        let span = document.querySelector('h1')
+        let number = 0
+        setInterval(()=> {
+            number++;
+            span.innerHTML = number
+        }, 1000)
+
+    function tick() {
+        alert('Eltelt 3 másodperc')
+    }
+
+    document.querySelector('button').addEventListener('click', ()=> {
+        console.log('hello')
+        setTimeout(tick, 3000)
+        console.log('hello')
+    })
+    </script>
+</body>
+</html>
