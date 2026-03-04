@@ -72,9 +72,6 @@
           </a>
         @endforeach
 
-
-         
-
         </div>
         <div class="flex justify-center mt-8 sm:hidden">
           <a href="recipes.html" class="btn btn-outline hover:bg-base-200">
