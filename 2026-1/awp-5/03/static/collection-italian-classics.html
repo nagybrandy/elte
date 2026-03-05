@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="caramellatte">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#7B4B2A" />
+  <title>Italian Classics - Food Atlas Collections</title>
+  <meta name="description" content="Timeless Italian recipes from pasta to risotto. Explore our Italian Classics collection on Food Atlas." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .font-serif { font-family: 'Lora', serif; }
+  </style>
+</head>
+<body class="bg-base-100 text-base-content">
+
+  <!-- NAVBAR -->
+  <div class="navbar bg-white/90 backdrop-blur-lg sticky top-0 z-50 border-b border-base-300 shadow-sm">
+    <div class="navbar-start">
+      <a href="index.html" class="btn btn-ghost text-xl">
+        <img src="logo-horizontal.png" alt="Food Atlas logo" class="h-10" />
+      </a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1 gap-6">
+        <li><a href="index.html" class="text-sm font-medium hover:text-primary transition-colors">Home</a></li>
+        <li><a href="recipes.html" class="text-sm font-medium hover:text-primary transition-colors">Recipes</a></li>
+        <li><a href="collections.html" class="text-sm font-medium text-primary">Collections</a></li>
+      </ul>
+    </div>
+    <div class="navbar-end gap-2">
+      <button class="btn btn-ghost btn-sm btn-circle hidden lg:flex hover:bg-base-200" aria-label="Search">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      </button>
+      <a href="login.html" class="btn btn-outline btn-sm hidden lg:flex hover:bg-base-200">Log in</a>
+      <a href="signup.html" class="btn btn-primary btn-sm hidden lg:flex">Sign up</a>
+      <div class="dropdown dropdown-end lg:hidden">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </div>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-3 shadow-xl bg-white rounded-box w-56 border border-base-300">
+          <li><a href="index.html" class="hover:bg-base-200">Home</a></li>
+          <li><a href="recipes.html" class="hover:bg-base-200">Recipes</a></li>
+          <li><a href="collections.html" class="hover:bg-base-200">Collections</a></li>
+          <li class="border-t border-base-300 mt-2 pt-2">
+            <a href="login.html" class="btn btn-outline btn-sm w-full">Log in</a>
+          </li>
+          <li><a href="signup.html" class="btn btn-primary btn-sm w-full mt-2">Sign up</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- COLLECTION HERO -->
+    <div class="hero min-h-[320px] lg:min-h-[400px] relative">
+      <div class="hero-overlay bg-gradient-to-r from-base-content/80 via-base-content/60 to-transparent"></div>
+      <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=1920&q=80" alt="Italian cuisine" class="brightness-75 absolute inset-0 w-full h-full object-cover" />
+      <div class="hero-content text-left text-primary-content relative z-10 container mx-auto px-4 lg:px-8 py-16 lg:py-24">
+        <div class="max-w-2xl">
+          <nav class="breadcrumbs text-primary-content/80 text-sm mb-4 px-0" aria-label="Breadcrumb">
+            <ul>
+              <li><a href="index.html" class="hover:text-primary-content">Home</a></li>
+              <li><a href="collections.html" class="hover:text-primary-content">Collections</a></li>
+              <li class="text-primary-content font-medium">Italian Classics</li>
+            </ul>
+          </nav>
+          <h1 class="font-serif text-4xl lg:text-5xl font-bold mb-4">Italian Classics</h1>
+          <p class="text-lg opacity-90 mb-6">Timeless Italian recipes from pasta to risotto. Discover the authentic flavors of Italy with our curated collection of beloved dishes.</p>
+          <div class="badge badge-primary badge-lg text-primary-content border-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            14 recipes
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RECIPES IN COLLECTION -->
+    <section class="py-16 lg:py-24">
+      <div class="container mx-auto px-4 lg:px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          
+          <a href="recipe-creamy-carbonara.html" class="card bg-base-200 shadow-lg hover:shadow-2xl transition-all border border-base-300 hover:border-primary/30 group">
+            <figure class="aspect-[4/3] overflow-hidden rounded-t-2xl">
+              <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=600&q=80" alt="Creamy Carbonara Pasta" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+            </figure>
+            <div class="card-body p-5">
+              <h3 class="card-title font-serif text-lg group-hover:text-primary">Creamy Carbonara Pasta</h3>
+              <p class="text-sm text-base-content/70 line-clamp-2">Authentic Roman carbonara with silky egg sauce and crispy guanciale.</p>
+              <div class="flex gap-4 text-xs text-base-content/60 mt-2">
+                <span>30 min</span>
+                <span>4 servings</span>
+              </div>
+              <div class="flex gap-2 mt-2">
+                <span class="badge badge-sm badge-secondary">pasta</span>
+                <span class="badge badge-sm badge-secondary">quick</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="card bg-base-200 shadow-lg hover:shadow-2xl transition-all border border-base-300 hover:border-primary/30 group">
+            <figure class="aspect-[4/3] overflow-hidden rounded-t-2xl">
+              <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=600&q=80" alt="Classic Margherita Pizza" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+            </figure>
+            <div class="card-body p-5">
+              <h3 class="card-title font-serif text-lg group-hover:text-primary">Classic Margherita Pizza</h3>
+              <p class="text-sm text-base-content/70 line-clamp-2">Wood-fired style pizza with fresh mozzarella, tomatoes, and basil.</p>
+              <div class="flex gap-4 text-xs text-base-content/60 mt-2">
+                <span>45 min</span>
+                <span>2 pizzas</span>
+              </div>
+              <div class="flex gap-2 mt-2">
+                <span class="badge badge-sm badge-secondary">pizza</span>
+                <span class="badge badge-sm badge-secondary">classic</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="card bg-base-200 shadow-lg hover:shadow-2xl transition-all border border-base-300 hover:border-primary/30 group">
+            <figure class="aspect-[4/3] overflow-hidden rounded-t-2xl">
+              <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=600&q=80" alt="Creamy Risotto" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+            </figure>
+            <div class="card-body p-5">
+              <h3 class="card-title font-serif text-lg group-hover:text-primary">Creamy Mushroom Risotto</h3>
+              <p class="text-sm text-base-content/70 line-clamp-2">Rich and creamy risotto with porcini mushrooms and Parmesan.</p>
+              <div class="flex gap-4 text-xs text-base-content/60 mt-2">
+                <span>40 min</span>
+                <span>4 servings</span>
+              </div>
+              <div class="flex gap-2 mt-2">
+                <span class="badge badge-sm badge-secondary">risotto</span>
+                <span class="badge badge-sm badge-secondary">vegetarian</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="card bg-base-200 shadow-lg hover:shadow-2xl transition-all border border-base-300 hover:border-primary/30 group">
+            <figure class="aspect-[4/3] overflow-hidden rounded-t-2xl">
+              <img src="https://images.unsplash.com/photo-1608897013039-887f21d8c804?w=600&q=80" alt="Lasagna" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+            </figure>
+            <div class="card-body p-5">
+              <h3 class="card-title font-serif text-lg group-hover:text-primary">Traditional Lasagna</h3>
+              <p class="text-sm text-base-content/70 line-clamp-2">Layered pasta with meat sauce, béchamel, and melted cheese.</p>
+              <div class="flex gap-4 text-xs text-base-content/60 mt-2">
+                <span>2 hrs</span>
+                <span>8 servings</span>
+              </div>
+              <div class="flex gap-2 mt-2">
+                <span class="badge badge-sm badge-secondary">pasta</span>
+                <span class="badge badge-sm badge-secondary">baked</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="card bg-base-200 shadow-lg hover:shadow-2xl transition-all border border-base-300 hover:border-primary/30 group">
+            <figure class="aspect-[4/3] overflow-hidden rounded-t-2xl">
+              <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=600&q=80" alt="Tiramisu" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+            </figure>
+            <div class="card-body p-5">
+              <h3 class="card-title font-serif text-lg group-hover:text-primary">Tiramisu</h3>
+              <p class="text-sm text-base-content/70 line-clamp-2">Classic Italian dessert with mascarpone, coffee, and cocoa.</p>
+              <div class="flex gap-4 text-xs text-base-content/60 mt-2">
+                <span>30 min + chill</span>
+                <span>6 servings</span>
+              </div>
+              <div class="flex gap-2 mt-2">
+                <span class="badge badge-sm badge-secondary">dessert</span>
+                <span class="badge badge-sm badge-secondary">no-bake</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="card bg-base-200 shadow-lg hover:shadow-2xl transition-all border border-base-300 hover:border-primary/30 group">
+            <figure class="aspect-[4/3] overflow-hidden rounded-t-2xl">
+              <img src="https://images.unsplash.com/photo-1612874742237-6526221588e3?w=600&q=80" alt="Osso Buco" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+            </figure>
+            <div class="card-body p-5">
+              <h3 class="card-title font-serif text-lg group-hover:text-primary">Osso Buco</h3>
+              <p class="text-sm text-base-content/70 line-clamp-2">Braised veal shanks in a rich tomato and vegetable sauce.</p>
+              <div class="flex gap-4 text-xs text-base-content/60 mt-2">
+                <span>3 hrs</span>
+                <span>4 servings</span>
+              </div>
+              <div class="flex gap-2 mt-2">
+                <span class="badge badge-sm badge-secondary">braised</span>
+                <span class="badge badge-sm badge-secondary">special</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+        <div class="flex justify-center mt-12">
+          <a href="collections.html" class="btn btn-outline hover:bg-base-200">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+            Back to Collections
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-base-200 border-t border-base-300 p-10 text-base-content">
+    <div class="container mx-auto px-4 lg:px-8">
+      <div class="flex flex-col md:flex-row gap-8 md:gap-24 items-start">
+        <div class="max-w-xs shrink-0">
+          <a href="index.html" class="hover:opacity-80 transition-opacity inline-block mb-3">
+            <img src="logo-horizontal.png" alt="Food Atlas logo" class="h-9" />
+          </a>
+          <p class="text-sm text-base-content/70">Your passport to global flavors. Discover, create, and organize recipes from around the world.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-12 md:ml-auto">
+          <div>
+            <h6 class="font-semibold text-base-content mb-3">Explore</h6>
+            <div class="flex flex-col gap-2">
+              <a href="recipes.html" class="text-sm text-base-content/70 hover:text-primary transition-colors">Recipes</a>
+              <a href="collections.html" class="text-sm text-base-content/70 hover:text-primary transition-colors">Collections</a>
+              <a href="recipes.html" class="text-sm text-base-content/70 hover:text-primary transition-colors">Search</a>
+            </div>
+          </div>
+          <div>
+            <h6 class="font-semibold text-base-content mb-3">Account</h6>
+            <div class="flex flex-col gap-2">
+              <a href="signup.html" class="text-sm text-base-content/70 hover:text-primary transition-colors">Sign Up</a>
+              <a href="login.html" class="text-sm text-base-content/70 hover:text-primary transition-colors">Log In</a>
+              <a href="#" class="text-sm text-base-content/70 hover:text-primary transition-colors">Dashboard</a>
+            </div>
+          </div>
+          <div>
+            <h6 class="font-semibold text-base-content mb-3">Company</h6>
+            <div class="flex flex-col gap-2">
+              <a href="#" class="text-sm text-base-content/70 hover:text-primary transition-colors">About</a>
+              <a href="#" class="text-sm text-base-content/70 hover:text-primary transition-colors">Privacy</a>
+              <a href="#" class="text-sm text-base-content/70 hover:text-primary transition-colors">Terms</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-base-300 pt-6 mt-8 text-center">
+        <p class="text-xs text-base-content/60">Food Atlas. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

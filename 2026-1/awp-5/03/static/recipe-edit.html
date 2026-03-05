@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="caramellatte">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#7B4B2A" />
+  <title>Edit Recipe - Food Atlas</title>
+  <meta name="description" content="Create or edit your recipe on Food Atlas." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .font-serif { font-family: 'Lora', serif; }
+  </style>
+</head>
+<body class="bg-base-100 text-base-content">
+
+  <!-- NAVBAR -->
+  <div class="navbar bg-white/90 backdrop-blur-lg sticky top-0 z-50 border-b border-base-300 shadow-sm">
+    <div class="navbar-start">
+      <a href="index.html" class="btn btn-ghost text-xl">
+        <img src="logo-horizontal.png" alt="Food Atlas logo" class="h-10" />
+      </a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1 gap-6">
+        <li><a href="index.html" class="text-sm font-medium hover:text-primary transition-colors">Home</a></li>
+        <li><a href="recipes.html" class="text-sm font-medium hover:text-primary transition-colors">Recipes</a></li>
+        <li><a href="collections.html" class="text-sm font-medium hover:text-primary transition-colors">Collections</a></li>
+      </ul>
+    </div>
+    <div class="navbar-end gap-2">
+      <div class="dropdown dropdown-end">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+          <div class="w-10 rounded-full bg-primary text-primary-content flex items-center justify-center font-semibold">
+            JD
+          </div>
+        </div>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow-xl bg-white rounded-box w-52 border border-base-300">
+          <li><a href="dashboard.html" class="text-primary font-medium">Dashboard</a></li>
+          <li><a href="recipe-edit.html">Create Recipe</a></li>
+          <li><a href="#">My Collections</a></li>
+          <li><a href="#">Settings</a></li>
+          <li class="border-t border-base-300 mt-2 pt-2"><a href="login.html">Log out</a></li>
+        </ul>
+      </div>
+      <div class="dropdown dropdown-end lg:hidden">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </div>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-3 shadow-xl bg-white rounded-box w-56 border border-base-300">
+          <li><a href="index.html" class="hover:bg-base-200">Home</a></li>
+          <li><a href="recipes.html" class="hover:bg-base-200">Recipes</a></li>
+          <li><a href="collections.html" class="hover:bg-base-200">Collections</a></li>
+          <li class="border-t border-base-300 mt-2 pt-2">
+            <a href="dashboard.html" class="hover:bg-base-200">Dashboard</a>
+          </li>
+          <li><a href="recipe-edit.html" class="hover:bg-base-200">Create Recipe</a></li>
+          <li><a href="login.html" class="hover:bg-base-200">Log out</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <main class="py-16 lg:py-24">
+    <div class="container mx-auto px-4 lg:px-8 max-w-4xl">
+      <!-- HEADER -->
+      <div class="mb-10">
+        <h1 class="text-3xl lg:text-4xl font-bold font-serif mb-2">Create Recipe</h1>
+        <p class="text-base-content/70">Share your culinary creations with the world</p>
+      </div>
+
+      <!-- FORM -->
+      <form class="space-y-8">
+        <!-- BASIC INFORMATION -->
+        <div class="card bg-base-200 border border-base-300 shadow-lg">
+          <div class="card-body">
+            <h2 class="card-title font-serif mb-6">Basic Information</h2>
+            
+            <div class="form-control w-full mb-4">
+              <label class="label" for="recipe-title">
+                <span class="label-text font-medium">Recipe Title *</span>
+              </label>
+              <input type="text" id="recipe-title" placeholder="e.g., Creamy Carbonara Pasta" class="input input-bordered w-full" required />
+            </div>
+
+            <div class="form-control w-full mb-4">
+              <label class="label block mb-2" for="recipe-description">
+                <span class="label-text font-medium">Description *</span>
+              </label>
+              <textarea id="recipe-description" placeholder="Write a detailed description of your recipe. Include what makes it special, the flavors, and any helpful context for cooks..." class="textarea textarea-bordered w-full min-h-32 text-base leading-relaxed block" rows="6" maxlength="500" required></textarea>
+              <div class="label pt-1 pb-0">
+                <span class="label-text-alt text-base-content/60" id="char-count">0 / 500 characters</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+              <div class="form-control w-full">
+                <label class="label" for="prep-time">
+                  <span class="label-text font-medium">Prep Time (minutes) *</span>
+                </label>
+                <input type="number" id="prep-time" placeholder="10" class="input input-bordered w-full" required />
+              </div>
+              <div class="form-control w-full">
+                <label class="label" for="cook-time">
+                  <span class="label-text font-medium">Cook Time (minutes) *</span>
+                </label>
+                <input type="number" id="cook-time" placeholder="20" class="input input-bordered w-full" required />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+              <div class="form-control w-full">
+                <label class="label" for="servings">
+                  <span class="label-text font-medium">Servings *</span>
+                </label>
+                <input type="number" id="servings" placeholder="4" class="input input-bordered w-full" required />
+              </div>
+              <div class="form-control w-full">
+                <label class="label" for="difficulty">
+                  <span class="label-text font-medium">Difficulty *</span>
+                </label>
+                <select id="difficulty" class="select select-bordered w-full" required>
+                  <option disabled selected>Select difficulty</option>
+                  <option>Easy</option>
+                  <option>Medium</option>
+                  <option>Hard</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-control w-full mb-4">
+              <label class="label" for="recipe-image">
+                <span class="label-text font-medium">Recipe Image URL</span>
+              </label>
+              <input type="url" id="recipe-image" placeholder="https://example.com/image.jpg" class="input input-bordered w-full" />
+              <label class="label">
+                <span class="label-text-alt">Or upload an image file</span>
+              </label>
+              <input type="file" accept="image/*" class="file-input file-input-bordered w-full" />
+            </div>
+          </div>
+        </div>
+
+        <!-- CATEGORIES AND TAGS -->
+        <div class="card bg-base-200 border border-base-300 shadow-lg">
+          <div class="card-body">
+            <h2 class="card-title font-serif mb-6">Categories & Tags</h2>
+            
+            <div class="form-control w-full mb-4">
+              <label class="label" for="cuisine">
+                <span class="label-text font-medium">Cuisine</span>
+              </label>
+              <select id="cuisine" class="select select-bordered w-full">
+                <option disabled selected>Select cuisine</option>
+                <option>Italian</option>
+                <option>Mexican</option>
+                <option>Indian</option>
+                <option>Mediterranean</option>
+                <option>Japanese</option>
+                <option>Chinese</option>
+                <option>French</option>
+                <option>Thai</option>
+                <option>American</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="form-control w-full mb-4">
+              <label class="label" for="category">
+                <span class="label-text font-medium">Category</span>
+              </label>
+              <select id="category" class="select select-bordered w-full">
+                <option disabled selected>Select category</option>
+                <option>Main Dish</option>
+                <option>Dessert</option>
+                <option>Salad</option>
+                <option>Soup</option>
+                <option>Baking</option>
+                <option>Appetizer</option>
+                <option>Breakfast</option>
+                <option>Snack</option>
+                <option>Beverage</option>
+              </select>
+            </div>
+
+            <div class="form-control w-full">
+              <label class="label" for="tags">
+                <span class="label-text font-medium">Tags (comma-separated)</span>
+              </label>
+              <input type="text" id="tags" placeholder="pasta, italian, quick, vegetarian" class="input input-bordered w-full" />
+              <label class="label">
+                <span class="label-text-alt">Add tags to help users find your recipe</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- INGREDIENTS -->
+        <div class="card bg-base-200 border border-base-300 shadow-lg">
+          <div class="card-body">
+            <div class="flex justify-between items-center mb-6">
+              <h2 class="card-title font-serif">Ingredients</h2>
+              <button type="button" class="btn btn-sm btn-primary" onclick="addIngredient()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="5" y2="19"/><line x1="5" x2="19" y1="12" y2="12"/></svg>
+                Add Ingredient
+              </button>
+            </div>
+            
+            <div id="ingredients-list" class="space-y-3">
+              <div class="flex gap-3 items-start">
+                <input type="text" placeholder="Amount (e.g., 400g)" class="input input-bordered flex-1" />
+                <input type="text" placeholder="Ingredient name" class="input input-bordered flex-2" />
+                <input type="text" placeholder="Notes (optional)" class="input input-bordered flex-1" />
+                <button type="button" class="btn btn-ghost btn-sm btn-square" onclick="removeIngredient(this)">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" x2="6" y1="6" y2="18"/><line x1="6" x2="18" y1="6" y2="18"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- INSTRUCTIONS -->
+        <div class="card bg-base-200 border border-base-300 shadow-lg">
+          <div class="card-body">
+            <div class="flex justify-between items-center mb-6">
+              <h2 class="card-title font-serif">Instructions</h2>
+              <button type="button" class="btn btn-sm btn-primary" onclick="addInstruction()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="5" y2="19"/><line x1="5" x2="19" y1="12" y2="12"/></svg>
+                Add Step
+              </button>
+            </div>
+            
+            <div id="instructions-list" class="space-y-4">
+              <div class="flex gap-3">
+                <div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-primary-content flex items-center justify-center font-bold">1</div>
+                <div class="flex-1">
+                  <input type="text" placeholder="Step title (optional)" class="input input-bordered w-full mb-2" />
+                  <textarea placeholder="Describe this step..." class="textarea textarea-bordered w-full h-24"></textarea>
+                </div>
+                <button type="button" class="btn btn-ghost btn-sm btn-square self-start" onclick="removeInstruction(this)">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" x2="6" y1="6" y2="18"/><line x1="6" x2="18" y1="6" y2="18"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PUBLISH OPTIONS -->
+        <div class="card bg-base-200 border border-base-300 shadow-lg">
+          <div class="card-body">
+            <h2 class="card-title font-serif mb-6">Publish Options</h2>
+            
+            <div class="form-control mb-4">
+              <label class="label cursor-pointer justify-start gap-3">
+                <input type="checkbox" class="checkbox checkbox-primary" />
+                <span class="label-text">Save as draft</span>
+              </label>
+            </div>
+
+            <div class="form-control">
+              <label class="label cursor-pointer justify-start gap-3">
+                <input type="checkbox" class="checkbox checkbox-primary" checked />
+                <span class="label-text">Publish immediately</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- ACTION BUTTONS -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-end">
+          <a href="dashboard.html" class="btn btn-outline">Cancel</a>
+          <button type="button" class="btn btn-ghost">Save Draft</button>
+          <button type="submit" class="btn btn-primary">Publish Recipe</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-base-200 border-t border-base-300 p-10 text-base-content mt-16">
+    <div class="container mx-auto px-4 lg:px-8">
+      <div class="flex flex-col md:flex-row gap-8 md:gap-24 items-start">
+        <div class="max-w-xs shrink-0">
+          <a href="index.html" class="hover:opacity-80 transition-opacity inline-block mb-3">
+            <img src="logo-horizontal.png" alt="Food Atlas logo" class="h-9" />
+          </a>
+          <p class="text-sm text-base-content/70">Your passport to global flavors. Discover, create, and organize recipes from around the world.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-12 md:ml-auto">
+          <div>
+            <h6 class="font-semibold text-base-content mb-3">Explore</h6>
+            <div class="flex flex-col gap-2">
+              <a href="recipes.html" class="text-sm text-base-content/70 hover:text-primary transition-colors">Recipes</a>
+              <a href="collections.html" class="text-sm text-base-content/70 hover:text-primary transition-colors">Collections</a>
+              <a href="recipes.html" class="text-sm text-base-content/70 hover:text-primary transition-colors">Search</a>
+            </div>
+          </div>
+          <div>
+            <h6 class="font-semibold text-base-content mb-3">Account</h6>
+            <div class="flex flex-col gap-2">
+              <a href="dashboard.html" class="text-sm text-base-content/70 hover:text-primary transition-colors">Dashboard</a>
+              <a href="recipe-edit.html" class="text-sm text-base-content/70 hover:text-primary transition-colors">Create Recipe</a>
+              <a href="#" class="text-sm text-base-content/70 hover:text-primary transition-colors">Settings</a>
+            </div>
+          </div>
+          <div>
+            <h6 class="font-semibold text-base-content mb-3">Company</h6>
+            <div class="flex flex-col gap-2">
+              <a href="#" class="text-sm text-base-content/70 hover:text-primary transition-colors">About</a>
+              <a href="#" class="text-sm text-base-content/70 hover:text-primary transition-colors">Privacy</a>
+              <a href="#" class="text-sm text-base-content/70 hover:text-primary transition-colors">Terms</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-base-300 pt-6 mt-8 text-center">
+        <p class="text-xs text-base-content/60">Food Atlas. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    let ingredientCount = 1;
+    let instructionCount = 1;
+
+    function addIngredient() {
+      ingredientCount++;
+      const list = document.getElementById('ingredients-list');
+      const div = document.createElement('div');
+      div.className = 'flex gap-3 items-start';
+      div.innerHTML = `
+        <input type="text" placeholder="Amount (e.g., 400g)" class="input input-bordered flex-1" />
+        <input type="text" placeholder="Ingredient name" class="input input-bordered flex-2" />
+        <input type="text" placeholder="Notes (optional)" class="input input-bordered flex-1" />
+        <button type="button" class="btn btn-ghost btn-sm btn-square" onclick="removeIngredient(this)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" x2="6" y1="6" y2="18"/><line x1="6" x2="18" y1="6" y2="18"/></svg>
+        </button>
+      `;
+      list.appendChild(div);
+    }
+
+    function removeIngredient(button) {
+      if (document.getElementById('ingredients-list').children.length > 1) {
+        button.parentElement.remove();
+      }
+    }
+
+    function addInstruction() {
+      instructionCount++;
+      const list = document.getElementById('instructions-list');
+      const div = document.createElement('div');
+      div.className = 'flex gap-3';
+      div.innerHTML = `
+        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-primary-content flex items-center justify-center font-bold">${instructionCount}</div>
+        <div class="flex-1">
+          <input type="text" placeholder="Step title (optional)" class="input input-bordered w-full mb-2" />
+          <textarea placeholder="Describe this step..." class="textarea textarea-bordered w-full h-24"></textarea>
+        </div>
+        <button type="button" class="btn btn-ghost btn-sm btn-square self-start" onclick="removeInstruction(this)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" x2="6" y1="6" y2="18"/><line x1="6" x2="18" y1="6" y2="18"/></svg>
+        </button>
+      `;
+      list.appendChild(div);
+      updateInstructionNumbers();
+    }
+
+    function removeInstruction(button) {
+      if (document.getElementById('instructions-list').children.length > 1) {
+        button.parentElement.remove();
+        updateInstructionNumbers();
+        instructionCount--;
+      }
+    }
+
+    function updateInstructionNumbers() {
+      const steps = document.getElementById('instructions-list').children;
+      Array.from(steps).forEach((step, index) => {
+        step.querySelector('.rounded-full').textContent = index + 1;
+      });
+    }
+
+    // Character counter for description
+    const descriptionField = document.getElementById('recipe-description');
+    const charCount = document.getElementById('char-count');
+    
+    if (descriptionField && charCount) {
+      descriptionField.addEventListener('input', function() {
+        const length = this.value.length;
+        const maxLength = this.getAttribute('maxlength');
+        charCount.textContent = `${length} / ${maxLength} characters`;
+        
+        if (length > maxLength * 0.9) {
+          charCount.classList.add('text-warning');
+          charCount.classList.remove('text-base-content/60');
+        } else {
+          charCount.classList.remove('text-warning');
+          charCount.classList.add('text-base-content/60');
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
