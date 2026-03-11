@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="caramellatte">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#7B4B2A" />
+  <title>Edit Recipe - Food Atlas</title>
+  <meta name="description" content="Create or edit your recipe on Food Atlas." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .font-serif { font-family: 'Lora', serif; }
+  </style>
+</head>
+<body class="bg-base-100 text-base-content">
+
+  <!-- NAVBAR -->
+  <div class="navbar bg-white/90 backdrop-blur-lg sticky top-0 z-50 border-b border-base-300 shadow-sm">
+    <div class="navbar-start">
+      <a href="index.html" class="btn btn-ghost text-xl">
+        <img src="logo-horizontal.png" alt="Food Atlas logo" class="h-10" />
+      </a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1 gap-6">
+        <li><a href="index.html" class="text-sm font-medium hover:text-primary transition-colors">Home</a></li>
+        <li><a href="recipes.html" class="text-sm font-medium hover:text-primary transition-colors">Recipes</a></li>
+        <li><a href="collections.html" class="text-sm font-medium hover:text-primary transition-colors">Collections</a></li>
+      </ul>
+    </div>
+    <div class="navbar-end gap-2">
+      <div class="dropdown dropdown-end">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+          <div class="w-10 rounded-full bg-primary text-primary-content flex items-center justify-center font-semibold">
+            JD
+          </div>
+        </div>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow-xl bg-white rounded-box w-52 border border-base-300">
+          <li><a href="dashboard.html" class="text-primary font-medium">Dashboard</a></li>
+          <li><a href="recipe-edit.html">Create Recipe</a></li>
+          <li><a href="#">My Collections</a></li>
+          <li><a href="#">Settings</a></li>
+          <li class="border-t border-base-300 mt-2 pt-2"><a href="login.html">Log out</a></li>
+        </ul>
+      </div>
+      <div class="dropdown dropdown-end lg:hidden">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </div>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-3 shadow-xl bg-white rounded-box w-56 border border-base-300">
+          <li><a href="index.html" class="hover:bg-base-200">Home</a></li>
+          <li><a href="recipes.html" class="hover:bg-base-200">Recipes</a></li>
+          <li><a href="collections.html" class="hover:bg-base-200">Collections</a></li>
+          <li class="border-t border-base-300 mt-2 pt-2">
+            <a href="dashboard.html" class="hover:bg-base-200">Dashboard</a>
+          </li>
+          <li><a href="recipe-edit.html" class="hover:bg-base-200">Create Recipe</a></li>
+          <li><a href="login.html" class="hover:bg-base-200">Log out</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer class="bg-base-200 border-t border-base-300 p-10 text-base-content mt-16">
+    <div class="container mx-auto px-4 lg:px-8">
+      <div class="flex flex-col md:flex-row gap-8 md:gap-24 items-start">
+        <div class="max-w-xs shrink-0">
+          <a href="index.html" class="hover:opacity-80 transition-opacity inline-block mb-3">
+            <img src="logo-horizontal.png" alt="Food Atlas logo" class="h-9" />
+          </a>
+          <p class="text-sm text-base-content/70">Your passport to global flavors. Discover, create, and organize recipes from around the world.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-12 md:ml-auto">
+          <div>
+            <h6 class="font-semibold text-base-content mb-3">Explore</h6>
+            <div class="flex flex-col gap-2">
+              <a href="recipes.html" class="text-sm text-base-content/70 hover:text-primary transition-colors">Recipes</a>
+              <a href="collections.html" class="text-sm text-base-content/70 hover:text-primary transition-colors">Collections</a>
+              <a href="recipes.html" class="text-sm text-base-content/70 hover:text-primary transition-colors">Search</a>
+            </div>
+          </div>
+          <div>
+            <h6 class="font-semibold text-base-content mb-3">Account</h6>
+            <div class="flex flex-col gap-2">
+              <a href="dashboard.html" class="text-sm text-base-content/70 hover:text-primary transition-colors">Dashboard</a>
+              <a href="recipe-edit.html" class="text-sm text-base-content/70 hover:text-primary transition-colors">Create Recipe</a>
+              <a href="#" class="text-sm text-base-content/70 hover:text-primary transition-colors">Settings</a>
+            </div>
+          </div>
+          <div>
+            <h6 class="font-semibold text-base-content mb-3">Company</h6>
+            <div class="flex flex-col gap-2">
+              <a href="#" class="text-sm text-base-content/70 hover:text-primary transition-colors">About</a>
+              <a href="#" class="text-sm text-base-content/70 hover:text-primary transition-colors">Privacy</a>
+              <a href="#" class="text-sm text-base-content/70 hover:text-primary transition-colors">Terms</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-base-300 pt-6 mt-8 text-center">
+        <p class="text-xs text-base-content/60">Food Atlas. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    let ingredientCount = 1;
+    let instructionCount = 1;
+
+    function addIngredient() {
+      ingredientCount++;
+      const list = document.getElementById('ingredients-list');
+      const div = document.createElement('div');
+      div.className = 'flex gap-3 items-start';
+      div.innerHTML = `
+        <input type="text" placeholder="Amount (e.g., 400g)" class="input input-bordered flex-1" />
+        <input type="text" placeholder="Ingredient name" class="input input-bordered flex-2" />
+        <input type="text" placeholder="Notes (optional)" class="input input-bordered flex-1" />
+        <button type="button" class="btn btn-ghost btn-sm btn-square" onclick="removeIngredient(this)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" x2="6" y1="6" y2="18"/><line x1="6" x2="18" y1="6" y2="18"/></svg>
+        </button>
+      `;
+      list.appendChild(div);
+    }
+
+    function removeIngredient(button) {
+      if (document.getElementById('ingredients-list').children.length > 1) {
+        button.parentElement.remove();
+      }
+    }
+
+    function addInstruction() {
+      instructionCount++;
+      const list = document.getElementById('instructions-list');
+      const div = document.createElement('div');
+      div.className = 'flex gap-3';
+      div.innerHTML = `
+        <div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-primary-content flex items-center justify-center font-bold">${instructionCount}</div>
+        <div class="flex-1">
+          <input type="text" placeholder="Step title (optional)" class="input input-bordered w-full mb-2" />
+          <textarea placeholder="Describe this step..." class="textarea textarea-bordered w-full h-24"></textarea>
+        </div>
+        <button type="button" class="btn btn-ghost btn-sm btn-square self-start" onclick="removeInstruction(this)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" x2="6" y1="6" y2="18"/><line x1="6" x2="18" y1="6" y2="18"/></svg>
+        </button>
+      `;
+      list.appendChild(div);
+      updateInstructionNumbers();
+    }
+
+    function removeInstruction(button) {
+      if (document.getElementById('instructions-list').children.length > 1) {
+        button.parentElement.remove();
+        updateInstructionNumbers();
+        instructionCount--;
+      }
+    }
+
+    function updateInstructionNumbers() {
+      const steps = document.getElementById('instructions-list').children;
+      Array.from(steps).forEach((step, index) => {
+        step.querySelector('.rounded-full').textContent = index + 1;
+      });
+    }
+
+    // Character counter for description
+    const descriptionField = document.getElementById('recipe-description');
+    const charCount = document.getElementById('char-count');
+    
+    if (descriptionField && charCount) {
+      descriptionField.addEventListener('input', function() {
+        const length = this.value.length;
+        const maxLength = this.getAttribute('maxlength');
+        charCount.textContent = `${length} / ${maxLength} characters`;
+        
+        if (length > maxLength * 0.9) {
+          charCount.classList.add('text-warning');
+          charCount.classList.remove('text-base-content/60');
+        } else {
+          charCount.classList.remove('text-warning');
+          charCount.classList.add('text-base-content/60');
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
