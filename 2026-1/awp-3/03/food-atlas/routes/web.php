@@ -1,10 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Landingcontroller;
-
+use App\Http\Controllers\LandingController;
+use App\Http\Controllers\RecipeController;
 Route::get('/', [LandingController::class, 'index']);
 
-Route::get('/recipe', function () {
-    return view('recipe');
-});
+Route::resource('recipes', RecipeController::class);
+
+Route::get('recipes-add', [RecipeController::class, 'addRecipe']);

@@ -14,6 +14,7 @@ class DatabaseSeeder extends Seeder
     /**
      * Seed the application's database.
      */
+
     public function run(): void
     {
         // User::factory(10)->create();
@@ -23,16 +24,19 @@ class DatabaseSeeder extends Seeder
        //     'email' => 'test@example.com',
        // ]);
 
-        Recipe::create([
-            'title' => 'Test Recipe1',
-            'image' => 'https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=800&q=80',
-            'description' => 'A timeless recipe for soft and chewy chocolate chip cookies that everyone will love.',
-            'prep' => '15 min prep',
-            'cook' => '11 min cook',
-            'servings' => 24,
-            'tags' => 'dessert, baking',
-            'url' => 'https://www.google.com',
-        ]);
-        Recipe::factory()->count(10)->create();
+       $recipes = json_decode(file_get_contents(base_path("recipes.json")), true);
+
+        foreach ($recipes as $recipe) {
+            Recipe::create([
+                'title' => $recipe['title'],
+                'image' => $recipe['image'],
+                'description' => $recipe['description'],
+                'prep' => $recipe['prep'],
+                'cook' => $recipe['cook'],
+                'servings' => $recipe['servings'],
+                'tags' =>json_encode($recipe['tags']),
+            ]);
+        }
+
     }
 }

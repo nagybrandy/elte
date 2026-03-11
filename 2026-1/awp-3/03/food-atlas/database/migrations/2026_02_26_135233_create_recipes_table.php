@@ -14,13 +14,12 @@ return new class extends Migration
         Schema::create('recipes', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('image');
-            $table->string('description');
-            $table->string('prep');
-            $table->string('cook');
-            $table->integer('servings');
-            $table->string('tags');
-            $table->string('url');
+            $table->string('image')->nullable();
+            $table->string('description')->nullable();
+            $table->string('prep')->nullable();
+            $table->string('cook')->nullable();
+            $table->integer('servings')->nullable();
+            $table->json('tags')->nullable();
             $table->timestamps();
         });
     }

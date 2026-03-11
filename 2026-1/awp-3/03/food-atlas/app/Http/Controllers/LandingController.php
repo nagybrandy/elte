@@ -16,4 +16,5 @@ class LandingController extends Controller
             "recipes" => $recipes
         ]);
     }
+    
 }

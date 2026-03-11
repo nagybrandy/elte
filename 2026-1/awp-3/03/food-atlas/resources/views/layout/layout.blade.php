@@ -19,7 +19,17 @@
   </style>
 </head>
 <body class="bg-base-100 text-base-content">
-
+  @if (session('success'))
+    <div class="alert alert-success">
+      {{ session('success') }}
+    </div>
+  @endif
+  @if (session('error'))
+    <div class="alert alert-error">
+      {{ session('error') }}
+    </div>
+  @endif
+  
   @include('layout.nav')
   @yield('content')
   @include("layout.footer")
