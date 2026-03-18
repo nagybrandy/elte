@@ -22,9 +22,12 @@
         </figure>
         <div>
           <div class="flex flex-wrap gap-2 mb-4">
+            @if($recipe->cuisine)
+              <span class="badge badge-secondary">{{ $recipe->cuisine->label() }}</span>
+            @endif
             @if($recipe->tags)
                 @foreach (explode(',', $recipe->tags) as $tag)
-                    <span class="badge badge-secondary">{{ $tag }}</span>
+                    <span class="badge badge-outline">{{ $tag }}</span>
                 @endforeach
             @endif
           </div>
@@ -67,6 +70,29 @@
               Delete
             </button>
             </form>
+          </div>
+        </div>
+        <div class="card-body w-6xl">
+          <h2 class="card-title font-serif mb-6">Collections</h2>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            @if($recipe->collections->count() > 0)
+            @foreach($recipe->collections as $collection)
+            <a href="{{ route('collections.show', $collection->id) }}" class="card bg-base-200 shadow-lg hover:shadow-2xl transition-all duration-300 border border-base-300 hover:border-primary/30 group focus:outline-none focus:ring-2 focus:ring-primary/50 rounded-2xl">
+              <figure class="aspect-[4/3] overflow-hidden rounded-t-2xl bg-base-300">
+                <img src="{{ $collection->image_file ? asset('storage/' . $collection->image_file) : $collection->image }}" alt="{{ $collection->name }}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+              </figure>
+              <div class="card-body p-5">
+                <h3 class="card-title font-serif text-lg group-hover:text-primary transition-colors line-clamp-2">{{ $collection->name }}</h3>
+                <p class="text-sm text-base-content/70 line-clamp-2">{{ $collection->description ?? '' }}</p>
+              </div>
+            </a>
+            @endforeach
+            @else
+            <p class="text-base-content/70">No collections found</p>
+            <a href="{{ route('collections.create') }}" class="btn btn-outline btn-sm">
+              Create Collection
+            </a>
+            @endif
           </div>
         </div>
       </section>

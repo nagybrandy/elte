@@ -48,6 +48,30 @@
         </div>
       </section>
 
+      <section class="container mx-auto px-4 lg:px-8 max-w-6xl gap-8 lg:gap-12 pb-12 border-b border-base-300">
+        <div class="card-body">
+          <h2 class="card-title font-serif mb-6">Recipes</h2>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            @foreach($collection->recipes as $recipe)
+            <a href="{{ route('recipes.show', $recipe->id) }}" class="card bg-base-200 shadow-lg hover:shadow-2xl transition-all duration-300 border border-base-300 hover:border-primary/30 group focus:outline-none focus:ring-2 focus:ring-primary/50 rounded-2xl">
+              <figure class="aspect-[4/3] overflow-hidden rounded-t-2xl bg-base-300">
+                <img src="{{ $recipe->image_file ? asset('storage/' . $recipe->image_file) : $recipe->image }}" alt="{{ $recipe->title }}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+              </figure>
+              <div class="card-body p-5">
+                <h3 class="card-title font-serif text-lg group-hover:text-primary transition-colors line-clamp-2">{{ $recipe->title }}</h3>
+                <p class="text-sm text-base-content/70 line-clamp-2">{{ $recipe->description ?? '' }}</p>
+              </div>
+              <div class="flex flex-wrap gap-2 pt-3 px-3">
+                @if($recipe->cuisine)
+                <span class="badge badge-secondary badge-sm">{{ $recipe->cuisine->label() }}</span>
+                @endif
+              </div>
+            </a>
+            @endforeach
+          </div>
+        </div>
+      </section>
+
     </div>
   </main>
 @endsection

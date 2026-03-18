@@ -16,7 +16,15 @@
         <h1 class="text-3xl lg:text-4xl font-bold font-serif mb-2">{{ $title }}</h1>
         <p class="text-base-content/70">Share your culinary creations with the world</p>
       </div>
-
+      @if ($errors->any())
+        <div class="alert alert-error">
+          <ul>
+            @foreach ($errors->all() as $error)
+              <li>{{ $error }}</li>
+            @endforeach
+          </ul>
+        </div>
+      @endif
       <!-- FORM -->
       <form class="space-y-8" action="{{ $action }}" method="POST" enctype="multipart/form-data">
         @csrf
@@ -82,6 +90,15 @@
             <h2 class="card-title font-serif mb-6">Tags</h2>
             <input type="text" id="tags" value="{{ $recipe->tags ?? '' }}" name="tags" placeholder="e.g., Italian, Pasta, Carbonara" class="input input-bordered w-full" />
           </div>
+          <div class="card-body">
+            <h2 class="card-title font-serif mb-6">Cuisine</h2>
+            <select name="cuisine" id="cuisine" class="select select-bordered">
+              @foreach(\App\Enums\Cuisine::cases() as $cuisine)
+                <option value="{{ $cuisine->name ?? '' }}" @selected(old('cuisine', $recipe->cuisine?->name ?? '') === $cuisine->name ?? '')>
+                  {{ $cuisine->label() }}
+                </option>
+              @endforeach
+            </select>
         </div>
 
 

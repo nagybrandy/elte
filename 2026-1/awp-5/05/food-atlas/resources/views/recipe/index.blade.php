@@ -70,10 +70,14 @@
             <div class="card-body p-5">
               <h3 class="card-title font-serif text-lg group-hover:text-primary transition-colors line-clamp-2">{{ $recipe->title }}</h3>
               <p class="text-sm text-base-content/70 line-clamp-2">{{ $recipe->description ?? '' }}</p>
+
               @if($recipe->tags)
                 <div class="flex flex-wrap gap-2 pt-3">
+                @if($recipe->cuisine)
+                <span class="badge badge-secondary badge-sm">{{ $recipe->cuisine->label() }}</span>
+              @endif
                   @foreach (explode(',', $recipe->tags) as $tag)
-                  <span class="badge badge-secondary badge-sm">{{ $tag }}</span>
+                  <span class="badge badge-outline badge-sm">{{ $tag }}</span>
                   @endforeach
                 </div>
               @endif

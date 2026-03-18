@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreCollectionRequest;
 use App\Http\Requests\UpdateCollectionRequest;
 use App\Models\Collection;
+use App\Models\Recipe;
 
 class CollectionController extends Controller
 {
@@ -22,7 +23,10 @@ class CollectionController extends Controller
      */
     public function create()
     {
-        return view('collection.edit');
+        if(!auth()->check()) {
+            return redirect()->route('login');
+        }
+        return view('collection.edit')->with('recipes', Recipe::all());
     }
 
     /**
@@ -30,6 +34,9 @@ class CollectionController extends Controller
      */
     public function store(StoreCollectionRequest $request)
     {
+        if(!auth()->check()) {
+            return redirect()->route('login');
+        }
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'description' => 'required|string|max:500',
@@ -68,8 +75,13 @@ class CollectionController extends Controller
      */
     public function edit(Collection $collection)
     {
+        if(!auth()->check()) {
+            return redirect()->route('login');
+        } 
+        $recipes = Recipe::all();
         return view('collection.edit', [
-            'collection' => $collection
+            'collection' => $collection,
+            'recipes' => $recipes
         ]);
     }
 
@@ -83,12 +95,18 @@ class CollectionController extends Controller
             'description' => 'required|string|max:500',
             'tags' => 'required|string|max:255',
             'image' => 'nullable|url',
-            'image_file' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'image_file' => 'nullable|max:2048',
+            'recipes' => 'nullable|array',
         ]);
 
         if(request()->hasFile('image_file')) {
             $validated['image_file'] = request()->file('image_file')->store('collections', 'public');
             $validated['image'] = asset('storage/' . $validated['image_file']);
+        }
+        if($validated['recipes']) {
+            $collection->recipes()->sync($validated['recipes']);
+        } else {
+            $collection->recipes()->detach();
         }
 
         $collection->update($validated);

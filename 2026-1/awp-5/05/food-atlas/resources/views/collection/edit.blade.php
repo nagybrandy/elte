@@ -66,7 +66,18 @@
                 <input type="text" id="collection-tags" value="{{ $collection->tags ?? '' }}" name="tags" placeholder="e.g., Italian, Pasta, Carbonara" class="input input-bordered w-full" required />
               </div>
             </div>
-
+            <div class="card-body">
+              <h2 class="card-title font-serif mb-6">Recipes</h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                @if(isset($recipes) && $recipes->count() > 0)
+                @foreach($recipes as $recipe)
+                <div class="form-control w-full flex items-center gap-2">
+                  <input type="checkbox" class="checkbox" name="recipes[]" value="{{ $recipe->id }}" @if(isset($collection->recipes) && $collection->recipes->contains($recipe)) @checked(true) @else @checked(false) @endif>
+                  <label for="recipe-{{ $recipe->id }}">{{ $recipe->title }}</label>
+                </div>
+                  @endforeach
+                </div>                @endif
+            </div>
            
         </div>
 

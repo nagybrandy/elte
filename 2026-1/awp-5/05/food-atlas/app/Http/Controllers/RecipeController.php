@@ -36,20 +36,14 @@ class RecipeController extends Controller
             'prep' => 'required|integer',
             'cook' => 'required|integer',
             'servings' => 'required|integer',
+            'cuisine' => 'nullable|string',
             'image' => 'nullable|url',
-            'tags' => 'nullable|json',
+            'tags' => 'nullable|string',
         ]);
 
         // Ensure image is never null (DB may have NOT NULL constraint)
         $validated['image'] = $validated['image'] ?? '';
         $validated['url'] = $validated['url'] ?? '';
-
-        // Convert comma-separated tags to JSON array when present
-        if (!empty($validated['tags'])) {
-            $validated['tags'] = array_values(array_filter(array_map('trim', explode(',', $validated['tags']))));
-        } else {
-            $validated['tags'] = [];
-        }
 
         $recipe = Recipe::create($validated);
         if(!$recipe) {
@@ -91,9 +85,10 @@ class RecipeController extends Controller
             'prep' => 'required|integer',
             'cook' => 'required|integer',
             'servings' => 'required|integer',
+            'cuisine' => 'nullable|string',
             'image' => 'nullable|url',
             'tags' => 'nullable|string',
-            'image_file' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'image_file' => 'nullable|max:2048',
         ]);
 
         if(request()->hasFile('image_file')) {

@@ -5,6 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use App\Tags;
+use App\Enums\Cuisine;
+use App\Models\Collection;
 
 class Recipe extends Model
 {
@@ -20,10 +22,17 @@ class Recipe extends Model
         'cook',
         'servings',
         'tags',
-        'url'
+        'url',
+        'cuisine'
     ];
 
     protected $casts = [
         'tags' => 'array',
+        'cuisine' => Cuisine::class,
     ];
+
+    public function collections()
+    {
+        return $this->belongsToMany(Collection::class, 'table_collection_recipe');
+    }
 }
