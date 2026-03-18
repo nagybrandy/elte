@@ -4,11 +4,18 @@
 
 @section('content')
 
+
+if($recipe) {
+  $action = route('recipes.update', $recipe->id);
+} else {
+  $action = route('recipes.store');
+}
+
 <main class="py-16 lg:py-24">
     <div class="container mx-auto px-4 lg:px-8 max-w-4xl">
       <!-- HEADER -->
       <div class="mb-10">
-        <h1 class="text-3xl lg:text-4xl font-bold font-serif mb-2">{{ $recipe->title ? 'Edit Recipe: ' . $recipe->title : 'Create Recipe' }}</h1>
+        <h1 class="text-3xl lg:text-4xl font-bold font-serif mb-2">{{ $recipe ? 'Edit Recipe: ' . $recipe->title : 'Create Recipe' }}</h1>
         <p class="text-base-content/70">Share your culinary creations with the world</p>
       </div>
 
@@ -92,6 +99,15 @@
               <label class="label">
                 <span class="label-text-alt">Add tags to help users find your recipe</span>
               </label>
+              <div class="form-control w-full mb-4">
+                <label class="label" for="cuisine">
+                  <span class="label-text font-medium">Cuisine</span>
+                </label>
+                <select name="cuisine" id="cuisine" class="select select-bordered w-full">
+                  @foreach($cuisines as $option)
+                    <option value="{{ $option['value'] }}" @selected(old('cuisine', $recipe->cuisine?->name) === $option['value'])>{{ $option['label'] }}</option>
+                  @endforeach
+                </select>
             </div>
 
         <!-- ACTION BUTTONS -->

@@ -11,7 +11,7 @@
       <nav class="breadcrumbs text-sm text-base-content/70 mb-8 px-0" aria-label="Breadcrumb">
         <ul>
           <li><a href="{{ route('landing') }}" class="hover:text-primary">Home</a></li>
-          <li><a href="{{ route('recipes.index') }}" class="hover:text-primary">Recipes</a></li>
+          <li><a href="{{ route('collections.index') }}" class="hover:text-primary">Collections</a></li>
           <li class="text-base-content font-medium">{{ $collection->title }}</li>
           
         </ul>
@@ -57,18 +57,35 @@
           </div>
 
           <div class="flex flex-wrap gap-2">
-            <button class="btn btn-accent btn-sm" onclick="window.location.href='{{ route('recipes.edit', $recipe->id) }}'">
+            <button class="btn btn-accent btn-sm" onclick="window.location.href='{{ route('collections.edit', $collection->id) }}'">
               Edit
             </button>
-            <form action="{{ route('recipes.destroy', $recipe->id) }}" method="POST">
+            <form action="{{ route('collections.destroy', $collection->id) }}" method="POST">
             @csrf
             @method('DELETE')
-            <button type="submit" class="btn btn-error btn-sm hover:text-primary" onclick="return confirm('Are you sure you want to delete this recipe?')">Delete</button>
+            <button type="submit" class="btn btn-error btn-sm hover:text-primary" onclick="return confirm('Are you sure you want to delete this collection?')">Delete</button>
           </form>
           </div>
         </div>
       </section>
 
-    </div>
+      <!-- RECIPES -->
+      <section class="pb-12 border-b border-base-300">
+        <h2 class="font-serif text-2xl lg:text-3xl font-bold my-4 ">Recipes</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        @foreach($collection->recipes as $recipe)
+          <a href="{{ route('recipes.show', $recipe->id) }}" class="card bg-base-200 border border-base-300 shadow-lg hover:shadow-2xl transition-all duration-300 border border-base-300 hover:border-primary/30 group">
+            <figure class="aspect-[4/3] overflow-hidden rounded-t-2xl">
+              <img src="{{ $recipe->image_file ? asset('storage/' . $recipe->image_file) : $recipe->image }}" alt="{{ $recipe->title }}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+            </figure>
+            <div class="card-body p-5">
+              <h3 class="card-title font-serif text-lg group-hover:text-primary transition-colors">{{ $recipe->title }}</h3>
+              <p class="text-sm text-base-content/70 line-clamp-2">{{ $recipe->description }}</p>
+            </div>
+          </a>
+        @endforeach
+        </div>
+      </section>
+
   </main>
 @endsection

@@ -53,12 +53,15 @@
               <img src="{{ $collection->image_file ? asset('storage/' . $collection->image_file) : $collection->image }}" alt="{{ $collection->title }}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
             </figure>
             <div class="card-body p-5">
-              <h3 class="card-title font-serif text-lg group-hover:text-primary transition-colors">{{ $collection['title'] }}</h3>
+              <h3 class="card-title font-serif text-lg group-hover:text-primary transition-colors">{{ $collection['title'] }} <span class="text-sm text-base-content/70">({{ $collection->recipes->count() }} recipes)</span>
+              </h3>
               <p class="text-sm text-base-content/70 line-clamp-2">{{ $collection['description'] }}</p>
               <div class="flex flex-wrap gap-2 pt-3">
                 @foreach (explode(',', $collection['tags']) as $tag)
                   <div class="badge badge-secondary badge-sm">{{ $tag }}</div>
                 @endforeach
+              </div>
+              <div class="flex flex-wrap gap-2 pt-3">
               </div>
             </div>
           </a>

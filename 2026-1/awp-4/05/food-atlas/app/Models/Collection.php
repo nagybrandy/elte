@@ -12,4 +12,9 @@ class Collection extends Model
         'description',
         'tags',
     ];
+
+    public function recipes()
+    {
+        return $this->belongsToMany(Recipe::class, 'collection_recipe');
+    }
 }

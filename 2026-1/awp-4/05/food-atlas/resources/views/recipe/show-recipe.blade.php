@@ -24,6 +24,9 @@
         </figure>
         <div>
           <div class="flex flex-wrap gap-2 mb-4">
+            <span class="badge badge-primary">{{ $recipe->cuisine->label() }}</span>
+          </div>
+          <div class="flex flex-wrap gap-2 mb-4">
             @foreach (explode(',', $recipe->tags) as $tag)
               <span class="badge badge-secondary">{{ $tag }}</span>
             @endforeach

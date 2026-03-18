@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreCollectionRequest;
 use App\Http\Requests\UpdateCollectionRequest;
 use App\Models\Collection;
+use App\Models\Recipe;
 
 class CollectionController extends Controller
 {
@@ -23,10 +24,11 @@ class CollectionController extends Controller
      */
     public function create()
     {
-        //
-        return view('collection.create-collection', [
-            'collection' => new Collection(),
-        ]);
+        if(auth()->check()) {
+            return view('collection.create-collection')->with('collection', new Collection());
+        } else {
+            return redirect()->route('login')->with('error', 'You must be logged in to create a collection');
+        }
     }
 
     /**
@@ -65,9 +67,10 @@ class CollectionController extends Controller
      */
     public function edit(Collection $collection)
     {
-        //
+        
         return view('collection.create-collection', [
             'collection' => $collection,
+            'recipes' => Recipe::all(),
         ]);
     }
 
@@ -76,7 +79,17 @@ class CollectionController extends Controller
      */
     public function update(UpdateCollectionRequest $request, Collection $collection)
     {
-        //
+        $validated = $request->validate([
+            'title' => "required|string|min:3|max:255",
+            'description' => "nullable|string|max:500",
+            'tags' => "nullable|string|max:255",
+            'image_file' => "nullable|image|max:2048",
+            'recipes' => "nullable|array",
+        ]);
+
+        $collection->update($validated);
+        $collection->recipes()->sync($request->input('recipes', []));
+        return redirect()->route('collections.show', $collection->id)->with('success', 'Collection updated successfully');
     }
 
     /**

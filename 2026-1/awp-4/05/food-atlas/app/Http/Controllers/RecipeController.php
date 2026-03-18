@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Recipe;
+use App\Enums\Cuisine;
 
 class RecipeController extends Controller
 {
@@ -27,6 +28,7 @@ class RecipeController extends Controller
     {
         return view('recipe.create-recipe', [
             'recipe' => new Recipe(),
+            'cuisines' => Cuisine::options(),
         ]);
     }
 
@@ -45,6 +47,7 @@ class RecipeController extends Controller
             'tags' => ['nullable', 'string', 'max:255'],
             'url' => ['nullable', 'string', 'max:500'],
             'image_file' => ['nullable', 'image', 'max:2048'],
+            'cuisine' => ['nullable', 'string'],
         ]);
 
         if ($request->hasFile('image_file')) {
@@ -72,6 +75,7 @@ class RecipeController extends Controller
     {
         return view('recipe.create-recipe', [
             'recipe' => Recipe::find($id),
+            'cuisines' => Cuisine::options(),
         ]);
     }
 
@@ -89,6 +93,7 @@ class RecipeController extends Controller
             'servings' => ['nullable', 'integer'],
             'image' => ['nullable', 'string', 'max:500'],
             'image_file' => ['nullable', 'image', 'max:2048'],
+            'cuisine' => ['nullable', 'string'],
         ]);
 
         if ($request->hasFile('image_file')) {

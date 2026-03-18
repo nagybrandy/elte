@@ -4,14 +4,26 @@
 
 @section('content')
 
+
+
 <main class="py-16 lg:py-24">
-    <div class="container mx-auto px-4 lg:px-8 max-w-4xl">
+
+    <div class="container mx-auto px-4 lg:px-8 max-w-6xl">
       <!-- HEADER -->
       <div class="mb-10">
         <h1 class="text-3xl lg:text-4xl font-bold font-serif mb-2">{{ $collection->title ? 'Edit Collection: ' . $collection->title : 'Create Collection' }}</h1>
         <p class="text-base-content/70">Share your culinary creations with the world</p>
       </div>
-
+      @if($errors->any())
+    <div class="container mx-auto px-4 lg:px-8 max-w-6xl">
+      <div class="alert alert-error rounded-none">
+        <ul>
+          @foreach($errors->all() as $error)
+            <li>{{ $error }}</li>
+          @endforeach
+        </ul>
+      </div>
+    @endif
       <!-- FORM -->
       <form class="space-y-8" action="{{ isset($collection) && $collection->id ? route('collections.update', $collection->id) : route('collections.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
@@ -65,6 +77,21 @@
               <label class="label">
                 <span class="label-text-alt">Add tags to help users find your recipe</span>
               </label>
+            </div>
+            <div class="form-control w-full mb-4">
+              <label class="label" for="recipes">
+                <span class="label-text font-medium">Recipes (comma-separated)</span>
+              </label>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+                @if(isset($recipes) && count($recipes) > 0)
+              @foreach($recipes as $recipe)
+              <div class="flex items-center gap-2">
+                  <input type="checkbox" class="checkbox" name="recipes[]" value="{{ $recipe->id }}" @checked($collection->recipes->contains($recipe->id)) />
+                  <label for="recipe-{{ $recipe->id }}">{{ $recipe->title }}</label>
+                </div>
+                @endforeach
+                @endif
+              </div>  
             </div>
 
         <!-- ACTION BUTTONS -->
