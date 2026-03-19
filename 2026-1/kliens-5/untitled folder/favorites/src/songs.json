@@ -1,0 +1,24 @@
+[
+    {
+      "title": "Song 1",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, asperiores. Odio earum voluptas ratione corrupti! Cupiditate, dicta. A totam quia, nobis sint debitis ducimus alias atque, rerum mollitia maiores expedita.",
+      "rating" : 5
+    },
+    {
+      "title": "Song 2",
+      "rating" : "good"
+    },
+    {
+      "title": "Song 3",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, asperiores. Odio earum voluptas ratione corrupti! Cupiditate, dicta. A totam quia, nobis sint debitis ducimus alias atque, rerum mollitia maiores expedita.",
+      "rating" :3  
+    },    
+    {
+        "title": "Song 3"
+    },
+    {
+        "title": "Song 3",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, asperiores. Odio earum voluptas ratione corrupti! Cupiditate, dicta. A totam quia, nobis sint debitis ducimus alias atque, rerum mollitia maiores expedita.",
+        "rating" :3  
+      }
+]
