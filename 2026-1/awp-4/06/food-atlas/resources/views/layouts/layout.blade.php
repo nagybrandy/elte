@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html data-theme="caramellatte">
 <html lang="en" data-theme="caramellatte">
 <head>
   <meta charset="UTF-8" />

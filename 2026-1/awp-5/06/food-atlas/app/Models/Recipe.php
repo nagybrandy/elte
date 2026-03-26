@@ -23,6 +23,7 @@ class Recipe extends Model
         'servings',
         'tags',
         'url',
+        'user_id',
         'cuisine'
     ];
 
@@ -34,5 +35,9 @@ class Recipe extends Model
     public function collections()
     {
         return $this->belongsToMany(Collection::class, 'table_collection_recipe');
+    }
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'user_id');
     }
 }

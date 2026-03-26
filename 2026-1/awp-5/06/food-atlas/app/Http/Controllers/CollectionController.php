@@ -6,9 +6,14 @@ use App\Http\Requests\StoreCollectionRequest;
 use App\Http\Requests\UpdateCollectionRequest;
 use App\Models\Collection;
 use App\Models\Recipe;
+use App\Policies\CollectionPolicy;
+use Illuminate\Support\Facades\Gate;
+
+
 
 class CollectionController extends Controller
 {
+
     /**
      * Display a listing of the resource.
      */
@@ -23,7 +28,7 @@ class CollectionController extends Controller
      */
     public function create()
     {
-        if(!auth()->check()) {
+        if(!auth()->check() || !Gate::allows('create', Collection::class)) {
             return redirect()->route('login');
         }
         return view('collection.edit')->with('recipes', Recipe::all());
@@ -34,7 +39,7 @@ class CollectionController extends Controller
      */
     public function store(StoreCollectionRequest $request)
     {
-        if(!auth()->check()) {
+        if(!auth()->check() || !Gate::allows('create', Collection::class)) {
             return redirect()->route('login');
         }
         $validated = $request->validate([
@@ -49,7 +54,7 @@ class CollectionController extends Controller
             $validated['image_file'] = request()->file('image_file')->store('collections', 'public');
             $validated['image'] = asset('storage/' . $validated['image_file']);
         }
-
+        $validated['user_id'] = auth()->id();
         $collection = Collection::create($validated);
 
         if(!$collection) {
@@ -75,6 +80,10 @@ class CollectionController extends Controller
      */
     public function edit(Collection $collection)
     {
+        if (!Gate::allows('update', $collection)) {
+            abort(403);
+        }
+
         if(!auth()->check()) {
             return redirect()->route('login');
         } 
@@ -90,6 +99,9 @@ class CollectionController extends Controller
      */
     public function update(UpdateCollectionRequest $request, Collection $collection)
     {
+        if (!Gate::allows('update', $collection)) {
+            abort(403);
+        }
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'description' => 'required|string|max:500',
@@ -103,6 +115,7 @@ class CollectionController extends Controller
             $validated['image_file'] = request()->file('image_file')->store('collections', 'public');
             $validated['image'] = asset('storage/' . $validated['image_file']);
         }
+        $validated['user_id'] = auth()->id();
         if($validated['recipes']) {
             $collection->recipes()->sync($validated['recipes']);
         } else {
@@ -122,6 +135,9 @@ class CollectionController extends Controller
      */
     public function destroy(Collection $collection)
     {
+        if (!Gate::allows('delete', $collection)) {
+            abort(403);
+        }
         $collection->delete();
         if(!$collection) {
             return redirect()->route('collections.index')->with('error', 'Failed to delete collection');

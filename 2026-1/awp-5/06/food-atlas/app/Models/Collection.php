@@ -14,10 +14,16 @@ class Collection extends Model
         'description',
         'image',
         'tags',
+        'user_id',
     ];
+
     
     public function recipes()
     {
         return $this->belongsToMany(Recipe::class, 'table_collection_recipe');
+    }
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'user_id');
     }
 }

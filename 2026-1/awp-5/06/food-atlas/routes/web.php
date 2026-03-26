@@ -14,6 +14,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+
+    Route::resource('/recipes', RecipeController::class)->only('create', 'store', 'edit', 'update', 'destroy');
+    Route::resource('/collections', CollectionController::class)->only('create', 'store', 'edit', 'update', 'destroy');
 });
 
 
@@ -23,8 +26,9 @@ Route::get('/carbonara', function () {
     return view('carbonara');
 });
 
-Route::resource('/recipes', RecipeController::class);
-
-Route::resource('/collections', CollectionController::class);
+Route::resource('/recipes', RecipeController::class)->only('show', 'index');
+Route::resource('/collections', CollectionController::class)->only('show', 'index');
 
 require __DIR__.'/auth.php';
+require __DIR__.'/api.php';
+

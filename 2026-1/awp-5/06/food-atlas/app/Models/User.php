@@ -45,4 +45,17 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function recipes()
+    {
+        return $this->hasMany(Recipe::class, 'user_id');
+    }
+    public function collections()
+    {
+        return $this->hasMany(Collection::class, 'user_id');
+    }
+    public function isAdmin(): bool
+    {
+        return $this->email === 'admin@foodatlas.com';
+    }
 }

@@ -29,14 +29,18 @@
             @endif
           </div>
           <h1 class="font-serif text-3xl lg:text-4xl font-bold mb-4">{{ $collection->name }}</h1>
+          <p class="text-base-content/80 leading-relaxed mb-6">Created by: {{ $collection->user->name ?? 'Unknown' }}</p>
           <p class="text-base-content/80 leading-relaxed mb-6">{{ $collection->description }}</p>
 
           </div>
 
           <div class="flex flex-wrap gap-2">
+              @can('update', $collection)
             <a href="{{ route('collections.edit', $collection->id) }}" class="btn btn-outline btn-sm">
               Edit
             </a>
+            @endcan
+            @can('delete', $collection)
             <form action="{{ route('collections.destroy', $collection->id) }}" method="POST">
               @csrf
               @method('DELETE')
@@ -44,6 +48,7 @@
               Delete
             </button>
             </form>
+            @endcan
           </div>
         </div>
       </section>

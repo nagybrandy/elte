@@ -6,9 +6,13 @@ use App\Http\Requests\StoreCollectionRequest;
 use App\Http\Requests\UpdateCollectionRequest;
 use App\Models\Collection;
 use App\Models\Recipe;
+use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Facades\Auth;
+use App\Models\User;
 
 class CollectionController extends Controller
 {
+    
     /**
      * Display a listing of the resource.
      */
@@ -43,6 +47,8 @@ class CollectionController extends Controller
             'image_file' => ['nullable', 'image', 'max:2048'],
         ]);
 
+        $validated['user_id'] = Auth::id();
+
         if ($request->hasFile('image_file')) {
             $validated['image_file'] = $request->file('image_file')->store('collections', 'public');
         }
@@ -56,9 +62,12 @@ class CollectionController extends Controller
      */
     public function show(Collection $collection)
     {
-        //
+        $users = User::all();
+        $creator = $users->find($collection->user_id)->name;
+
         return view('collection.show-collection', [
             'collection' => $collection,
+            'creator' => $creator,
         ]);
     }
 
@@ -67,7 +76,8 @@ class CollectionController extends Controller
      */
     public function edit(Collection $collection)
     {
-        
+        $users = User::all();
+
         return view('collection.create-collection', [
             'collection' => $collection,
             'recipes' => Recipe::all(),

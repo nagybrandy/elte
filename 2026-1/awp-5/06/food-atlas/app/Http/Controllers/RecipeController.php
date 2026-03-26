@@ -21,7 +21,7 @@ class RecipeController extends Controller
      */
     public function create()
     {
-        //
+        
         return view('recipe.edit');
     }
 
@@ -41,9 +41,11 @@ class RecipeController extends Controller
             'tags' => 'nullable|string',
         ]);
 
+
         // Ensure image is never null (DB may have NOT NULL constraint)
         $validated['image'] = $validated['image'] ?? '';
         $validated['url'] = $validated['url'] ?? '';
+        $validated['user_id'] = auth()->id();
 
         $recipe = Recipe::create($validated);
         if(!$recipe) {
@@ -95,7 +97,7 @@ class RecipeController extends Controller
             $validated['image_file'] = request()->file('image_file')->store('recipes', 'public');
             $validated['image'] = asset('storage/' . $validated['image_file']);
         }
-
+        $validated['user_id'] = auth()->id();
         $recipe->update($validated);       
         return redirect()->route('recipes.show', $recipe->id)->with('success', 'Recipe updated successfully');
     }

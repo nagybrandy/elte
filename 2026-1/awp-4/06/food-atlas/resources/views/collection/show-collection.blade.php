@@ -29,7 +29,9 @@
             @endforeach
           </div>
           <h1 class="font-serif text-3xl lg:text-4xl font-bold mb-4">{{ $collection->title }}</h1>
+          <p class="text-base-content/80 leading-relaxed mb-6">Created by: {{$creator ?? 'Unknown'}}</p>
           <p class="text-base-content/80 leading-relaxed mb-6">{{ $collection->description }}</p>
+
 
           <!-- STATS -->
           <div class="stats stats-vertical sm:stats-horizontal shadow border border-base-300 bg-base-200 w-full mb-6">
@@ -57,14 +59,18 @@
           </div>
 
           <div class="flex flex-wrap gap-2">
-            <button class="btn btn-accent btn-sm" onclick="window.location.href='{{ route('collections.edit', $collection->id) }}'">
-              Edit
-            </button>
-            <form action="{{ route('collections.destroy', $collection->id) }}" method="POST">
-            @csrf
-            @method('DELETE')
-            <button type="submit" class="btn btn-error btn-sm hover:text-primary" onclick="return confirm('Are you sure you want to delete this collection?')">Delete</button>
-          </form>
+            @can('update', $collection)
+              <button class="btn btn-accent btn-sm" onclick="window.location.href='{{ route('collections.edit', $collection->id) }}'">
+                Edit
+              </button>
+            @endcan
+            @can('delete', $collection)
+              <form action="{{ route('collections.destroy', $collection->id) }}" method="POST">
+                @csrf
+                @method('DELETE')
+                <button type="submit" class="btn btn-error btn-sm hover:text-primary" onclick="return confirm('Are you sure you want to delete this collection?')">Delete</button>
+              </form>
+            @endcan
           </div>
         </div>
       </section>
