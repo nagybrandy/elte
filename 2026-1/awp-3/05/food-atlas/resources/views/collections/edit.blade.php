@@ -16,7 +16,15 @@
         <h1 class="text-3xl lg:text-4xl font-bold font-serif mb-2">{{ $collection ? 'Edit Collection: ' . $collection->title : 'Create Collection' }}</h1>
         <p class="text-base-content/70">Share your culinary creations with the world</p>
       </div>
-
+      @if ($errors->any())
+        <div class="alert alert-error">
+          <ul>
+            @foreach ($errors->all() as $error)
+              <li>{{ $error }}</li>
+            @endforeach
+          </ul>
+        </div>
+      @endif
       <!-- FORM -->
       <form class="space-y-8" action="{{ $collection ? route('collections.update', $collection->id) : route('collections.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
@@ -72,7 +80,32 @@
                 <span class="label-text-alt">Add tags to help users find your recipe</span>
               </label>
             </div>
+
+            <div class="form-control w-full">
+            <label class="label" for="recipes">
+              <span class="label-text font-medium">Recipes</span>
+            </label>
+            <div class="flex flex-col gap-2">
+                @foreach ($recipes as $recipe)
+                <div class="flex flex-row gap-2">
+                  <input type="checkbox" name="recipes[]" id="recipes" class="checkbox checkbox-sm checkbox-primary" value="{{ $recipe->id }}" {{ $collection->recipes->contains($recipe->id) ? 'checked' : '' }} />
+                  <label for="recipes">{{ $recipe->title }}</label>
+                  </div>
+                @endforeach
+            </div>
+          </div>  
+
+          <div class="form-control w-full">
+            <label class="label" for="cuisine">
+              <span class="label-text font-medium">Cuisine</span>
+            </label>
+            <select name="cuisine" id="cuisine" class="select select-bordered w-full">
+              @foreach ($cuisines as $option)
+              <option value="{{ $option['value'] }}" {{ $collection->cuisine == $option['value'] ? 'selected' : '' }}>{{ $option['label'] }}</option>
+              @endforeach
+            </select>
           </div>
+
         </div>
 
 

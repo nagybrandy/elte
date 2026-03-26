@@ -23,6 +23,9 @@
         </figure>
         <div>
           <div class="flex flex-wrap gap-2 mb-4">
+            @if ($collection->cuisine)
+              <span class="badge badge-primary">{{ $collection->cuisine->label() }}</span>
+            @endif
             @if ($collection->tags)
               @foreach (explode(',', $collection->tags) as $tag)
                 <span class="badge badge-secondary">{{ $tag }}</span>
@@ -30,6 +33,7 @@
             @endif
           </div>
           <h1 class="font-serif text-3xl lg:text-4xl font-bold mb-4">{{ $collection->title }}</h1>
+          <p class="text-base-content/80 leading-relaxed mb-6">By {{ $collection->user->name ?? 'Unknown' }}</p>
           <p class="text-base-content/80 leading-relaxed mb-6">{{ $collection->description }}</p>
 
 
@@ -37,6 +41,7 @@
             <a href="{{ route('collections.index') }}" class="btn btn-accent btn-sm">
               Back to Collections
             </a>
+            @can('update', $collection)
             <a href="{{ route('collections.edit', $collection->id) }}" class="btn btn-outline btn-sm">
               Edit Collection
             </a>
@@ -46,6 +51,7 @@
               <button type="submit" class="btn btn-error btn-sm">
                 Delete Recipe
               </button>
+              @endcan
             </form>
           </div>
         </div>
@@ -94,88 +100,32 @@
         </aside>
 
         <!-- INSTRUCTIONS -->
-        <div class="lg:col-span-2 space-y-8">
-          <section>
-            <h2 class="font-serif text-2xl font-bold mb-6">Instructions</h2>
-            <ul class="steps steps-vertical">
-              <li class="step step-primary" data-content="1">
-                <div>
-                  <h3 class="font-semibold text-lg mb-2">Prepare the egg mixture</h3>
-                  <p class="text-base-content/80">In a medium bowl, whisk together the egg yolks, whole eggs, finely grated Pecorino Romano, and Parmigiano-Reggiano until smooth and creamy. Add about 1 teaspoon of freshly cracked black pepper. Set aside.</p>
-                </div>
-              </li>
-              <li class="step step-primary" data-content="2">
-                <div>
-                  <h3 class="font-semibold text-lg mb-2">Cook the guanciale</h3>
-                  <p class="text-base-content/80">Cut the guanciale into small strips or cubes. Place them in a cold, large skillet, then turn the heat to medium. Cook slowly for 8-10 minutes until golden and crispy. Remove from heat and set aside, reserving the rendered fat.</p>
-                </div>
-              </li>
-              <li class="step step-primary" data-content="3">
-                <div>
-                  <h3 class="font-semibold text-lg mb-2">Boil the pasta</h3>
-                  <p class="text-base-content/80">Bring a large pot of well-salted water to a rolling boil. Add the spaghetti and cook until just short of al dente. Before draining, reserve at least 2 cups of the starchy pasta water.</p>
-                </div>
-              </li>
-              <li class="step step-primary" data-content="4">
-                <div>
-                  <h3 class="font-semibold text-lg mb-2">Combine the pasta and guanciale</h3>
-                  <p class="text-base-content/80">Return the skillet to medium-low heat. Add the drained pasta and toss well with a splash of pasta water. Toss in the crispy guanciale and mix to combine.</p>
-                </div>
-              </li>
-              <li class="step step-primary" data-content="5">
-                <div>
-                  <h3 class="font-semibold text-lg mb-2">Create the creamy sauce</h3>
-                  <p class="text-base-content/80">Remove the pan from heat entirely. Wait about 30 seconds. Pour the egg and cheese mixture over the pasta and toss vigorously, adding small splashes of reserved pasta water as needed, until every strand is coated in a glossy, silky sauce.</p>
-                </div>
-              </li>
-              <li class="step step-primary" data-content="6">
-                <div>
-                  <h3 class="font-semibold text-lg mb-2">Serve immediately</h3>
-                  <p class="text-base-content/80">Divide among warmed bowls. Finish with extra Pecorino Romano and freshly cracked black pepper. Serve immediately while the sauce is hot and creamy.</p>
-                </div>
-              </li>
-            </ul>
-          </section>
-
-          <!-- TIPS -->
-          <div class="alert border border-base-300 bg-base-200">
-            <svg xmlns="http://www.w3.org/2000/svg" class="stroke-primary shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-            <div>
-              <h3 class="font-bold mb-2">Chef's Tips</h3>
-              <ul class="list-disc list-inside space-y-1 text-sm text-base-content/80">
-                <li>Use guanciale for the most authentic flavor. Pancetta is a good substitute.</li>
-                <li>Remove the pan from heat before adding the egg mixture to avoid scrambling.</li>
-                <li>Always reserve plenty of pasta water—the starch creates the silky sauce.</li>
-                <li>Use freshly grated cheese, never pre-grated.</li>
-                <li>Traditional carbonara has no cream—the creaminess comes from eggs, cheese, and pasta water.</li>
-              </ul>
+        <div class="lg:col-span-2 space-y-8 grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-6">
+          @if ($collection->recipes->count() > 0)
+          @else
+          <div class="card bg-base-200 shadow-lg border border-base-300">
+            <div class="card-body">
+              <h2 class="card-title font-serif">No recipes found</h2>
             </div>
           </div>
-
-          <!-- NUTRITION -->
-          <div class="card bg-base-200 border border-base-300">
-            <div class="card-body">
-              <h3 class="card-title font-serif">Nutrition per Serving</h3>
-              <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-2">
-                <div class="bg-base-100 rounded-lg p-3 text-center">
-                  <span class="block font-bold text-lg">580</span>
-                  <span class="text-xs text-base-content/60 uppercase tracking-wide">Calories</span>
-                </div>
-                <div class="bg-base-100 rounded-lg p-3 text-center">
-                  <span class="block font-bold text-lg">28g</span>
-                  <span class="text-xs text-base-content/60 uppercase tracking-wide">Protein</span>
-                </div>
-                <div class="bg-base-100 rounded-lg p-3 text-center">
-                  <span class="block font-bold text-lg">65g</span>
-                  <span class="text-xs text-base-content/60 uppercase tracking-wide">Carbs</span>
-                </div>
-                <div class="bg-base-100 rounded-lg p-3 text-center">
-                  <span class="block font-bold text-lg">22g</span>
-                  <span class="text-xs text-base-content/60 uppercase tracking-wide">Fat</span>
-                </div>
+          @endif
+          @if ($collection->recipes->count() > 0) 
+          @foreach ($collection->recipes as $recipe)
+            <a href="{{ route('recipes.show', $recipe->id) }}" class="card bg-base-200 shadow-lg hover:shadow-2xl transition-all border border-base-300 hover:border-primary/30 group">
+              <figure class="aspect-[4/3] overflow-hidden rounded-t-2xl">
+                <img src="{{ $recipe->image }}" alt="{{ $recipe->title }}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              </figure>
+            </a>
+            <div class="card-body p-5">
+              <h3 class="card-title font-serif text-lg group-hover:text-primary">{{ $recipe->title }}</h3>
+              <p class="text-sm text-base-content/70 line-clamp-2">{{ $recipe->description }}</p>
+              <div class="flex gap-4 text-xs text-base-content/60 mt-2">
+                <span>{{ $recipe->prep }} min</span>
+                <span>{{ $recipe->cook }} min</span>
               </div>
             </div>
-          </div>
+          @endforeach
+          @endif
         </div>
       </div>
 

@@ -17,7 +17,18 @@ class Recipe extends Model
         'cook',
         'servings',
         'tags',
-        'url'
+        'url',
+        'user_id',
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function collections()
+    {
+        return $this->belongsToMany(Collection::class, 'collection_recipe');
+    }
 
 }

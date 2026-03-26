@@ -2,6 +2,16 @@
 
 @section('title', 'FoodAtlas - Landing')
 
+@php
+  $heroMessage = 'Your Passport to Global Flavors';
+  $heroDescription = 'Explore, create, and organize your favorite recipes. From Italian pasta to Japanese ramen, Food Atlas brings global cuisines to your kitchen.';
+  $heroButtonText = 'Browse Recipes';
+  $heroButtonLink = route('recipes.index');
+  $heroButtonSecondaryText = 'Create Your Own';
+  $heroButtonSecondaryLink = route('recipes.create');
+  $heroButtonSecondaryIcon = 'plus';
+  $heroButtonSecondaryIconLink = route('recipes.create');
+@endphp
 @section('content')
   <main>
 

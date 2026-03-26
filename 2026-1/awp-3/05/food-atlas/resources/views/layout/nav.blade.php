@@ -16,8 +16,17 @@
       <button class="btn btn-ghost btn-sm btn-circle hidden lg:flex hover:bg-base-200">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
       </button>
-      <a href="login.html" class="btn btn-outline btn-sm hidden lg:flex hover:bg-base-200">Log in</a>
-      <a href="signup.html" class="btn btn-primary btn-sm hidden lg:flex">Sign up</a>
+      @auth
+      <a href={{ route('dashboard')}} class="btn btn-outline btn-sm hidden lg:flex hover:bg-base-200">Dashboard</a>
+      <a href={{ route('profile.edit')}} class="btn btn-outline btn-sm hidden lg:flex hover:bg-base-200">{{ Auth::user()->name }}</a>
+      <form method="POST" action="{{ route('logout') }}">
+        @csrf
+        <button type="submit" class="btn btn-outline btn-sm hidden lg:flex hover:bg-base-200">Logout</button>
+      </form>
+      @else 
+      <a href={{ route('login')}} class="btn btn-outline btn-sm hidden lg:flex hover:bg-base-200">Log in</a>
+      <a href={{ route('register')}} class="btn btn-primary btn-sm hidden lg:flex">Sign up</a>
+      @endauth
       <div class="dropdown dropdown-end lg:hidden">
         <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
@@ -26,12 +35,20 @@
           <li><a href={{ route('home')}} class="hover:bg-base-200">Home</a></li>
           <li><a href={{ route('recipes.index')}} class="hover:bg-base-200">Recipes</a></li>
           <li><a href={{ route('collections.index')}} class="hover:bg-base-200">Collections</a></li>
+          @auth
+          <li><a href={{ route('dashboard')}} class="hover:bg-base-200">Dashboard</a></li>
+          <li><a href={{ route('profile.edit')}} class="hover:bg-base-200">Profile</a></li>
+            @csrf
+            <button type="submit" class="hover:bg-base-200">Logout</button>
+          </form></li>
+          @else
           <li class="border-t border-base-300 mt-2 pt-2">
-            <a href="login.html" class="btn btn-outline btn-sm w-full">Log in</a>
+            <a href={{ route('login')}} class="btn btn-outline btn-sm w-full">Log in</a>
           </li>
-          <li>
-            <a href="signup.html" class="btn btn-primary btn-sm w-full mt-2">Sign up</a>
-          </li>
+            <li>
+              <a href={{ route('register')}} class="btn btn-primary btn-sm w-full mt-2">Sign up</a>
+            </li>
+          @endauth
         </ul>
       </div>
     </div>
