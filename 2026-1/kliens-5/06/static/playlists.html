@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="synthwave">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./assets/cover.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reactive Playlist - My Playlists</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="w-full min-h-screen overflow-x-hidden bg-base-200">
+    <div class="px-5 navbar bg-base-100">
+        <div class="navbar-start ">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li>
+                        <a class="item" href="/home">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="/playlists">
+                            <i class="fas fa-headphones"></i> My Playlists
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="/tracks">
+                            <i class="fas fa-music"></i> Tracks
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="/search">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-44"><img src="./assets/logo.png" alt="Logo" /></div>
+        </div>
+        <div class="hidden navbar-center lg:flex">
+            <ul class="px-1 menu menu-horizontal">
+                <li>
+                    <a class="item" href="/home">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                </li>
+                <li>
+                    <a class="item" href="/playlists">
+                        <i class="fas fa-headphones"></i> My Playlists
+                    </a>
+                </li>
+                <li>
+                    <a class="item" href="/tracks">
+                        <i class="fas fa-music"></i> Tracks
+                    </a>
+                </li>
+                <li>
+                    <a class="item" href="/search">
+                        <i class="fas fa-search"></i> Search
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="m-1 btn"><i class="fas fa-user"></i> Jake Peralta</div>
+                <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-200 rounded-box w-52">
+                    <li><a>Playlists</a></li>
+                    <li><a>Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-11/12 mx-auto">
+        <div class="pb-3 pr-3 mt-5 md:flex">
+          <div class="w-full p-2 overflow-hidden md:w-4/12 h-[40vh]">
+            <div class="w-full h-full shadow-xl join join-vertical bg-base-300">
+                <h2 class="p-3 text-2xl font-bold join-item">Playlists</h2>
+                <div class="overflow-y-scroll join join-vertical w-full pl-[0.6rem] h-[calc(100%-4rem)]">
+                    <!-- Sample Playlist 1 -->
+                    <div class="items-start p-3 border-0 rounded-lg btn hover:bg-base-200 bg-base-200">
+                        <div class="flex px-5 w-[100%]">
+                            <div class="w-8/12 font-bold text-left">
+                                <i class="mr-2 fas fa-music"></i>Favorites
+                            </div>
+                            <div class="w-4/12 text-right">3 songs</div>
+                        </div>
+                    </div>
+                    <!-- Sample Playlist 2 -->
+                    <div class="items-start p-3 border-0 rounded-lg btn hover:bg-base-200 bg-base-300">
+                        <div class="flex px-5 w-[100%]">
+                            <div class="w-8/12 font-bold text-left">
+                                <i class="mr-2 fas fa-music"></i>Workout Mix
+                            </div>
+                            <div class="w-4/12 text-right">4 songs</div>
+                        </div>
+                    </div>
+                    <!-- Sample Playlist 3 -->
+                    <div class="items-start p-3 border-0 rounded-lg btn hover:bg-base-200 bg-base-300">
+                        <div class="flex px-5 w-[100%]">
+                            <div class="w-8/12 font-bold text-left">
+                                <i class="mr-2 fas fa-music"></i>Chill Vibes
+                            </div>
+                            <div class="w-4/12 text-right">5 songs</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="w-full h-[40vh] overflow-x-hidden shadow-xl join join-vertical bg-base-300">
+            <h2 class="p-3 text-2xl font-bold join-item">Tracks of Favorites</h2>
+            <div class="overflow-y-scroll w-full join join-vertical pl-[0.6rem] h-[calc(100%-4rem)]">
+                <!-- Sample Track 1 -->
+                <div class="items-start p-3 border-0 rounded-lg btn hover:bg-base-200 bg-base-200">
+                    <div class="flex px-5 w-[100%]">
+                        <div class="w-8/12 font-bold text-left">
+                            <i class="mr-2 fas fa-music"></i>Bohemian Rhapsody
+                        </div>
+                        <div class="w-4/12 text-right">Queen</div>
+                    </div>
+                </div>
+                <!-- Sample Track 2 -->
+                <div class="items-start p-3 border-0 rounded-lg btn hover:bg-base-200 bg-base-300">
+                    <div class="flex px-5 w-[100%]">
+                        <div class="w-8/12 font-bold text-left">
+                            <i class="mr-2 fas fa-music"></i>Hotel California
+                        </div>
+                        <div class="w-4/12 text-right">Eagles</div>
+                    </div>
+                </div>
+                <!-- Sample Track 3 -->
+                <div class="items-start p-3 border-0 rounded-lg btn hover:bg-base-200 bg-base-300">
+                    <div class="flex px-5 w-[100%]">
+                        <div class="w-8/12 font-bold text-left">
+                            <i class="mr-2 fas fa-music"></i>Sweet Caroline
+                        </div>
+                        <div class="w-4/12 text-right">Neil Diamond</div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="px-3">
+            <div class="h-full shadow-xl card md:card-side align-center bg-base-300">
+                <figure><img src="./assets/cover-without-text.png" alt="Album Cover" class="object-cover w-64 h-64" /></figure>
+                <div class="p-3 my-auto card-body">
+                    <div class="p-5 md:flex md:flex-wrap">
+                        <div class="w-full mx-auto md:w-8/12">
+                            <h2 class="text-2xl font-bold card-title">Bohemian Rhapsody</h2>
+                            <h2 class="text-xl font-thin card-title">Queen</h2>
+                            <div class="mt-2 mb-5 rating">
+                                <input type="radio" name="rating-4" class="mask mask-star-2 bg-accent" checked />
+                                <input type="radio" name="rating-4" class="mask mask-star-2 bg-accent" checked />
+                                <input type="radio" name="rating-4" class="mask mask-star-2 bg-accent" checked />
+                                <input type="radio" name="rating-4" class="mask mask-star-2 bg-accent" checked />
+                                <input type="radio" name="rating-4" class="mask mask-star-2 bg-accent" checked />
+                            </div>
+                            <div class="p-2 card-actions">
+                                <button class="w-full btn btn-primary md:w-1/6">Spotify</button>
+                                <button class="w-full btn btn-primary md:w-1/6">Youtube</button>
+                                <button class="w-full btn btn-secondary md:w-1/6">Lyrics</button>
+                                <button class="w-full btn btn-secondary md:w-1/6">Chords</button>
+                            </div>
+                        </div>
+                        <div class="w-full h-32 my-auto mt-5 card-actions md:w-4/12 md:justify-end">
+                            <img src="./assets/cover-without-text.png" alt="" class="h-full mt-2 contrast-50 drop-shadow brightness-25 opacity-60" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html> 
