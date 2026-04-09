@@ -1,10 +1,11 @@
 import type { Playlist } from "../../../entities"
 
 
-const PlaylistsList = ({ playlists, setId } : { playlists : Playlist[], setId : any }) => {
+const PlaylistsList = ({ playlists, setId,setTrackId } : { playlists : Playlist[], setId : (id: number ) => void, setTrackId : (id: number | undefined) => void} ) => {
 
   const handleClick = (key: number) => {
     setId(key)
+    setTrackId(undefined)
   }
   return (
     <div className="w-full p-2 overflow-hidden md:w-4/12 h-[40vh]">

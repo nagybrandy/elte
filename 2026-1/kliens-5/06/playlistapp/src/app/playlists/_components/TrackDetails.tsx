@@ -1,14 +1,18 @@
+import type { Track } from "../../../entities"
 
-const TrackDetails = () => {
+const TrackDetails = ({track} : {track : Track}) => {
+
+  if(!track) return;
+  
   return (
     <div className="px-3">
     <div className="h-full shadow-xl card md:card-side align-center bg-base-300">
-        <figure><img src="/cover-without-text.png" alt="Album Cover" className="object-cover w-64 h-64" /></figure>
+        <figure><img src={track?.thumbnailURL} alt="Album Cover" className="object-cover w-64 h-64" /></figure>
         <div className="p-3 my-auto card-body">
             <div className="p-5 md:flex md:flex-wrap">
                 <div className="w-full mx-auto md:w-8/12">
-                    <h2 className="text-2xl font-bold card-title">Bohemian Rhapsody</h2>
-                    <h2 className="text-xl font-thin card-title">Queen</h2>
+                    <h2 className="text-2xl font-bold card-title">{track.title}</h2>
+                    <h2 className="text-xl font-thin card-title">{track.artist}</h2>
                     <div className="mt-2 mb-5 rating">
                         <input type="radio" name="rating-4" className="mask mask-star-2 bg-accent" defaultChecked />
                         <input type="radio" name="rating-4" className="mask mask-star-2 bg-accent" defaultChecked />
