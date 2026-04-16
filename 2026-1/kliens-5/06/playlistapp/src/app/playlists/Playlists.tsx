@@ -5,8 +5,13 @@ import { examplePlaylists as playlists } from "../../storage/playlists.ts"
 import TrackDetails from "./_components/TrackDetails.tsx"
 import TrackList from "./_components/TrackList.tsx"
 import { useState } from "react"
+import { useParams } from "react-router-dom"
 
 const Playlists = () => {
+  const { plId } = useParams<{ plId: string }>()
+
+  const playlistId = plId ? parseInt(plId) : -1;
+  console.log(plId, typeof plId)
   const [id, setId] = useState(2);
   const [trackId, setTrackId] = useState<number | undefined>(undefined);
 
@@ -15,7 +20,7 @@ const Playlists = () => {
         <div className="w-11/12 mx-auto">
             <div className="pb-3 pr-3 mt-5 md:flex">
                 <PlaylistsList playlists={playlists} setId={setId} setTrackId={setTrackId}/>
-                <TrackList playlist={playlists[id]} setTrackId={setTrackId}/>
+                {plId && <TrackList playlist={playlists[playlistId]} setTrackId={setTrackId}/>}
             </div>
         </div>
 
