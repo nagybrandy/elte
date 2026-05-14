@@ -4,22 +4,21 @@ import { ProductCard } from '../components/ProductCard'
 import type { Product } from '../types'
 import { useAppDispatch } from '../stores/hooks'
 import { addProduct } from '../stores/productsSlice'
+import { useAddProductMutation } from '../stores/productsApiSlice'
 
 const placeholderImageUrl =
   'https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1200&q=80'
 
 export function NewProductPage() {
   const formId = useId()
-  const navigate = useNavigate()
-  const dispatch = useAppDispatch()
-
+  const [addProduct] = useAddProductMutation()
   const [form, setForm] = useState<Partial<Product>>({
     name: 'New coffee',
     priceHuf: 0,
     imageUrl: placeholderImageUrl,
     description: 'Short coffee description…',
   })
-  const [errors, setErrors] = useState<Record<string, string>>({})
+  const [errors] = useState<Record<string, string>>({})
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
     setForm({ ...form, [e.target.name]: e.target.value })
@@ -27,10 +26,8 @@ export function NewProductPage() {
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
-
-    // TODO (Lesson 1, task 4): add validation (name required, price > 0, description min 10 chars)
-    // If valid, dispatch addProduct and navigate to /
-    alert('TODO (Lesson 1, task 4): validate then dispatch addProduct(form)')
+    addProduct(form)
+    
   }
 
   const previewProduct: Product = {
