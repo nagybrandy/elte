@@ -1,0 +1,74 @@
+import { Link, useParams } from 'react-router-dom'
+import { useAppDispatch, useAppSelector } from '../stores/hooks'
+import { add } from '../stores/cartSlice'
+
+export function ProductDetailPage() {
+  const { productId } = useParams()
+  const dispatch = useAppDispatch()
+
+  const product = useAppSelector((state) =>
+    state.products.items.find((p) => p.id === productId),
+  )
+
+  // TODO (Lesson 2, task 1): switch to RTK Query
+  // const { data: product, isLoading, isError } = useGetProductQuery(productId!)
+
+  if (!product) {
+    return (
+      <div className="alert alert-error">
+        <span>Product not found.</span>
+      </div>
+    )
+  }
+
+  return (
+    <div className="space-y-4">
+      <div className="breadcrumbs text-sm">
+        <ul>
+          <li>
+            <Link to="/">Products</Link>
+          </li>
+          <li>{product.name}</li>
+        </ul>
+      </div>
+
+      <div className="card bg-base-100 shadow">
+        <figure className="max-h-[420px] bg-base-200">
+          <img
+            src={product.imageUrl}
+            alt={product.name}
+            className="h-full w-full object-cover"
+          />
+        </figure>
+        <div className="card-body">
+          <h1 className="card-title text-2xl">{product.name}</h1>
+          <p className="opacity-80">{product.description}</p>
+          {product.origin || product.preparation ? (
+            <div className="mt-3 space-y-3">
+              {product.origin ? (
+                <div className="badge badge-outline">Origin: {product.origin}</div>
+              ) : null}
+              {product.preparation ? (
+                <div className="rounded-box bg-base-200 p-4">
+                  <div className="text-sm font-semibold">Preparation</div>
+                  <div className="mt-1 whitespace-pre-wrap text-sm opacity-80">
+                    {product.preparation}
+                  </div>
+                </div>
+              ) : null}
+            </div>
+          ) : null}
+          <div className="mt-2 flex items-center justify-between">
+            <div className="text-lg font-semibold">{product.priceHuf} HUF</div>
+            <button
+              className="btn btn-primary"
+              onClick={() => alert('TODO (Lesson 1, task 2): dispatch add(product.id)')}
+            >
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
